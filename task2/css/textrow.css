@@ -1,0 +1,17 @@
+.text-row{
+    display:flex;
+    margin-top:50px;
+    justify-content: center;
+}
+.text-row__header{
+    font-size:32px;
+    color: #373435;
+    font-family: SourceSansProBold;
+}
+.text-row__text{
+    padding-top: 10px;
+    font-size:18px;
+    font-family: SourceSansProReg;
+    text-align: center;
+    color: #676364;
+}

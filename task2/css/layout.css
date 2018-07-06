@@ -1,0 +1,13 @@
+.l-auto{
+    margin-right: auto;
+    margin-left: auto ;
+}
+.l-nav{
+    display:flex;
+    justify-content: center;
+}
+.l-row{
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+}

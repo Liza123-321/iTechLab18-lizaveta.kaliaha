@@ -1,0 +1,9 @@
+body{
+    background-image: url(../images/body-bg.png);
+}
+.main{
+    background-color: #ebebeb ;
+    width: 1230px;
+    border-radius: 5px;
+    margin-top: 97px;
+}
