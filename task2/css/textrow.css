@@ -1,15 +1,18 @@
 .text-row{
     display:flex;
+    margin-right: 3px;
     margin-top:50px;
     justify-content: center;
 }
 .text-row__header{
+    letter-spacing: 2px;
     font-size:32px;
     color: #373435;
     font-family: SourceSansProBold;
 }
 .text-row__text{
-    padding-top: 10px;
+    padding-top: 7px;
+    letter-spacing: 1px;
     font-size:18px;
     font-family: SourceSansProReg;
     text-align: center;

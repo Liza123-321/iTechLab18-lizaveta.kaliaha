@@ -1,6 +1,15 @@
 
 .buttonLine{
-    margin-top: 58px;
+    margin-top: 57px;
+    margin-right: 3px;
+    height: 37px;
+    display:flex;
+    justify-content: center;
+    background: url("../images/line.png") no-repeat center;
+}
+.buttonLine-more{
+    margin-top: 40px;
+    margin-right: 3px;
     height: 37px;
     display:flex;
     justify-content: center;
@@ -8,7 +17,8 @@
 }
 .buttonLine__button{
     border-radius: 5px;
-    width: 119px ;
+    max-width: 119px ;
+    width: 100%;
     background-color: #ed3237;
     color: #ebebeb;
     padding-top:8px;
