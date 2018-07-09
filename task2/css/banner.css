@@ -1,11 +1,12 @@
 .banner{
-    margin-top: 40px;
     display:flex;
-    margin-right: 13px;
+    margin-right: auto;
+    margin-left: auto ;
     justify-content: center;
 }
 .banner__img{
+    margin-top: 40px;
+    margin-right: 13px;
     max-width: 1180px;
     width:100%;
-    height: auto;
 }

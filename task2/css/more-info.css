@@ -1,42 +1,33 @@
-.moreInfo{
+.more-info{
     display:flex;
-    margin: 55px 20px 42px 12px;
+    padding: 55px 20px 0px 12px;
     justify-content: space-around;
 }
-.moreInfo__item{
+.more-info__item{
     margin: 0px 13px 0px 15px;
  }
-.moreInfo__item__l-icon{
+/*нужно это пофиксить !!*/
+.more-info__icon{
     float:left;
     margin-top: 2px;
+    box-shadow: -8.699px 9.661px 0px 0px rgba(0, 0, 0, 0.1);
+    width: 69px;
+    height: 69px;
+    border-radius: 10px 0px 10px 10px;
 }
-/*нужно это пофиксить !!*/
-.moreInfo__item__icon-1{
+.more-info__icon-img-1{
     background:rgb(55, 52, 53) url("../images/icon1.png") no-repeat center;
-    box-shadow: -8.699px 9.661px 0px 0px rgba(0, 0, 0, 0.1);
-    width: 69px;
-    height: 69px;
-    border-radius: 10px 0px 10px 10px;
 }
-.moreInfo__item__icon-2{
+.more-info__icon-img-2{
     background:rgb(55, 52, 53) url("../images/icon2.png") no-repeat center;
-    box-shadow: -8.699px 9.661px 0px 0px rgba(0, 0, 0, 0.1);
-    width: 69px;
-    height: 69px;
-    border-radius: 10px 0px 10px 10px;
 }
-.moreInfo__item__icon-3{
+.more-info__icon-img-3{
     background:rgb(55, 52, 53) url("../images/icon3.png") no-repeat center;
-    box-shadow: -8.699px 9.661px 0px 0px rgba(0, 0, 0, 0.1);
-    width: 69px;
-    height: 69px;
-    border-radius: 10px 0px 10px 10px;
 }
-.moreInfo__item__block{
+.more-info__block{
     margin-left: 100px;
-
 }
-.moreInfo__item__header{
+.more-info__header{
     font-size:16px;
     line-height: 1.2;
     max-width: 75%;
@@ -44,14 +35,14 @@
     color:#373435;
     font-family: SourceSansProBold;
 }
-.moreInfo__item__text{
+.more-info__text{
     margin-top:19px;
     line-height: 1.5;
     font-size:14px;
     color: #676364;
     font-family: SourceSansProReg;
 }
-.moreInfo__item__link{
+.more-info__link{
     font-size:16px;
     letter-spacing: 1px;
     color:#373435;
@@ -59,10 +50,9 @@
     margin-top:25px;
     font-family: SourceSansProBold;
 }
-.moreInfo__item__link:hover{
+.more-info__link:hover{
     color: #ed3237;
 }
-.moreInfo__item__link__arrow{
-    margin-left: 10px;
-    letter-spacing: 1px;
+.more-info__arrow{
+    padding-left: 8px;
 }

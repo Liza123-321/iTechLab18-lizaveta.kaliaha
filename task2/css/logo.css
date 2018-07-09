@@ -9,10 +9,7 @@
     height: 105px;
     position: relative;
     right: 3px;
-    background: #ebebeb url("../images/sitename.png") no-repeat center;
-}
-.logo__shadow{
     margin-top: -46px;
-    height: 105px;
+    background: #ebebeb url("../images/sitename.png") no-repeat center;
 }
 

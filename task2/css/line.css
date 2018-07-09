@@ -1,9 +1,8 @@
 .line{
-     margin-top: 56px;
-     margin-bottom: auto;
-     display:flex;
-     justify-content: center;
+     padding-top: 39px;
  }
-.line_img{
-    max-width: 100%;
+.line__img{
+    height: 37px;
+    width: auto;
+    background: url("../images/line1.png") no-repeat center;
 }

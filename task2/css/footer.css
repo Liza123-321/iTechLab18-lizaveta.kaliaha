@@ -1,13 +1,5 @@
+
 .footer{
-    color: #ebebeb;
-    margin-top:35px;
-    font-size: 16px;
-    font-family: SourceSansProReg;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    text-align: center;
-}
-.main-footer{
-    margin-top: 70px;
+    padding-top: 70px;
     height: 7px;
 }
