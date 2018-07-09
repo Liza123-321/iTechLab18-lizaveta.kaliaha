@@ -1,22 +1,14 @@
 .moreInfo{
     display:flex;
-    margin: 38px 18px 41px 11px;
+    margin: 55px 20px 42px 12px;
     justify-content: space-around;
 }
 .moreInfo__item{
-    margin: 16px 15px 0px 15px;
-}
+    margin: 0px 13px 0px 15px;
+ }
 .moreInfo__item__l-icon{
     float:left;
-    margin-top: 3px;
-}
-.moreInfo__item__icon{
-    background-color: rgb(55, 52, 53);
-    box-shadow: -8.699px 9.661px 0px 0px rgba(0, 0, 0, 0.1);
-    width: 69px;
-    height: 69px;
-    margin-right: 30px;
-    border-radius: 10px 0px 10px 10px;
+    margin-top: 2px;
 }
 /*нужно это пофиксить !!*/
 .moreInfo__item__icon-1{
@@ -24,7 +16,6 @@
     box-shadow: -8.699px 9.661px 0px 0px rgba(0, 0, 0, 0.1);
     width: 69px;
     height: 69px;
-    margin-right: 35px;
     border-radius: 10px 0px 10px 10px;
 }
 .moreInfo__item__icon-2{
@@ -32,28 +23,30 @@
     box-shadow: -8.699px 9.661px 0px 0px rgba(0, 0, 0, 0.1);
     width: 69px;
     height: 69px;
-    margin-right: 25px;
     border-radius: 10px 0px 10px 10px;
 }
 .moreInfo__item__icon-3{
     background:rgb(55, 52, 53) url("../images/icon3.png") no-repeat center;
     box-shadow: -8.699px 9.661px 0px 0px rgba(0, 0, 0, 0.1);
-    width: 70px;
+    width: 69px;
     height: 69px;
-    margin-right: 30px;
     border-radius: 10px 0px 10px 10px;
 }
 .moreInfo__item__block{
     margin-left: 100px;
+
 }
 .moreInfo__item__header{
     font-size:16px;
+    line-height: 1.2;
+    max-width: 75%;
     letter-spacing: 1px;
     color:#373435;
     font-family: SourceSansProBold;
 }
 .moreInfo__item__text{
     margin-top:19px;
+    line-height: 1.5;
     font-size:14px;
     color: #676364;
     font-family: SourceSansProReg;
@@ -63,9 +56,13 @@
     letter-spacing: 1px;
     color:#373435;
     display:flex;
-    margin-top:32px;
+    margin-top:25px;
     font-family: SourceSansProBold;
+}
+.moreInfo__item__link:hover{
+    color: #ed3237;
 }
 .moreInfo__item__link__arrow{
     margin-left: 10px;
+    letter-spacing: 1px;
 }

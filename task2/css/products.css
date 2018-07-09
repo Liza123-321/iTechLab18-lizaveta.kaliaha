@@ -1,7 +1,7 @@
 .products{
     display:flex;
-    margin-top:15px;
-    max-width: 410px;
+    margin-top:13px;
+    max-width: 445px;
     width: 100%;
     justify-content: center;
     flex-direction: column;
@@ -25,11 +25,12 @@
 }
 .products__items__item{
     display: inline-block;
+    letter-spacing: 1px;
     padding: 9px 15px 9px 15px;
     font-size:16px;
     color:#373435;
     margin-right: 7px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     font-family: SourceSansProBold;
     box-shadow: -3.536px 3.536px 0px 0px rgba(0, 0, 0, 0.12);
     text-align: center;

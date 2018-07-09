@@ -1,6 +1,6 @@
 
 .buttonLine{
-    margin-top: 55px;
+    margin-top: 56px;
     margin-bottom:  53px ;
     margin-right: 3px;
     height: 37px;
@@ -9,8 +9,8 @@
     background: url("../images/line.png") no-repeat center;
 }
 .buttonLine-lesstop{
-    margin-top: 35px;
-    margin-bottom:  53px ;
+    margin-top: 34px;
+    margin-bottom:  50px ;
     margin-right: 3px;
     height: 37px;
     display:flex;
@@ -23,9 +23,13 @@
     width: 100%;
     background-color: #ed3237;
     color: #ebebeb;
+    letter-spacing: 1px;
     padding-top:8px;
     text-align: center;
     font-family: SourceSansProBold;
     font-size: 16px;
     box-shadow: -3.536px 3.536px 0px 0px rgba(0, 0, 0, 0.12);
+}
+.buttonLine__button:hover{
+    background-color: #909090;
 }
