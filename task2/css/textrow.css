@@ -1,0 +1,28 @@
+.text-row{
+    display:flex;
+    flex-direction: column;
+    margin-right: 3px;
+    padding-top:49px;
+    justify-content: center;
+}
+.text-row-padding-after-line{
+    padding-top:32px;
+}
+.text-row__header{
+    letter-spacing: 2px;
+    margin-right: auto;
+    margin-left: auto ;
+    font-size:32px;
+    color: #373435;
+    font-family: SourceSansProBold;
+}
+.text-row__text{
+    margin-right: auto;
+    margin-left: auto ;
+    padding-top: 6px;
+    letter-spacing: 1px;
+    font-size:18px;
+    font-family: SourceSansProReg;
+    text-align: center;
+    color: #676364;
+}

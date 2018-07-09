@@ -1,0 +1,31 @@
+
+.button-line{
+    padding-top: 57px;
+    padding-bottom: 5px;
+    padding-right: 3px;
+}
+.button-line-padding-top-less{
+    padding-top: 37px;
+}
+.button-line__lines{
+    height: 37px;
+    display:flex;
+    justify-content: center;
+    background: url("../images/line.png") no-repeat center;
+}
+.button-line__button{
+    border-radius: 5px;
+    max-width: 119px ;
+    width: 100%;
+    background-color: #ed3237;
+    color: #ebebeb;
+    letter-spacing: 1px;
+    padding-top:8px;
+    text-align: center;
+    font-family: SourceSansProBold;
+    font-size: 16px;
+    box-shadow: -3.536px 3.536px 0px 0px rgba(0, 0, 0, 0.12);
+}
+.button-line__button:hover{
+    background-color: #909090;
+}

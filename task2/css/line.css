@@ -1,0 +1,8 @@
+.line{
+     padding-top: 39px;
+ }
+.line__img{
+    height: 37px;
+    width: auto;
+    background: url("../images/line1.png") no-repeat center;
+}
