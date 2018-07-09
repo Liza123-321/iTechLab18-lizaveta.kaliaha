@@ -1,5 +1,9 @@
 .line{
-    margin-top:53px;
-    display:flex;
-    justify-content: center;
+     margin-top: 50px;
+     margin-bottom: auto;
+     display:flex;
+     justify-content: center;
+ }
+.line_img{
+    max-width: 100%;
 }

@@ -1,14 +1,16 @@
 
 .buttonLine{
-    margin-top: 57px;
+    margin-top: 55px;
+    margin-bottom:  53px ;
     margin-right: 3px;
     height: 37px;
     display:flex;
     justify-content: center;
     background: url("../images/line.png") no-repeat center;
 }
-.buttonLine-more{
-    margin-top: 40px;
+.buttonLine-lesstop{
+    margin-top: 35px;
+    margin-bottom:  53px ;
     margin-right: 3px;
     height: 37px;
     display:flex;
