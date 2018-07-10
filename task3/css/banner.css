@@ -1,0 +1,21 @@
+.banner{
+    display:flex;
+    margin-right: auto;
+    margin-left: auto ;
+    justify-content: center;
+}
+.banner__img{
+    margin-top: 40px;
+    margin-right: 13px;
+    max-width: 1180px;
+    width:100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+
+}
+
+@media screen and (min-width: 412px) and (max-width: 768px)
+{
+
+}

@@ -1,0 +1,15 @@
+.logo{
+    display:flex;
+    justify-content: center;
+}
+.logo__img{
+    width: 260px;
+    border-radius: 5px;
+    box-shadow: -8.699px 9.661px 0px 0px rgba(0, 0, 0, 0.1);
+    height: 105px;
+    position: relative;
+    right: 3px;
+    margin-top: -46px;
+    background: #ebebeb url("../images/sitename.png") no-repeat center;
+}
+
