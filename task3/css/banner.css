@@ -1,16 +1,13 @@
 .banner{
-    display:flex;
     margin-right: auto;
     margin-left: auto ;
-    max-height: 430px;
+    padding-right: 16px;
     max-width: 1181px;
-    justify-content: center;
 }
 .banner__img{
     margin-top: 40px;
-    margin-right: 14px;
-    margin-left: 1px;
-    display: block;
-    max-height: 100%;
-    max-width: 100%;
+    margin-right: 16px;
+    height: 391px;
+    width: 100%;
+    background-image: url("../images/banner-bg.png");
 }
