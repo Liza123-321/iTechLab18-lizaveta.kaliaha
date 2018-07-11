@@ -6,6 +6,7 @@
 
 .more-info__item{
     margin: 0px 13px 0px 15px;
+    position: relative;
  }
 /*нужно это пофиксить !!*/
 .more-info__icon{
@@ -27,6 +28,7 @@
 }
 .more-info__block{
     margin-left: 100px;
+    margin-bottom:45px;
 }
 .more-info__header{
     font-size:16px;
@@ -44,27 +46,37 @@
     font-family: SourceSansProReg;
 }
 .more-info__link{
+    position: absolute;
+    bottom: 0;
     font-size:16px;
     letter-spacing: 1px;
     color:#373435;
     display:flex;
-    margin-top:25px;
+   padding-top:25px;
+    margin-left: 100px;
     font-family: SourceSansProBold;
 }
 .more-info__link:hover{
     color: #ed3237;
 }
-.more-info__arrow{
-    padding-left: 8px;
+.more-info__icon:hover{
+    width: 72px;
+    height: 72px;
 }
+.more-info__arrow{
+    padding-top: 5px;
+    padding-left: 6px;
+    max-height: 11px;
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px)
 {
-    .more-info__item{
-        margin: 0px 10px 0px 10px;
-    }
     .more-info__text{
         margin-top:15px;
+    }
+    .more-info__header{
+
     }
 
 }
@@ -75,6 +87,8 @@
         flex-wrap: wrap;
     }
     .more-info__link{
+        position: relative;
+        float: right;
         margin-top:5px;
     }
     .more-info__item{
@@ -83,15 +97,22 @@
     .more-info__text{
         margin-top:5px;
     }
+    .more-info__block{
+        margin-bottom:0px;
+    }
 }
 
 @media screen and (max-width: 412px)
 {
     .more-info{
         flex-wrap: wrap;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
     .more-info__link{
         margin-top:5px;
+
     }
     .more-info__item{
         margin-bottom: 35px;

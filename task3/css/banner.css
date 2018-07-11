@@ -1,13 +1,45 @@
 .banner{
-    margin-right: auto;
-    margin-left: auto ;
-    padding-right: 16px;
-    max-width: 1181px;
-}
+     margin-right: auto;
+     margin-left: auto ;
+     padding-right: 16px;
+     max-width: 1181px;
+ }
 .banner__img{
     margin-top: 40px;
-    margin-right: 16px;
     height: 391px;
     width: 100%;
     background-image: url("../images/banner-bg.png");
+    background-position-x: 70%;
+    /*box-shadow: -8.699px 9.661px 1px 0px rgba(0, 0, 0, 0.1);*/
+    border-radius: 10px 0px 10px 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .banner{
+        padding-right: 0px;
+    }
+    .banner__img{
+        border-radius: 0px;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 768px)
+{
+    .banner{
+        padding-right: 0px;
+    }
+    .banner__img{
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 412px)
+{
+    .banner{
+        padding-right: 0px;
+    }
+    .banner__img{
+        border-radius: 0px;
+    }
 }

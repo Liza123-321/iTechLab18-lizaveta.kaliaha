@@ -53,5 +53,7 @@
     color: #ed3237;
 }
 .news__arrow{
-    margin-left: 8px;
+    padding-top: 5px;
+    padding-left: 6px;
+    max-height: 11px;
 }
