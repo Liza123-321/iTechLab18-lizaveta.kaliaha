@@ -4,11 +4,11 @@
     flex-wrap: wrap;
     margin-left: auto ;
     max-width: 490px;
+    padding-top: 41px;
     justify-content: space-between;
 }
 .nav__item{
     color: #909090;
-    margin-top:41px;
     letter-spacing: 1px;
     padding: 10px 0px 10px 0px;
     display:flex;

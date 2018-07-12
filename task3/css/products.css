@@ -15,14 +15,10 @@
 }
 .products__items{
     flex-wrap: wrap;
-    margin-top: 25px;
+    padding-top: 25px;
     display:flex;
     justify-content: center;
 
-}
-.products__l-items{
-    display:flex;
-    justify-content: center;
 }
 .products__item{
     display: inline-block;

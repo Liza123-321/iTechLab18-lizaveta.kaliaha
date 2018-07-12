@@ -2,13 +2,13 @@
     display:flex;
     margin-right: auto;
     flex-wrap: wrap;
-    margin-left: auto ;
+    margin-left: auto;
     max-width: 407px;
+    padding-top:34px;
     justify-content: space-between;
 }
 .nav__item{
     color: #909090;
-    margin-top:34px;
     letter-spacing: 1px;
     padding: 10px 0px 10px 0px;
     display:flex;
