@@ -1,7 +1,7 @@
 .text-row{
     display:flex;
     flex-direction: column;
-    margin-right: 3px;
+    padding-right: 3px;
     padding-top:49px;
     justify-content: center;
 }
@@ -25,4 +25,21 @@
     font-family: SourceSansProReg;
     text-align: center;
     color: #676364;
+}
+@media screen and (max-width: 412px)
+{
+    .text-row{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top:30px;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 768px)
+{
+    .text-row{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top:30px;
+    }
 }

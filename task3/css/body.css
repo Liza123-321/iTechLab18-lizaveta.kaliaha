@@ -3,20 +3,39 @@
 }
 .body__main{
     background-color: #ebebeb ;
-    max-width: 1229px;
+    width: 1012px;
     margin-right: auto;
     margin-left: auto ;
     border-radius: 5px;
-    margin-top: 97px;
+    margin-top: 80px;
 }
 .body__copyright{
     color: #ebebeb;
-    padding-top:35px;
-    font-size: 16px;
+    padding-top:29px;
+    font-size: 13px;
     font-family: SourceSansProReg;
     margin-right: auto;
     margin-left: auto ;
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .body__main{
+        width: 756px;
+    }
+
+}
+@media screen and (min-width: 412px) and (max-width: 768px)
+{
+    .body__main{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 412px)
+{
+    .body__main{
+        width: 300px;
+    }
 }
