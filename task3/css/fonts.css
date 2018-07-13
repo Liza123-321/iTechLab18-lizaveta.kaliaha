@@ -1,0 +1,8 @@
+@font-face {
+    font-family: SourceSansProReg; /* Имя шрифта */
+    src: url(../fonts/SourceSansPro-Regular.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: SourceSansProBold; /* Имя шрифта */
+    src: url(../fonts/SourceSansPro-Bold.otf); /* Путь к файлу со шрифтом */
+}
