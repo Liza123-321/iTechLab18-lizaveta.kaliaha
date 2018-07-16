@@ -86,10 +86,9 @@ let movies3=movie.map(function (x) {
 
 //task  E
 let ratings=[2,3,1,4,5];
-console.log(ratings.reduce(function(memo,item){
-    console.log(memo,item);
- return (memo<item ? memo : item);
-}));
+// console.log(ratings.reduce(function(memo,item){
+//  return (memo>item ? memo : item);
+// }));
 
 //task Ж
 var boxarts = [{
@@ -109,13 +108,11 @@ var boxarts = [{
     height: 150,
     url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg"
 }];
-//  let boxarts2= boxarts.reduce(function (memo,item) {
-//
-//
-//  }).map(function (x) {
-//      return x.url;
-//  });
-// console.log(boxarts2)
+ let boxarts2= boxarts.reduce(function (memo,item) {
+    let area= item.width*item.height;
+    let memoarea=(memo!=null ? memo.height*memo.width : null);
+    return memoarea>area ? memo : item }).url;
+//console.log(boxarts2)
 
 //task З
 var videos = [{
@@ -131,3 +128,8 @@ var videos = [{
     "id": 654356453,
     "title": "Bad Boys"
 }];
+let videos2=videos.reduce(function (memo,item){
+    memo[item.id] = item.title;
+    return memo;
+},{});
+console.log(videos2);
