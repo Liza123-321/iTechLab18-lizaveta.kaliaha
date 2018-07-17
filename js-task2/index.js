@@ -19,6 +19,11 @@ console.log(add.call(voltron,1,2)); //call
 console.log(add.apply(voltron,[20,30])); //apply
 
 //4
- console.log(add.bind(voltron)("drinking","beer")); //bind
-
+function showName() {
+    setTimeout(function(){
+        console.log(add.bind(voltron)("drinking","beer"))
+    }, 1000);
+}
+showName();
  //5 Написанный вами код должен вывести console.log имени которое лежит в this.name пятью разными способами
+
