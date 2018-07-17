@@ -28,13 +28,19 @@
 
 4a - https://jsbin.com/xuwabaw/edit?js,console
 
-4б -
+4б - https://jsbin.com/woquwih/edit?js,console
 
-4в -
+4в - https://jsbin.com/muhekur/edit?js,console
 
 4г -
 
 
 /////////////
 
-5 - 
+5а -
+
+5б -
+
+5в -
+
+5г -
