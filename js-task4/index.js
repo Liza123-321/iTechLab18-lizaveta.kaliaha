@@ -12,23 +12,26 @@ function logHi() {
 
 ///task Б
 new Promise(function (resolve) {
-    return new Promise(() =>
         setTimeout(() => {
-        resolve(-10);
-    }, 3000))
+            resolve(-10);
+    }, 3000)
 }).then((result) => {
     console.log(result);
     return result * 2;
 }).then((result) => {
     console.log(result);
-    return new Promise((resolve) =>
-        setTimeout(() => {
-            resolve(result * 2);
-        }, 2000)
-    );
+    setTimeout(() => {
+        return(result * 2)
+    }, 2000)
 }).then((result) => {
     console.log(result);
 });
 
 
 //task В
+
+
+
+//task Г
+
+

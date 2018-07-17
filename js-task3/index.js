@@ -44,9 +44,10 @@ function task3() {
         clearInterval(intervalTask2);
     }
 }
-
+var timeout_id4;
 function task4() {
-    setTimeout(function () {
+    clearTimeout(timeout_id4);
+    timeout_id4=setTimeout(function () {
         console.log(document.getElementById("task4_id").value);
     }, 1000);
 }

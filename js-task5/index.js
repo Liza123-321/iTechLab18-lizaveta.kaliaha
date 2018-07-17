@@ -1,4 +1,4 @@
-//1 done
+//1
 loadVideosAsync().then(function (videos) {
     loadMetaAsync()
 }).then(function (meta) {
@@ -14,7 +14,7 @@ function anAsyncCall() {
     return promise;
 };
 
-//3
+//3 проверка если все
 db.getAllDocs().then(function (result) {
     return Promise.all(result.rows.forEach(function (row) {
         return db.remove(row.doc);
@@ -24,7 +24,7 @@ db.getAllDocs().then(function (result) {
 });
 
 
-//4
+//4 добавление обработки ошибок
 doAsync().then(function () {
     throw new Error('nope');
 }, function (err) {
