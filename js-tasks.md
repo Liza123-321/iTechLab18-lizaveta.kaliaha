@@ -17,13 +17,24 @@
 1з - https://jsbin.com/lalusew/edit?js,console
 
 /////////////
+
 2 - https://jsbin.com/jodinus/edit?js,console
 
 /////////////
+
 3 - https://jsbin.com/juvopiw/edit?html,js,console,output
 
 /////////////
-4 - 
+
+4a - https://jsbin.com/xuwabaw/edit?js,console
+
+4б -
+
+4в -
+
+4г -
+
 
 /////////////
+
 5 - 
