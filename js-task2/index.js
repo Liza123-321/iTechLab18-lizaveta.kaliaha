@@ -6,11 +6,11 @@ function add(op1, op2) {
     this.name = this.name || "Human";
     return this.name + " can count to " + (op1 + op2);
 }
+var voltron = new Robot("Voltron");
 
-(function task_2(console,add,Robot) {
+(function task_2(console,add,voltron) {
     'use strict';
 
-    var voltron = new Robot("Voltron");
     //1
     console.log(add(1, 0)); // || "Human";
 
@@ -23,16 +23,21 @@ function add(op1, op2) {
     //4
     console.log(add.bind(voltron)("drinking", "beer"))
 
-})(console, add,Robot);
-
-
-
-// //5 Написанный вами код должен вывести console.log имени которое лежит в this.name пятью разными способами
-(function showName() {
-    setTimeout(() => console.log(this.name), 1000);
-})(Robot("Voltron"));
+})(console, add,voltron);
 
 
 // #5 Написанный вами код должен вывести в консоль "Voltron" внутри setTimeout, 5-ью разными способами
-// var showName = function () { // code here setTimeout( // code here, 1000); }.bind(voltron)
-// showName();
+(function (){
+    'use strict';
+
+    function show() {
+        this.name = this.name || "42";
+        return this.name;
+    }
+    setTimeout(()=>{
+     console.log(this.name);
+     console.log(voltron.name);
+     console.log(show.call(voltron));
+     console.log(show.apply(voltron));
+     console.log(show.bind(voltron)());
+ }, 1000); }.bind(voltron))();

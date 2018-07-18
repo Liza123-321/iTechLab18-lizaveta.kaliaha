@@ -1,13 +1,12 @@
-
+var timeout_id;
 // var test=document.getElementById("t1").addEventListener("click",task1);
-
-global.handler1=function task1() {
-    var timeout_id;
+function task1() {
     clearTimeout(timeout_id)
     timeout_id=setTimeout(function () {
         console.log("Hello World");
     }, 5000);
-}();
+}
+
 
 var flag = false;
 var interval_id;
