@@ -25,7 +25,6 @@ var voltron = new Robot("Voltron");
 
 })(console, add,voltron);
 
-
 // #5 Написанный вами код должен вывести в консоль "Voltron" внутри setTimeout, 5-ью разными способами
 (function (){
     'use strict';
@@ -34,10 +33,13 @@ var voltron = new Robot("Voltron");
         this.name = this.name || "42";
         return this.name;
     }
+
     setTimeout(()=>{
      console.log(this.name);
      console.log(voltron.name);
      console.log(show.call(voltron));
      console.log(show.apply(voltron));
      console.log(show.bind(voltron)());
- }, 1000); }.bind(voltron))();
+    }, 1000);
+
+}.bind(voltron))();

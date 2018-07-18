@@ -39,7 +39,7 @@
 
 5а - https://jsbin.com/sogodog/edit?js,console
 
-5б -
+5б - https://jsbin.com/giwikox/edit?js,console
 
 5в - https://jsbin.com/mofixuk/edit?js,console
 
