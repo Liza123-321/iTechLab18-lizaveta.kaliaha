@@ -37,7 +37,7 @@
 
 /////////////
 
-5а -
+5а - https://jsbin.com/sogodog/edit?js,console
 
 5б -
 

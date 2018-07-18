@@ -18,8 +18,8 @@ let arr2= arr.map(function(x){
 //task Б
 let arrJson2=arrJson.map(function(x){
     let obj={
-        'id': Object.values(x)[0],
-        'title': Object.values(x)[1]
+        'id': x.id,
+        'title': x.title
     }
     return obj;
 });
@@ -44,29 +44,26 @@ arr2=arr.filter(function(x){
 arrJson2=arrJson.filter(function (x) {
     return x.rating > 4.0;})
 .map(function(x){
-    return Object.values(x)[0];
+    return x.id;
 });
 //console.log(arrJson2);
 
 //task Д
+
 let movies=JSON.parse(fs.readFileSync('./movieList.json', 'utf8'));
-let movies2= movies.map(function(x){
-    return x.videos;
-});
-let movie=movies2[0].concat(movies2[1]);
-let movies3=movie.map(function (x) {
+let videoList=Array.prototype.concat.apply([],[movies[0].videos,movies[1].videos]);
+let movies2= videoList.map(function(x){
     let boxart=x.boxarts.filter(function(y){
         return y.width==150 && y.height==200
     });
     let obj={
-        'id': Object.values(x)[0],
-        'title': Object.values(x)[1],
+        'id': x.id,
+        'title': x.title,
         'boxart': boxart[0].url
     }
     return obj;
-
 });
-//console.log(movies3);
+//console.log(movies2);
 
 //task Д2 reduce
  Array.prototype.reduce=function (combiner,initialValue) {
@@ -108,11 +105,14 @@ var boxarts = [{
     height: 150,
     url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg"
 }];
- let boxarts2= boxarts.reduce(function (memo,item) {
-    let area= item.width*item.height;
-    let memoarea=(memo!=null ? memo.height*memo.width : null);
-    return memoarea>area ? memo : item }).url;
-//console.log(boxarts2)
+let boxarts2=boxarts.map(function (x) {
+    return {
+        "area": x.width*x.height,
+        "url": x.url
+    }
+}).reduce(function (memo,item) {
+    return memo.area>item.area ? memo.url : item.url },{});
+console.log(boxarts2)
 
 //task З
 var videos = [{
@@ -132,4 +132,4 @@ let videos2=videos.reduce(function (memo,item){
     memo[item.id] = item.title;
     return memo;
 },{});
-console.log(videos2);
+//console.log(videos2);

@@ -1,13 +1,12 @@
-//1
-loadVideosAsync().then(function (videos) {
-    loadMetaAsync()
-}).then(function (meta) {
-    DoSomething(videos, meta);
-});
+//1 откуда у DoSomething videos?? выполнение обоих промисов
+Promise.all([loadVideosAsync(), loadMetaAsync()])
+    .then(function (videos, meta) {
+        DoSomething(videos, meta);
+    });
 
 //2
-function anAsyncCall() {
-    var promise = doSomethingAsync();
+async function anAsyncCall() {
+    var promise = await doSomethingAsync();
     promise.then(function () {
         somethingComplicated();
     });
@@ -22,7 +21,6 @@ db.getAllDocs().then(function (result) {
 }).then(function () {
     // All docs must be removed!
 });
-
 
 //4 добавление обработки ошибок
 doAsync().then(function () {

@@ -1,14 +1,16 @@
-var timeout_id;
-function task1() {
+
+// var test=document.getElementById("t1").addEventListener("click",task1);
+
+global.handler1=function task1() {
+    var timeout_id;
     clearTimeout(timeout_id)
     timeout_id=setTimeout(function () {
         console.log("Hello World");
     }, 5000);
-}
+}();
 
 var flag = false;
 var interval_id;
-
 function task2() {
     flag = (flag == true ? false : true);
     console.log(flag);
@@ -22,7 +24,6 @@ function task2() {
 
 var flagTask2 = false;
 var intervalTask2;
-
 function task3() {
     let seconds = Math.floor(Math.random() * (4 - 1) + 1);
     flagTask2 = (flagTask2 == true ? false : true);
@@ -44,6 +45,7 @@ function task3() {
         clearInterval(intervalTask2);
     }
 }
+
 var timeout_id4;
 function task4() {
     clearTimeout(timeout_id4);
