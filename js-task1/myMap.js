@@ -49,20 +49,50 @@ arrJson2=arrJson.filter(function (x) {
 //console.log(arrJson2);
 
 //task Д
+// let movies=JSON.parse(fs.readFileSync('./movieList.json', 'utf8'));
+// let videoList=Array.prototype.concat.apply([],[movies[0].videos,movies[1].videos]);
+// let movies2= videoList.map(function(x){
+//     let boxart=x.boxarts.filter(function(y){
+//         return y.width==150 && y.height==200
+//     });
+//     let obj={
+//         'id': x.id,
+//         'title': x.title,
+//         'boxart': boxart[0].url
+//     }
+//     return obj;
+// });
 
 let movies=JSON.parse(fs.readFileSync('./movieList.json', 'utf8'));
-let videoList=Array.prototype.concat.apply([],[movies[0].videos,movies[1].videos]);
-let movies2= videoList.map(function(x){
-    let boxart=x.boxarts.filter(function(y){
-        return y.width==150 && y.height==200
+let videos3=movies.map(function (movie) {
+    let abc = movie.videos.map(function (video) {
+        return video.boxarts.filter(function(boxart){
+            return boxart.width==150 && boxart.height==200
+        }).map(function (boxart) {
+            return {
+                'id': video.id,
+                'title': video.title,
+                'boxart': boxart.url
+            }
+        })
+
     });
-    let obj={
-        'id': x.id,
-        'title': x.title,
-        'boxart': boxart[0].url
-    }
-    return obj;
+    return Array.prototype.concat.apply([],abc);
 });
+console.log(Array.prototype.concat.apply([],videos3));
+//
+// let videoList=Array.prototype.concat.apply([],[movies[0].videos,movies[1].videos]);
+// let movies2= videoList.map(function(x){
+//     let boxart=x.boxarts.filter(function(y){
+//         return y.width==150 && y.height==200
+//     });
+//     let obj={
+//         'id': x.id,
+//         'title': x.title,
+//         'boxart': boxart[0].url
+//     }
+//     return obj;
+// });
 //console.log(movies2);
 
 //task Д2 reduce
@@ -93,6 +123,10 @@ var boxarts = [{
     height: 200,
     url: "http://cdn-0.nflximg.com/images/2891/Fracture200.jpg"
 }, {
+    width: 425,
+    height: 150,
+    url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg"
+},{
     width: 150,
     height: 200,
     url: "http://cdn-0.nflximg.com/images/2891/Fracture150.jpg"
@@ -100,19 +134,15 @@ var boxarts = [{
     width: 300,
     height: 200,
     url: "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg"
-}, {
-    width: 425,
-    height: 150,
-    url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg"
-}];
+}, ];
 let boxarts2=boxarts.map(function (x) {
     return {
         "area": x.width*x.height,
         "url": x.url
     }
 }).reduce(function (memo,item) {
-    return memo.area>item.area ? memo.url : item.url },{});
-console.log(boxarts2)
+    return memo.area>item.area ? memo : item },{}).url;
+//console.log(boxarts2)
 
 //task З
 var videos = [{

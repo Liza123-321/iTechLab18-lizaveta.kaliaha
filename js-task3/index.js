@@ -1,5 +1,5 @@
 
-(function  t1() {
+(function  t1(global,document,console) {
     'use strict';
 
     let timeout_id;
@@ -9,12 +9,13 @@
         timeout_id=setTimeout(function () {
             console.log("Hello World");
         }, 5000);
-    }
+    };
+    global.handler1=task1;
 
-})();
+})(this,document,console);
 
 
-(function t2() {
+(function t2(global,document,console) {
     'use strict';
 
     let flag = false;
@@ -31,10 +32,12 @@
         else clearInterval(interval_id);
     }
 
-})();
+    global.handler2=task2;
+
+})(this,document,console);
 
 
-(function t3() {
+(function t3(global,document,console) {
     'use strict';
 
     let flagTask2 = false;
@@ -61,10 +64,12 @@
             clearInterval(intervalTask2);
         }
     }
-})();
+
+    global.handler3=task3;
+})(this,document,console);
 
 
-(function t4() {
+(function t4(global,document,console) {
     'use strict';
 
     let timeout_id4;
@@ -75,6 +80,8 @@
             console.log(document.getElementById("task4_id").value);
         }, 1000);
     }
-})();
+
+    global.handler4=task4;
+})(this,document,console);
 
 
