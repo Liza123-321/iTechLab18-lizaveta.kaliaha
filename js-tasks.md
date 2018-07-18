@@ -32,7 +32,7 @@
 
 4в - https://jsbin.com/muhekur/edit?js,console
 
-4г -
+4г - https://jsbin.com/ruwamuw/edit?js,console
 
 
 /////////////
@@ -41,6 +41,6 @@
 
 5б -
 
-5в -
+5в - https://jsbin.com/mofixuk/edit?js,console
 
-5г -
+5г - https://jsbin.com/fesuzaw/edit?js,console

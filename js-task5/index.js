@@ -14,7 +14,7 @@ function anAsyncCall() {
     return promise;
 };
 
-//3 проверка если все
+//3 проверка если все удалились
 db.getAllDocs().then(function (result) {
     return Promise.all(result.rows.forEach(function (row) {
         return db.remove(row.doc);
