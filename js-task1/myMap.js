@@ -6,8 +6,10 @@ let arrJson=JSON.parse(fs.readFileSync('./arrayReleases.json', 'utf8'));
 //task A map
 Array.prototype.map=function(projectionFunction){
     let res=[];
-    for(let i=0; i< this.length; i ++){
-        res.push(projectionFunction.call(this,this[i],i))
+    if(typeof(projectionFunction)==="function"){
+        for(let i=0; i< this.length; i ++){
+            res.push(projectionFunction.call(this,this[i],i))
+        }
     }
     return res;
 };
@@ -28,12 +30,14 @@ let arrJson_res=arrJson.map(function(x){
 //task В filter
  Array.prototype.filter=function (predicateFunction) {
      let res=[];
-    for(let i=0;i<this.length;i++){
-    if(predicateFunction.call(this,this[i],i)){
-        res.push(this[i]);
-        }
-    }
-return res;
+     if(typeof(predicateFunction)==="function") {
+         for (let i = 0; i < this.length; i++) {
+             if (predicateFunction.call(this, this[i], i)) {
+                 res.push(this[i]);
+             }
+         }
+     }
+    return res;
 };
 arr_res=arr.filter(function(x){
     return x>2
@@ -79,7 +83,7 @@ let videos_in_movie=movies.map(function (movie) {
     });
     return Array.prototype.concat.apply([],video_res);
 });
-console.log(Array.prototype.concat.apply([],videos_in_movie));
+//console.log(Array.prototype.concat.apply([],videos_in_movie));
 //
 // let videoList=Array.prototype.concat.apply([],[movies[0].videos,movies[1].videos]);
 // let movies2= videoList.map(function(x){
@@ -97,9 +101,11 @@ console.log(Array.prototype.concat.apply([],videos_in_movie));
 
 //task Д2 reduce
  Array.prototype.reduce=function (combiner,initialValue) {
-     let res=initialValue != undefined? initialValue : null;
-     for(let i=0;i < this.length;i++){
-         res= combiner.call(null,res,this[i],i,this);
+     let res = initialValue != undefined ? initialValue : null;
+     if(typeof(combiner)==="function") {
+         for (let i = 0; i < this.length; i++) {
+             res = combiner.call(null, res, this[i], i, this);
+         }
      }
     return res;
  };
