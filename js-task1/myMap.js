@@ -11,19 +11,19 @@ Array.prototype.map=function(projectionFunction){
     }
     return res;
 };
-let arr2= arr.map(function(x){
+let arr_res= arr.map(function(x){
     return x+1;});
-//console.log(arr2);
+//console.log(arr_res);
 
 //task Б
-let arrJson2=arrJson.map(function(x){
+let arrJson_res=arrJson.map(function(x){
     let obj={
         'id': x.id,
         'title': x.title
     }
     return obj;
 });
-//console.log(arrJson2);
+//console.log(arrJson_res);
 
 //task В filter
  Array.prototype.filter=function (predicateFunction) {
@@ -35,18 +35,18 @@ let arrJson2=arrJson.map(function(x){
     }
 return res;
 };
-arr2=arr.filter(function(x){
+arr_res=arr.filter(function(x){
     return x>2
 });
-//console.log(arr2);
+//console.log(arr_res);
 
 //task Г
-arrJson2=arrJson.filter(function (x) {
+arrJson_res=arrJson.filter(function (x) {
     return x.rating > 4.0;})
 .map(function(x){
     return x.id;
 });
-//console.log(arrJson2);
+//console.log(arrJson_res);
 
 //task Д
 // let movies=JSON.parse(fs.readFileSync('./movieList.json', 'utf8'));
@@ -64,8 +64,8 @@ arrJson2=arrJson.filter(function (x) {
 // });
 
 let movies=JSON.parse(fs.readFileSync('./movieList.json', 'utf8'));
-let videos3=movies.map(function (movie) {
-    let abc = movie.videos.map(function (video) {
+let videos_in_movie=movies.map(function (movie) {
+    let video_res = movie.videos.map(function (video) {
         return video.boxarts.filter(function(boxart){
             return boxart.width==150 && boxart.height==200
         }).map(function (boxart) {
@@ -77,9 +77,9 @@ let videos3=movies.map(function (movie) {
         })
 
     });
-    return Array.prototype.concat.apply([],abc);
+    return Array.prototype.concat.apply([],video_res);
 });
-console.log(Array.prototype.concat.apply([],videos3));
+console.log(Array.prototype.concat.apply([],videos_in_movie));
 //
 // let videoList=Array.prototype.concat.apply([],[movies[0].videos,movies[1].videos]);
 // let movies2= videoList.map(function(x){
@@ -118,7 +118,7 @@ let ratings=[2,3,1,4,5];
 // }));
 
 //task Ж
-var boxarts = [{
+let boxarts = [{
     width: 200,
     height: 200,
     url: "http://cdn-0.nflximg.com/images/2891/Fracture200.jpg"
@@ -135,17 +135,17 @@ var boxarts = [{
     height: 200,
     url: "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg"
 }, ];
-let boxarts2=boxarts.map(function (x) {
+let boxarts_res=boxarts.map(function (x) {
     return {
         "area": x.width*x.height,
         "url": x.url
     }
 }).reduce(function (memo,item) {
     return memo.area>item.area ? memo : item },{}).url;
-//console.log(boxarts2)
+//console.log(boxarts_res)
 
 //task З
-var videos = [{
+let videos = [{
     "id": 65432445,
     "title": "The Chamber"
 }, {
@@ -158,8 +158,8 @@ var videos = [{
     "id": 654356453,
     "title": "Bad Boys"
 }];
-let videos2=videos.reduce(function (memo,item){
+let videos_res=videos.reduce(function (memo,item){
     memo[item.id] = item.title;
     return memo;
 },{});
-//console.log(videos2);
+//console.log(videos_res);

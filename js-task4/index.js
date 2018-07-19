@@ -60,6 +60,7 @@
 
 (function task_4d(console){
     'use strict';
+
     let count_function = Math.floor(Math.random()*(10-1)+1);
     let start_time= new Date();
     let all_promises=[];
