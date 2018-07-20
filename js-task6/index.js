@@ -26,16 +26,6 @@
 })(Array);
 
 
-function doOneObject(){
-    let obj=[];
-    for(let i=0;i<arguments.length;i++){
-        obj[arguments[i]]="test";
-    }
-    return obj;
-}
-
-
-
 
 let movies = [{
         "name": "Instant Queue",

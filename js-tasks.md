@@ -44,3 +44,8 @@
 5в - https://jsbin.com/mofixuk/edit?js,console
 
 5г - https://jsbin.com/fesuzaw/edit?js,console
+
+
+/////////////
+
+6 - https://jsbin.com/gojalop/edit?js,console
