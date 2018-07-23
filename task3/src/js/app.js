@@ -1,0 +1,15 @@
+import '../css/banner.css'
+import '../css/base.css'
+import '../css/body.css'
+import '../css/button-line.css'
+import '../css/footer.css'
+import '../css/line.css'
+import '../css/logo.css'
+import '../css/more-info.css'
+import '../css/nav-bar.css'
+import '../css/news.css'
+import '../css/products.css'
+import '../css/textrow.css'
+import '../css/fonts.css'
+
+console.log('Hello webpack')
