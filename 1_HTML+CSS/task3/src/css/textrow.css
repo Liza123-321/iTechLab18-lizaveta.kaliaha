@@ -1,0 +1,45 @@
+.text-row{
+    display:flex;
+    flex-direction: column;
+    padding-right: 3px;
+    padding-top:41px;
+    justify-content: center;
+}
+.text-row-padding-after-line{
+    padding-top:27px;
+}
+.text-row__header{
+    letter-spacing: 2px;
+    margin-right: auto;
+    margin-left: auto ;
+    font-size:27px;
+    color: #373435;
+    font-family: SourceSansProBold;
+}
+.text-row__text{
+    margin-right: auto;
+    margin-left: auto ;
+    padding-top: 5px;
+    letter-spacing: 1px;
+    font-size:15px;
+    font-family: SourceSansProReg;
+    text-align: center;
+    color: #676364;
+}
+@media screen and (max-width: 412px)
+{
+    .text-row{
+        padding-right: 8px;
+        padding-left: 8px;
+        padding-top:25px;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 768px)
+{
+    .text-row{
+        padding-right: 8px;
+        padding-left: 8px;
+        padding-top:25px;
+    }
+}
