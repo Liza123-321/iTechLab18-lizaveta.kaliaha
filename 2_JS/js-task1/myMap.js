@@ -85,19 +85,19 @@ let videos_in_movie=movies.map(function (movie) {
 });
 //console.log(Array.prototype.concat.apply([],videos_in_movie));
 //
-// let videoList=Array.prototype.concat.apply([],[movies[0].videos,movies[1].videos]);
-// let movies2= videoList.map(function(x){
-//     let boxart=x.boxarts.filter(function(y){
-//         return y.width==150 && y.height==200
-//     });
-//     let obj={
-//         'id': x.id,
-//         'title': x.title,
-//         'boxart': boxart[0].url
-//     }
-//     return obj;
-// });
-//console.log(movies2);
+let videoList=Array.prototype.concat.apply([],[movies[0].videos,movies[1].videos]);
+let movies2= videoList.map(function(x){
+    let boxart=x.boxarts.filter(function(y){
+        return y.width==150 && y.height==200
+    });
+    let obj={
+        'id': x.id,
+        'title': x.title,
+        'boxart': boxart[0].url
+    }
+    return obj;
+});
+console.log(movies2);
 
 //task Д2 reduce
  Array.prototype.reduce=function (combiner,initialValue) {
