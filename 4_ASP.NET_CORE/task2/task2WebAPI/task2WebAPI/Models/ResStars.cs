@@ -10,5 +10,10 @@ namespace task2WebAPI.Models
     {
         public int? Count { get; set; }
         public List<Star> Results { get; set; }
+        public ResStars()
+        {
+            this.Count = 0;
+            this.Results = new List<Star>();
+        }
     }
 }

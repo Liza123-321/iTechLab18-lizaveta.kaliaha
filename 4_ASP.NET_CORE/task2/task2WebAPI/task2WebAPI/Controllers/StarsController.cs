@@ -51,22 +51,16 @@ namespace task2WebAPI.Controllers
         [HttpGet("async/all")]
         public async Task<ActionResult> GetAsyncAll()
         {
-            string url = "https://swapi.co/api/starships/?page=1";
+            string url = "https://swapi.co/api/starships/";
             using (var webClient = new WebClient())
             {
                 int count = 0;
-                string response = await webClient.DownloadStringTaskAsync(url);
-                ResStarsNext result = JsonConvert.DeserializeObject<ResStarsNext>(response);
-                for (int j = 0; j < result.Results.Count; j++)
+                ResStars res =new ResStars();
+                while (url != null)
                 {
-                    count++;
-                    result.Results[j].Index = count;
-                }
-                ResStars res =new ResStars {Results=result.Results};
-                while (result.Next != null)
-                {
-                    response = await webClient.DownloadStringTaskAsync(result.Next);
-                    result = JsonConvert.DeserializeObject<ResStarsNext>(response);
+                    string response = await webClient.DownloadStringTaskAsync(url);
+                    ResStarsNext result = JsonConvert.DeserializeObject<ResStarsNext>(response);
+                    url = result.Next;
                     for (int j = 0; j < result.Results.Count; j++)
                     {
                         count++;

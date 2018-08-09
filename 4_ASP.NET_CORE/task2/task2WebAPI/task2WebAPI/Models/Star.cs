@@ -15,3 +15,4 @@ namespace task2WebAPI.Models
         public string Url { get; set; }
     }
 }
+
