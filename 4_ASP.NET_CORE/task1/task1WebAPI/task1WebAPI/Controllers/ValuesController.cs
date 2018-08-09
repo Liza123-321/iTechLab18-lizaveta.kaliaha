@@ -25,7 +25,7 @@ namespace task1WebAPI.Controllers
         //[HttpGet("{a:int:min(1)}/{b:int:max(-1)}")]
         //public ActionResult Get(int a, int b)
         //{
-        //    var res = new { a = a, b = b, sum = (a + b) };
+        //    SumObject res = new SumObject { A = a, B = b, Sum = (int)(a + b) };
         //    return new ObjectResult(res);
         //}
 

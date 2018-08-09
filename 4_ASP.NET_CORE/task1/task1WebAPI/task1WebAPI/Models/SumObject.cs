@@ -9,7 +9,6 @@ namespace task1WebAPI.Models
     {
         public int? A { get; set; }
         public int? B { get; set; }
-        // Ссылка на автора
         public int Sum { get; set; }
     }
 }
