@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using task2WebAPI.Models;
+using Newtonsoft.Json;
 
 namespace task2WebAPI.Controllers
 {
@@ -10,36 +13,71 @@ namespace task2WebAPI.Controllers
     [ApiController]
     public class StarsController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        // GET api/stars/sync
+        [HttpGet("{sync}")]
+        public ActionResult GetSync()
         {
-            return new string[] { "value1", "value2" };
-        }
+            string url = "https://swapi.co/api/starships/";
+            using (var webClient = new WebClient())
+            {
+                var response = webClient.DownloadString(url);
+                ResStars result = JsonConvert.DeserializeObject<ResStars>(response);
+                for (int i = 0; i < result.Results.Count; i++)
+                {
+                    result.Results[i].Index = i + 1;
+                }
+                return new ObjectResult(result);
+            }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
         }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
+        // GET api/stars
+        [HttpGet("{async}")]
+        public async Task<ActionResult> GetAsync()
         {
+            string url = "https://swapi.co/api/starships/";
+            using (var webClient = new WebClient())
+            {
+                string response = await webClient.DownloadStringTaskAsync(url);
+                ResStars result = JsonConvert.DeserializeObject<ResStars>(response);
+                for (int i = 0; i < result.Results.Count; i++)
+                {
+                    result.Results[i].Index = i + 1;
+                }
+                return new ObjectResult(result);
+            }
+
         }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        // GET api/stars
+        [HttpGet("async/all")]
+        public async Task<ActionResult> GetAsyncAll()
         {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            string url = "https://swapi.co/api/starships/?page=1";
+            using (var webClient = new WebClient())
+            {
+                int count = 0;
+                string response = await webClient.DownloadStringTaskAsync(url);
+                ResStarsNext result = JsonConvert.DeserializeObject<ResStarsNext>(response);
+                for (int j = 0; j < result.Results.Count; j++)
+                {
+                    count++;
+                    result.Results[j].Index = count;
+                }
+                ResStars res =new ResStars {Results=result.Results};
+                while (result.Next != null)
+                {
+                    response = await webClient.DownloadStringTaskAsync(result.Next);
+                    result = JsonConvert.DeserializeObject<ResStarsNext>(response);
+                    for (int j = 0; j < result.Results.Count; j++)
+                    {
+                        count++;
+                        result.Results[j].Index = count;
+                    }
+                    res.Results.AddRange(result.Results);
+                }
+                res.Count = count;
+                return new ObjectResult(res);
+            }
         }
     }
+    
 }
