@@ -8,18 +8,21 @@ using task1WebAPI.Models;
 namespace task1WebAPI.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
     public class ValuesController : ControllerBase
     {
         // GET api/values
         [HttpGet]
-        public IActionResult Get(int? a, int? b)
+        public ActionResult Get(SumModel model)
         {
-            if (a == null || b == null) return new ObjectResult("Error: Params Not Found");
-            SumObject res = new SumObject { A = a, B = b, Sum = (int)(a + b) };
-            if (a <= 0) return new ObjectResult("Error: a must be >0");
-            if (b >= 0) return new ObjectResult("Error: b must be <0");
-            return new ObjectResult(res);
+            if (ModelState.IsValid)
+            {
+                return Ok(new SumModel { A = model.A, B = model.B, Sum = (int)(model.A + model.B) });
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+
         }
         // GET api/values//
         //[HttpGet("{a:int:min(1)}/{b:int:max(-1)}")]
