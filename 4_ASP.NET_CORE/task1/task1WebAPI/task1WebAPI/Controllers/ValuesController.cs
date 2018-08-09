@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using task1WebAPI.Models;
 
 namespace task1WebAPI.Controllers
 {
@@ -12,34 +13,21 @@ namespace task1WebAPI.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IActionResult Get(int? a, int? b)
         {
-            return new string[] { "value1", "value2" };
+            if (a == null || b == null) return new ObjectResult("Error: Params Not Found");
+            SumObject res = new SumObject { A = a, B = b, Sum = (int)(a + b) };
+            if (a <= 0) return new ObjectResult("Error: a must be >0");
+            if (b >= 0) return new ObjectResult("Error: b must be <0");
+            return new ObjectResult(res);
         }
+        // GET api/values//
+        //[HttpGet("{a:int:min(1)}/{b:int:max(-1)}")]
+        //public ActionResult Get(int a, int b)
+        //{
+        //    var res = new { a = a, b = b, sum = (a + b) };
+        //    return new ObjectResult(res);
+        //}
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }
