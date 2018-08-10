@@ -15,23 +15,22 @@ namespace task2WebAPI.Controllers
     public class StarsController : ControllerBase
     {
         private readonly IStarsService _starsService;
-        private string url = "https://swapi.co/api/starships/";
         public StarsController(IStarsService starsService)
         {
             this._starsService = starsService;
         }
         // GET api/stars/sync
-        [HttpGet("{sync}")]
+        [HttpGet("sync")]
         public ActionResult GetSync()
         {
-            return new ObjectResult(_starsService.GetStarsSync(url));
+            return new ObjectResult(_starsService.GetStarsSync());
 
         }
         // GET api/stars/async
-        [HttpGet("{async}")]
+        [HttpGet("async")]
         public async Task<ActionResult> GetAsync()
         {
-            return new ObjectResult(await _starsService.GetStarsAsync(url));
+            return new ObjectResult(await _starsService.GetStarsAsync());
 
         }
         // GET api/stars/async/all
@@ -39,7 +38,7 @@ namespace task2WebAPI.Controllers
         public async Task<ActionResult> GetAsyncAll()
         {
 
-            return new ObjectResult(await _starsService.GetAllStarsAsync(url));
+            return new ObjectResult(await _starsService.GetAllStarsAsync());
         }
     }
     

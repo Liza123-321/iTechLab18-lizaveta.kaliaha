@@ -10,17 +10,19 @@ namespace task2WebAPI.Services
 {
     public class StarsService : IStarsService
     {
-        public async Task<ResStars> GetAllStarsAsync(string url)
+       private const string url = "https://swapi.co/api/starships/";
+        public async Task<StarsResult> GetAllStarsAsync()
         {
-            ResStars result = new ResStars();
+            StarsResult result = new StarsResult();
             using (var webClient = new WebClient())
             {
                 int count = 0;
-                while (url != null)
+                string currentUrl = url;
+                while (currentUrl != null)
                 {
-                    string responseStarsList = await webClient.DownloadStringTaskAsync(url);
-                    ResStarsWithNext starsOnePage = JsonConvert.DeserializeObject<ResStarsWithNext>(responseStarsList);
-                    url = starsOnePage.Next;
+                    string responseStarsList = await webClient.DownloadStringTaskAsync(currentUrl);
+                    StarsResultWithNext starsOnePage = JsonConvert.DeserializeObject<StarsResultWithNext>(responseStarsList);
+                    currentUrl = starsOnePage.Next;
                     for (int j = 0; j < starsOnePage.Results.Count; j++)
                     {
                         count++;
@@ -33,13 +35,13 @@ namespace task2WebAPI.Services
             return result;
         }
 
-        public async Task<ResStars> GetStarsAsync(string url)
+        public async Task<StarsResult> GetStarsAsync()
         {
-            ResStars result = new ResStars();
+            StarsResult result = null;
             using (var webClient = new WebClient())
             {
                 string responseStarsList = await webClient.DownloadStringTaskAsync(url);
-                result = JsonConvert.DeserializeObject<ResStars>(responseStarsList);
+                result = JsonConvert.DeserializeObject<StarsResult>(responseStarsList);
                 for (int i = 0; i < result.Results.Count; i++)
                 {
                     result.Results[i].Index = i + 1;
@@ -48,13 +50,13 @@ namespace task2WebAPI.Services
             return result;
         }
 
-        public ResStars GetStarsSync(string url)
+        public StarsResult GetStarsSync()
         {
-            ResStars result = new ResStars();
+            StarsResult result = null;
             using (var webClient = new WebClient())
             {
                 var responseStarsList = webClient.DownloadString(url);
-                result = JsonConvert.DeserializeObject<ResStars>(responseStarsList);
+                result = JsonConvert.DeserializeObject<StarsResult>(responseStarsList);
                 for (int i = 0; i < result.Results.Count; i++)
                 {
                     result.Results[i].Index = i + 1;

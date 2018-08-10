@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace task2WebAPI.Models
 {
-    public class ResStars
+    public class StarsResult
     {
         public int? Count { get; set; }
         public List<Star> Results { get; set; }
-        public ResStars()
+        public StarsResult()
         {
             this.Count = 0;
             this.Results = new List<Star>();

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace task2WebAPI.Models
 {
-    public class ResStarsWithNext
+    public class StarsResultWithNext
     {
         public string Next { get; set; }
         public int Count { get; set; }

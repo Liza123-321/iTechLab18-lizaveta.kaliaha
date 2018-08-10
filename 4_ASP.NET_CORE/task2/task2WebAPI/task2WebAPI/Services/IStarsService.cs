@@ -8,8 +8,8 @@ namespace task2WebAPI.Services
 {
     public interface IStarsService
     {
-        ResStars GetStarsSync(string url);
-        Task<ResStars> GetStarsAsync(string url);
-        Task<ResStars> GetAllStarsAsync(string url);
+        StarsResult GetStarsSync();
+        Task<StarsResult> GetStarsAsync();
+        Task<StarsResult> GetAllStarsAsync();
     }
 }
