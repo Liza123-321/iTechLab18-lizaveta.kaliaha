@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"_postman_id": "19d897c7-f4dd-4842-a49d-b68006c77b5d",
+			"_postman_id": "00c02111-c349-4d50-a370-2f864b05850c",
 			"name": "get_sync(10)",
 			"request": {
 				"method": "GET",
@@ -23,12 +23,12 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "https://localhost:44367/api/stars/sync",
+					"raw": "https://localhost:5001/api/stars/sync",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44367",
+					"port": "5001",
 					"path": [
 						"api",
 						"stars",
@@ -39,19 +39,19 @@
 			"response": []
 		},
 		{
-			"_postman_id": "4adbdfc9-f49c-46bd-8803-c580d6cf800f",
+			"_postman_id": "426a66ab-d5c0-4391-a3fd-02fedf5f41fe",
 			"name": "get_async(10)",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "https://localhost:44367/api/stars/async",
+					"raw": "https://localhost:5001/api/stars/async",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44367",
+					"port": "5001",
 					"path": [
 						"api",
 						"stars",
@@ -62,19 +62,19 @@
 			"response": []
 		},
 		{
-			"_postman_id": "97bd47e2-6916-4be3-91ae-0c4e0b8f2aeb",
+			"_postman_id": "f6a90088-0d33-4f63-9f66-23624d041fdf",
 			"name": "get_async(all)",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "https://localhost:44367/api/stars/async/all",
+					"raw": "https://localhost:5001/api/stars/async/all",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44367",
+					"port": "5001",
 					"path": [
 						"api",
 						"stars",
