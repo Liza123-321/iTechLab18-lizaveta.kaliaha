@@ -19,7 +19,7 @@ namespace task2WebAPI.Services
                 while (url != null)
                 {
                     string responseStarsList = await webClient.DownloadStringTaskAsync(url);
-                    ResStarsNext starsOnePage = JsonConvert.DeserializeObject<ResStarsNext>(responseStarsList);
+                    ResStarsWithNext starsOnePage = JsonConvert.DeserializeObject<ResStarsWithNext>(responseStarsList);
                     url = starsOnePage.Next;
                     for (int j = 0; j < starsOnePage.Results.Count; j++)
                     {
