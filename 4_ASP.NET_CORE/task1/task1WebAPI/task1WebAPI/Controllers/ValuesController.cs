@@ -16,7 +16,7 @@ namespace task1WebAPI.Controllers
         {
             if (ModelState.IsValid)
             {
-                return Ok(new SumModel { A = model.A, B = model.B, Sum = (int)(model.A + model.B) });
+                return Ok(new ObjectResult( new SumModel { A = model.A, B = model.B, Sum = (int)(model.A + model.B) }));
             }
             else
             {

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using AutoMapper;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,14 @@ namespace task2WebAPI.Services
     public class StarsService : IStarsService
     {
        private const string url = "https://swapi.co/api/starships/";
+        private readonly IMapper _mapper;
+        public StarsService(IMapper mapper)
+        {
+            this._mapper = mapper;
+        }
         public async Task<StarsResult> GetAllStarsAsync()
         {
-            StarsResult result = new StarsResult();
+            StarsResultWithNext result = new StarsResultWithNext();
             using (var webClient = new WebClient())
             {
                 int count = 0;
@@ -32,7 +38,7 @@ namespace task2WebAPI.Services
                 }
                 result.Count = count;
             }
-            return result;
+            return _mapper.Map<StarsResultWithNext,StarsResult> (result);
         }
 
         public async Task<StarsResult> GetStarsAsync()
