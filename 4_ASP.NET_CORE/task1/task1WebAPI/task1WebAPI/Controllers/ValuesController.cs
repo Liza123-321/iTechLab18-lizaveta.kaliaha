@@ -12,11 +12,11 @@ namespace task1WebAPI.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult Get(SumModel model)
+        public ActionResult Get(DataModel model)
         {
             if (ModelState.IsValid)
             {
-                return Ok(new ObjectResult( new SumModel { A = model.A, B = model.B, Sum = (int)(model.A + model.B) }));
+                return Ok(new SumModel { A = (int)model.A, B =(int)model.B, Sum = (int)(model.A + model.B) });
             }
             else
             {
@@ -24,13 +24,5 @@ namespace task1WebAPI.Controllers
             }
 
         }
-        // GET api/values//
-        //[HttpGet("{a:int:min(1)}/{b:int:max(-1)}")]
-        //public ActionResult Get(int a, int b)
-        //{
-        //    SumObject res = new SumObject { A = a, B = b, Sum = (int)(a + b) };
-        //    return new ObjectResult(res);
-        //}
-
     }
 }

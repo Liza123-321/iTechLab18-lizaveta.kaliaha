@@ -8,13 +8,8 @@ namespace task1WebAPI.Models
 {
     public class SumModel
     {
-        [Required(ErrorMessage ="Параметр a обязателен")]
-        [Range(1, Int32.MaxValue, ErrorMessage = "Параметр a должен быть строго положительным")]
-        public int? A { get; set; }
-        [Required(ErrorMessage = "Параметр b обязателен")]
-        [Range(Int32.MinValue, -1, ErrorMessage = "Параметр b должен быть строго отрицательным")]
-        public int? B { get; set; }
-
+        public int A { get; set; }
+        public int B { get; set; }
         public int Sum { get; set; }
     }
 }
