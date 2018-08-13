@@ -3,19 +3,21 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using task3WebAPI.MyLogger;
 
 namespace task3WebAPI.Filters
 {
-    public class LogActionFilter : IActionFilter
+    public class LogActionAttribute : ActionFilterAttribute
     {
-        public void OnActionExecuted(ActionExecutedContext context)
+        private readonly IMyFileLogger _logger;
+        public LogActionAttribute(IMyFileLogger logger)
         {
-            throw new NotImplementedException();
+            this._logger = logger;
         }
 
-        public void OnActionExecuting(ActionExecutingContext context)
+        public override void OnActionExecuted(ActionExecutedContext context)
         {
-            throw new NotImplementedException();
+            _logger.Log(context);
         }
     }
 }

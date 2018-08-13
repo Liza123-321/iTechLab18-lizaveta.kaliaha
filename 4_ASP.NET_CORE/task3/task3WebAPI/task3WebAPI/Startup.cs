@@ -14,7 +14,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using task3WebAPI.Context;
+using task3WebAPI.Filters;
 using task3WebAPI.Logger;
+using task3WebAPI.MyLogger;
 using task3WebAPI.Services;
 
 namespace task3WebAPI
@@ -35,6 +37,8 @@ namespace task3WebAPI
             services.AddDbContext<FilmsContext>(options =>
                 options.UseSqlServer(connection));
             services.AddTransient<IFilmsService, FilmsService>();
+            services.AddTransient<IMyFileLogger,MyFileLogger>();
+            services.AddScoped<LogActionAttribute>();
             services.AddMvc().AddXmlDataContractSerializerFormatters();
    
         }

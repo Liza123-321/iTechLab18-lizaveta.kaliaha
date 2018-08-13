@@ -8,12 +8,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using task3WebAPI.Context;
+using task3WebAPI.Filters;
 using task3WebAPI.Models;
 using task3WebAPI.Services;
 namespace task3WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [ServiceFilter(typeof(LogActionAttribute))]
     public class FilmsController : ControllerBase
     {
         private readonly IFilmsService _filmsService;
@@ -35,7 +37,7 @@ namespace task3WebAPI.Controllers
         public async Task<IActionResult> Get(int id)
         {
             var film = await  _filmsService.getByIdFilm(id);
-            if(film==null) return new ObjectResult("Film with this id {" +id +"} not found");
+            if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });
             return Ok(film);
         }
         // POST: api/films
@@ -49,7 +51,7 @@ namespace task3WebAPI.Controllers
         public async Task<IActionResult> Put([FromBody]FilmModel film)
         {
             var getfilm = await _filmsService.updateFilm(film);
-            if (getfilm == null) return new ObjectResult("Film with this id {" + film.Id + "} not found");
+            if (getfilm == null) return BadRequest("Film with this id {" + film.Id + "} not found");
             return Ok(getfilm);
         }
 
@@ -58,7 +60,7 @@ namespace task3WebAPI.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var film = await _filmsService.deleteFilm(id);
-            if (film == null) return new ObjectResult("Film with this id {" + id + "} not found");
+            if (film == null) return BadRequest(new { message="Film with this id {" + id + "} not found" });
             return Ok(film);
         }
     }
