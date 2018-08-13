@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using task3WebAPI.Context;
 using task3WebAPI.Models;
 
@@ -21,18 +22,18 @@ namespace task3WebAPI.Services
                 db.SaveChanges();
             }
         }
-        public FilmModel createFilm([FromBody] FilmModel film)
+        public async Task<FilmModel> createFilm(FilmModel film)
         {
             if(film == null)
             {
                 return null;
             }
             db.Films.Add(film);
-            db.SaveChanges();
+            await db.SaveChangesAsync();
             return film;
         }
 
-        public FilmModel deleteFilm(int id)
+        public async Task<FilmModel> deleteFilm(int id)
         {
             FilmModel film = db.Films.FirstOrDefault(x => x.Id == id);
             if (film == null)
@@ -40,21 +41,22 @@ namespace task3WebAPI.Services
                 return null;
             }
             db.Films.Remove(film);
-            db.SaveChanges();
+            await db.SaveChangesAsync();
             return film;
         }
 
-        public List<FilmModel> getAllFilms()
+        public async Task<List<FilmModel>> getAllFilms()
         {
-            return db.Films.ToList();
+            return await db.Films.ToListAsync();
         }
 
-        public FilmModel getByIdFilm(int id)
+        public async Task<FilmModel> getByIdFilm(int id)
         {
-            return db.Films.FirstOrDefault(x => x.Id == id);
+
+            return await db.Films.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public FilmModel updateFilm(int id, [FromBody] FilmModel film)
+        public async Task<FilmModel> updateFilm(FilmModel film)
         {
             if (film == null)
             {
@@ -65,8 +67,8 @@ namespace task3WebAPI.Services
                 return null;
             }
 
-            db.Update(film);
-            db.SaveChanges();
+            db.Films.Update(film);
+            await db.SaveChangesAsync();
             return film;
         }
     }

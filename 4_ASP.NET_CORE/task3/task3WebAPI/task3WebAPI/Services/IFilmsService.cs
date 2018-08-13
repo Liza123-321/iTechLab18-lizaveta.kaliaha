@@ -9,10 +9,10 @@ namespace task3WebAPI.Services
 {
     public interface IFilmsService
     {
-        List<FilmModel> getAllFilms();
-        FilmModel getByIdFilm(int id);
-        FilmModel createFilm([FromBody]FilmModel film);
-        FilmModel updateFilm(int id,[FromBody]FilmModel film);
-        FilmModel deleteFilm(int id);
+        Task<List<FilmModel>> getAllFilms();
+        Task<FilmModel>  getByIdFilm(int id);
+        Task<FilmModel> createFilm(FilmModel film);
+        Task<FilmModel> updateFilm(FilmModel film);
+        Task<FilmModel> deleteFilm(int id);
     }
 }

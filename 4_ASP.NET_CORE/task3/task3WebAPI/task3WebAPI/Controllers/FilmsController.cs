@@ -2,6 +2,7 @@
 using log4net.Config;
 using log4net.Repository.Hierarchy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,44 +17,49 @@ namespace task3WebAPI.Controllers
     public class FilmsController : ControllerBase
     {
         private readonly IFilmsService _filmsService;
-        private readonly ILog _logger= LogManager.GetLogger(AssemblyInfo.Info,"LOGGER");
-        private readonly task3WebAPI.MyLogger.Logger _logcreater;
-        public FilmsController(IFilmsService filmsService)
+        private readonly ILogger _logger;
+        
+        public FilmsController(IFilmsService filmsService,ILogger<FilmsController> logger)
         {
-            this._logcreater.InitLogger();
             this._filmsService = filmsService;
+            this._logger = logger;
         }
         // GET api/films
         [HttpGet]
-        public ActionResult<IEnumerable<FilmModel>> Get()
+        public async Task<ActionResult<IEnumerable<FilmModel>>> Get()
         {
-            return _filmsService.getAllFilms();
+            return await _filmsService.getAllFilms();
         }
         // GET: api/films/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            _logcreater.Log.Info("Ура заработало!");
-            return new ObjectResult(_filmsService.getByIdFilm(id));
+            var film = await  _filmsService.getByIdFilm(id);
+            if(film==null) return new ObjectResult("Film with this id {" +id +"} not found");
+            return Ok(film);
         }
         // POST: api/films
         [HttpPost]
-        public IActionResult Post([FromBody]FilmModel film)
+        public async Task<IActionResult> Post([FromBody]FilmModel film)
         {
-            return Ok(_filmsService.createFilm(film));
+            return Ok(await _filmsService.createFilm(film));
         }
         // PUT: api/films/5
-        [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody]FilmModel film)
+        [HttpPut]
+        public async Task<IActionResult> Put([FromBody]FilmModel film)
         {
-            return Ok(_filmsService.updateFilm(id,film));
+            var getfilm = await _filmsService.updateFilm(film);
+            if (getfilm == null) return new ObjectResult("Film with this id {" + film.Id + "} not found");
+            return Ok(getfilm);
         }
 
         // DELETE: api/films/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            return Ok(_filmsService.deleteFilm(id));
+            var film = await _filmsService.deleteFilm(id);
+            if (film == null) return new ObjectResult("Film with this id {" + id + "} not found");
+            return Ok(film);
         }
     }
 }

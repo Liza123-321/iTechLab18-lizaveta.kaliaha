@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using task3WebAPI.Context;
+using task3WebAPI.Logger;
 using task3WebAPI.Services;
 
 namespace task3WebAPI
@@ -47,9 +50,9 @@ namespace task3WebAPI
             {
                 app.UseHsts();
             }
-
+            loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logger.txt"));
+            var logger = loggerFactory.CreateLogger("FileLogger");
             app.UseHttpsRedirection();
-            loggerFactory.AddLog4Net("log4net.config", Configuration.GetSection("Log4net"));
             app.UseMvc();
         }
     }
