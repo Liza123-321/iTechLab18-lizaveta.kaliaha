@@ -1,0 +1,111 @@
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 13.08.2018 16:26:00
+_____________________________Do action filter!_____________________________
+GET
+/api/films/4
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 13.08.2018 16:26:31
+_____________________________Do action filter!_____________________________
+GET
+/api/films/4
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 13.08.2018 16:27:09
+_____________________________Do action filter!_____________________________
+GET
+/api/films/4
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 13.08.2018 16:27:26
+_____________________________Do action filter!_____________________________
+POST
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Date: 13.08.2018 16:28:17
+_____________________________Do action filter!_____________________________
+POST
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Date: 13.08.2018 16:28:22
+_____________________________Do action filter!_____________________________
+POST
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Date: 13.08.2018 16:28:26
+_____________________________Do action filter!_____________________________
+DELETE
+/api/films/26
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Delete (task3WebAPI)
+Date: 13.08.2018 16:29:08
+_____________________________Do action filter!_____________________________
+PUT
+/api/films
+HTTP/1.1
+___400 Bad Request___
+Action: task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Date: 13.08.2018 16:29:54
+_____________________________Do action filter!_____________________________
+PUT
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Date: 13.08.2018 16:29:59
+_____________________________Do action filter!_____________________________
+PUT
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Date: 13.08.2018 16:30:04
+_____________________________Do action filter!_____________________________
+PUT
+/api/films
+HTTP/1.1
+___400 Bad Request___
+Action: task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Date: 13.08.2018 16:30:28
+_____________________________Do action filter!_____________________________
+PUT
+/api/films
+HTTP/1.1
+___400 Bad Request___
+Action: task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Date: 13.08.2018 16:30:35
+_____________________________Do action filter!_____________________________
+PUT
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Date: 13.08.2018 16:30:40
+_____________________________Do action filter!_____________________________
+PUT
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Date: 13.08.2018 16:30:43
+_____________________________Do action filter!_____________________________
+PUT
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Date: 13.08.2018 16:30:46
+_____________________________Do action filter!_____________________________
+POST
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Date: 13.08.2018 16:31:14
+_____________________________Do action filter!_____________________________
+POST
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Date: 13.08.2018 16:31:19

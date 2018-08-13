@@ -1,0 +1,458 @@
+Failed to authenticate HTTPS connection.
+Request starting HTTP/1.1 GET https://localhost:5001/api/films application/json 
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) - Validation state: Valid
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[Country], [f].[Derictor], [f].[Name], [f].[Year]
+FROM [Films] AS [f]
+Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.4625ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[task3WebAPI.Models.FilmModel, task3WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 67.6393ms
+Request finished in 70.1239ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/api/films/4  
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) with arguments (4) - Validation state: Valid
+Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Country], [x].[Derictor], [x].[Name], [x].[Year]
+FROM [Films] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.4203ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 19.1685ms
+Request finished in 27.9439ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/api/films/4  
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) with arguments (4) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Country], [x].[Derictor], [x].[Name], [x].[Year]
+FROM [Films] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.6488ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 63.6443ms
+Request finished in 71.0463ms 200 application/xml; charset=utf-8
+Request starting HTTP/1.1 GET https://localhost:5001/api/films/4  
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) with arguments (4) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Country], [x].[Derictor], [x].[Name], [x].[Year]
+FROM [Films] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.4034ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 16.4208ms
+Request finished in 22.9231ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 POST https://localhost:5001/api/films  0
+Route matched with {action = "Post", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+Executed action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) in 8.9165ms
+Request finished in 23.7377ms 400 application/json; charset=utf-8
+Request starting HTTP/1.1 POST https://localhost:5001/api/films application/json 101
+Route matched with {action = "Post", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Films] ([Country], [Derictor], [Name], [Year])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Films]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed action method task3WebAPI.Controllers.FilmsController.Post (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 77.6732ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) in 99.9598ms
+Request finished in 106.3088ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 POST https://localhost:5001/api/films application/json 79
+Route matched with {action = "Post", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Films] ([Country], [Derictor], [Name], [Year])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Films]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed action method task3WebAPI.Controllers.FilmsController.Post (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.87ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) in 15.7934ms
+Request finished in 18.8751ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 POST https://localhost:5001/api/films application/json 79
+Route matched with {action = "Post", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Films] ([Country], [Derictor], [Name], [Year])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Films]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed action method task3WebAPI.Controllers.FilmsController.Post (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.5679ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) in 9.9635ms
+Request finished in 12.2657ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 POST https://localhost:5001/api/films application/json 52
+Route matched with {action = "Post", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+Executed action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) in 4.7184ms
+Request finished in 6.9549ms 400 application/json; charset=utf-8
+Request starting HTTP/1.1 DELETE https://localhost:5001/api/films/26  0
+Route matched with {action = "Delete", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Delete (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Delete (task3WebAPI) with arguments (26) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Country], [x].[Derictor], [x].[Name], [x].[Year]
+FROM [Films] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Films]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+Executed action method task3WebAPI.Controllers.FilmsController.Delete (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.6105ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Delete (task3WebAPI) in 44.7365ms
+Request finished in 54.5718ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 PUT https://localhost:5001/api/films application/json 98
+Route matched with {action = "Put", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@__film_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [x]
+        WHERE [x].[Id] = @__film_Id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executed action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 8.9115ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) in 23.8901ms
+Request finished in 38.5483ms 400 text/plain; charset=utf-8
+Request starting HTTP/1.1 PUT https://localhost:5001/api/films application/json 98
+Route matched with {action = "Put", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (2ms) [Parameters=[@__film_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [x]
+        WHERE [x].[Id] = @__film_Id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executed DbCommand (3ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Films] SET [Country] = @p0, [Derictor] = @p1, [Name] = @p2, [Year] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+Executed action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.2678ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) in 21.9243ms
+Request finished in 27.762ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 PUT https://localhost:5001/api/films application/json 104
+Route matched with {action = "Put", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@__film_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [x]
+        WHERE [x].[Id] = @__film_Id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executed DbCommand (1ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Films] SET [Country] = @p0, [Derictor] = @p1, [Name] = @p2, [Year] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+Executed action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.7213ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) in 15.5212ms
+Request finished in 18.5091ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 PUT https://localhost:5001/api/films application/json 108
+Route matched with {action = "Put", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@__film_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [x]
+        WHERE [x].[Id] = @__film_Id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executed action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1.949ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) in 19.9687ms
+Request finished in 27.0422ms 400 text/plain; charset=utf-8
+Request starting HTTP/1.1 PUT https://localhost:5001/api/films application/json 84
+Route matched with {action = "Put", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (0ms) [Parameters=[@__film_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [x]
+        WHERE [x].[Id] = @__film_Id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executed action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1.2671ms.
+Executing ObjectResult, writing value of type 'System.String'.
+Executed action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) in 8.3639ms
+Request finished in 10.8428ms 400 text/plain; charset=utf-8
+Request starting HTTP/1.1 PUT https://localhost:5001/api/films application/json 98
+Route matched with {action = "Put", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@__film_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [x]
+        WHERE [x].[Id] = @__film_Id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executed DbCommand (1ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Films] SET [Country] = @p0, [Derictor] = @p1, [Name] = @p2, [Year] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+Executed action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.7064ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) in 16.513ms
+Request finished in 18.8656ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 PUT https://localhost:5001/api/films application/json 98
+Route matched with {action = "Put", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@__film_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [x]
+        WHERE [x].[Id] = @__film_Id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executed DbCommand (1ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Films] SET [Country] = @p0, [Derictor] = @p1, [Name] = @p2, [Year] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+Executed action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.1132ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) in 15.0715ms
+Request finished in 17.7396ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 PUT https://localhost:5001/api/films application/json 108
+Route matched with {action = "Put", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@__film_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [x]
+        WHERE [x].[Id] = @__film_Id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executed DbCommand (0ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Films] SET [Country] = @p0, [Derictor] = @p1, [Name] = @p2, [Year] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+Executed action method task3WebAPI.Controllers.FilmsController.Put (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.6905ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Put (task3WebAPI) in 22.1672ms
+Request finished in 28.5381ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 POST https://localhost:5001/api/films application/json 114
+Route matched with {action = "Post", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Failed executing DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Films] ([Id], [Country], [Derictor], [Name], [Year])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+An exception occurred in the database while saving changes for context type 'task3WebAPI.Context.FilmsContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'Films' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Executed action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) in 36.6416ms
+An unhandled exception has occurred while executing the request.
+Request finished in 102.5476ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 POST https://localhost:5001/api/films application/json 101
+Route matched with {action = "Post", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Films] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+Executing action method task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) with arguments (task3WebAPI.Models.FilmModel) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Films] ([Country], [Derictor], [Name], [Year])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Films]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed action method task3WebAPI.Controllers.FilmsController.Post (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.6114ms.
+Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
+Executed action task3WebAPI.Controllers.FilmsController.Post (task3WebAPI) in 19.8705ms
+Request finished in 27.8895ms 200 application/json; charset=utf-8
