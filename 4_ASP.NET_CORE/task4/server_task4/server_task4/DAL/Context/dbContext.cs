@@ -10,6 +10,7 @@ namespace server_task4.DAL.Context
     public class dbContext: DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<Film> Films { get; set; }
         public dbContext(DbContextOptions<dbContext> options)
            : base(options)
         {
