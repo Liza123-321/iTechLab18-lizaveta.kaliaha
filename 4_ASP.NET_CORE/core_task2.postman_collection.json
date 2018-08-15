@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "03dd90a8-1a0b-4ba1-8292-14fa3bec97e6",
+		"name": "core_task2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "00c02111-c349-4d50-a370-2f864b05850c",
+			"name": "get_sync(10)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/stars/sync",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"stars",
+						"sync"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "426a66ab-d5c0-4391-a3fd-02fedf5f41fe",
+			"name": "get_async(10)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/stars/async",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"stars",
+						"async"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "f6a90088-0d33-4f63-9f66-23624d041fdf",
+			"name": "get_async(all)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/stars/async/all",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"stars",
+						"async",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
