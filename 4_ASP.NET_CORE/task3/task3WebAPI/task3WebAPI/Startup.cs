@@ -36,8 +36,8 @@ namespace task3WebAPI
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<FilmsContext>(options =>
                 options.UseSqlServer(connection));
-            services.AddTransient<IFilmsService, FilmsService>();
-            services.AddTransient<IMyFileLogger,MyFileLogger>();
+            services.AddScoped<IFilmsService, FilmsService>();
+            services.AddSingleton<IMyFileLogger,MyFileLogger>();
             services.AddSingleton<LogActionAttribute>();
             
             services.AddMvc(options=>

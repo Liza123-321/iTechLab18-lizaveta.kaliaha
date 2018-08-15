@@ -3,36 +3,28 @@ GET
 /api/films
 HTTP/1.1
 Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:32:17
-_____________________________Do action filter!_____________________________
-DELETE
-/api/films/28
-HTTP/1.1
-___400 Bad Request___
-Action: task3WebAPI.Controllers.FilmsController.Delete (task3WebAPI)
-Date: 15.08.2018 14:32:24
+Date: 15.08.2018 14:41:24
 _____________________________Do action filter!_____________________________
 GET
 /api/films
 HTTP/1.1
 Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:32:28
+Date: 15.08.2018 14:41:32
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 15.08.2018 14:42:24
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 15.08.2018 14:42:27
 _____________________________Do action filter!_____________________________
 GET
 /api/films/4
 HTTP/1.1
-___400 Bad Request___
 Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:32:31
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:32:43
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:32:48
+Date: 15.08.2018 14:42:33
