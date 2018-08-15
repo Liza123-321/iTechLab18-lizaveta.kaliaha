@@ -13,6 +13,7 @@ namespace task2WebAPI.Models
         public StarsResultWithNext()
         {
             this.Results = new List<Star>();
+            this.Count = 0;
         }
     }
 }
