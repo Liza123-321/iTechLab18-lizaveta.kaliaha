@@ -14,5 +14,6 @@ namespace task3WebAPI.Services
         Task<FilmModel> createFilm(FilmModel film);
         Task<FilmModel> updateFilm(FilmModel film);
         Task<FilmModel> deleteFilm(int id);
+        Task<FilmModel> getFirstOrDefault(int id);
     }
 }

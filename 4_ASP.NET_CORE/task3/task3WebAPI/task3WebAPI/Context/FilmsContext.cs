@@ -10,6 +10,8 @@ namespace task3WebAPI.Context
     public class FilmsContext : DbContext
     {
         public DbSet<FilmModel> Films { get; set; }
-        public FilmsContext(DbContextOptions<FilmsContext> options) : base(options) { }
+        public FilmsContext(DbContextOptions<FilmsContext> options) : base(options) {
+            Database.EnsureCreated();
+        }
     }
 }

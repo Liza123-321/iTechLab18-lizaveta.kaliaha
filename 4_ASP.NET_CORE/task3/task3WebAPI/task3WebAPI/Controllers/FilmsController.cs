@@ -15,7 +15,6 @@ namespace task3WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [ServiceFilter(typeof(LogActionAttribute))]
     public class FilmsController : ControllerBase
     {
         private readonly IFilmsService _filmsService;

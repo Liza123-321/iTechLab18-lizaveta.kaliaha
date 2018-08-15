@@ -15,19 +15,15 @@ namespace task3WebAPI.Services
         public FilmsService(FilmsContext films)
         {
             this.db = films;
-            if (!db.Films.Any())
-            {
-                db.Films.Add(new FilmModel { Name = "Test",Country="USA",Year=1783,Derictor="Liza" });
-                db.Films.Add(new FilmModel { Name = "ITechArt", Country = "Belarus", Year = 2007, Derictor = "Liza" });
-                db.SaveChanges();
-            }
+            //if (!db.Films.Any())
+            //{
+            //    db.Films.Add(new FilmModel { Name = "Test",Country="USA",Year=1783,Derictor="Liza" });
+            //    db.Films.Add(new FilmModel { Name = "ITechArt", Country = "Belarus", Year = 2007, Derictor = "Liza" });
+            //    db.SaveChanges();
+            //}
         }
         public async Task<FilmModel> createFilm(FilmModel film)
         {
-            if(film == null)
-            {
-                return null;
-            }
             db.Films.Add(film);
             await db.SaveChangesAsync();
             return film;
@@ -35,7 +31,7 @@ namespace task3WebAPI.Services
 
         public async Task<FilmModel> deleteFilm(int id)
         {
-            FilmModel film = db.Films.FirstOrDefault(x => x.Id == id);
+            FilmModel film = await getFirstOrDefault(id);
             if (film == null)
             {
                 return null;
@@ -58,10 +54,6 @@ namespace task3WebAPI.Services
 
         public async Task<FilmModel> updateFilm(FilmModel film)
         {
-            if (film == null)
-            {
-                return null;
-            }
             if (!db.Films.Any(x => x.Id == film.Id))
             {
                 return null;
@@ -70,6 +62,11 @@ namespace task3WebAPI.Services
             db.Films.Update(film);
             await db.SaveChangesAsync();
             return film;
+        }
+
+        public async Task<FilmModel> getFirstOrDefault(int id)
+        {  
+            return await db.Films.FirstOrDefaultAsync(x => x.Id == id);
         }
     }
 }

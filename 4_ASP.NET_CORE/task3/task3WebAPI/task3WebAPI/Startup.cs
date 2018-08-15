@@ -38,10 +38,16 @@ namespace task3WebAPI
                 options.UseSqlServer(connection));
             services.AddTransient<IFilmsService, FilmsService>();
             services.AddTransient<IMyFileLogger,MyFileLogger>();
-            services.AddScoped<LogActionAttribute>();
-            services.AddMvc().AddXmlDataContractSerializerFormatters();
+            services.AddSingleton<LogActionAttribute>();
+            
+            services.AddMvc(options=>
+            {
+                options.Filters.Add(typeof(LogActionAttribute)); 
+
+            }).AddXmlDataContractSerializerFormatters();
    
         }
+     
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -49,13 +55,13 @@ namespace task3WebAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                FilmsContextInit.Seed(app);
             }
             else
             {
                 app.UseHsts();
             }
             loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logger.txt"));
-            var logger = loggerFactory.CreateLogger("FileLogger");
             app.UseHttpsRedirection();
             app.UseMvc();
         }
