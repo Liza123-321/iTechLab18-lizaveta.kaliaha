@@ -1,0 +1,30 @@
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 15.08.2018 14:41:24
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 15.08.2018 14:41:32
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 15.08.2018 14:42:24
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 15.08.2018 14:42:27
+_____________________________Do action filter!_____________________________
+GET
+/api/films/4
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 15.08.2018 14:42:33
