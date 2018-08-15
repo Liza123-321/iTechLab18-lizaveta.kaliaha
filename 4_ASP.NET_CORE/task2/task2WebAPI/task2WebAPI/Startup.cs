@@ -29,8 +29,8 @@ namespace task2WebAPI
         {
 
             services.AddMvc().AddXmlDataContractSerializerFormatters();
-            services.AddTransient<IStarsService, StarsService>();
             services.AddAutoMapper();
+            services.AddSingleton<IStarsService, StarsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
