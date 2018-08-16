@@ -55,7 +55,7 @@ namespace task3WebAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                FilmsContextInit.Seed(app);
+                FilmsContextInitializer.Seed(app);
             }
             else
             {

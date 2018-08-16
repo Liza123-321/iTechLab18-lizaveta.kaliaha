@@ -27,15 +27,15 @@ namespace task3WebAPI.Controllers
         }
         // GET api/films
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<FilmModel>>> Get()
+        public async Task<IEnumerable<FilmModel>> Get()
         {
-            return await _filmsService.getAllFilms();
+            return await _filmsService.GetAllFilms();
         }
         // GET: api/films/5
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var film = await  _filmsService.getByIdFilm(id);
+            var film = await  _filmsService.GetFilmById(id);
             if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });
             return Ok(film);
         }
@@ -43,13 +43,13 @@ namespace task3WebAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]FilmModel film)
         {
-            return Ok(await _filmsService.createFilm(film));
+            return Ok(await _filmsService.CreateFilm(film));
         }
         // PUT: api/films/5
         [HttpPut]
         public async Task<IActionResult> Put([FromBody]FilmModel film)
         {
-            var getfilm = await _filmsService.updateFilm(film);
+            var getfilm = await _filmsService.UpdateFilm(film);
             if (getfilm == null) return BadRequest("Film with this id {" + film.Id + "} not found");
             return Ok(getfilm);
         }
@@ -58,7 +58,7 @@ namespace task3WebAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var film = await _filmsService.deleteFilm(id);
+            var film = await _filmsService.DeleteFilm(id);
             if (film == null) return BadRequest(new { message="Film with this id {" + id + "} not found" });
             return Ok(film);
         }

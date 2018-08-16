@@ -28,3 +28,33 @@ GET
 HTTP/1.1
 Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
 Date: 15.08.2018 14:42:33
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 16.08.2018 11:42:44
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 16.08.2018 11:42:46
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 16.08.2018 11:45:47
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 16.08.2018 11:45:51
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 16.08.2018 11:48:44

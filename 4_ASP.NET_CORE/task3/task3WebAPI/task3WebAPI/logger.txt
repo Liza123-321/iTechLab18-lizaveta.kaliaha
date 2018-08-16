@@ -76,3 +76,83 @@ Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
 Executing ObjectResult, writing value of type 'task3WebAPI.Models.FilmModel'.
 Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 75.1779ms
 Request finished in 96.663ms 200 application/json; charset=utf-8
+Failed to authenticate HTTPS connection.
+Failed to authenticate HTTPS connection.
+Request starting HTTP/1.1 GET https://localhost:5001/api/films  
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+Executing action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) - Validation state: Valid
+Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[Country], [f].[Derictor], [f].[Name], [f].[Year]
+FROM [Films] AS [f]
+Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 176.8565ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[task3WebAPI.Models.FilmModel, task3WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 340.5372ms
+Request finished in 525.4845ms 200 application/json; charset=utf-8
+Failed to authenticate HTTPS connection.
+Request starting HTTP/1.1 GET https://localhost:5001/api/films application/json 
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+Executing action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) - Validation state: Valid
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[Country], [f].[Derictor], [f].[Name], [f].[Year]
+FROM [Films] AS [f]
+Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.0076ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[task3WebAPI.Models.FilmModel, task3WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 13.7621ms
+Request finished in 26.6275ms 200 application/json; charset=utf-8
+Failed to authenticate HTTPS connection.
+Failed to authenticate HTTPS connection.
+Request starting HTTP/1.1 GET https://localhost:5001/api/films  
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+Executing action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) - Validation state: Valid
+Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[Country], [f].[Derictor], [f].[Name], [f].[Year]
+FROM [Films] AS [f]
+Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 130.952ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[task3WebAPI.Models.FilmModel, task3WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 313.1704ms
+Request finished in 466.1431ms 200 application/json; charset=utf-8
+Failed to authenticate HTTPS connection.
+Request starting HTTP/1.1 GET https://localhost:5001/api/films application/json 
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+Executing action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) - Validation state: Valid
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[Country], [f].[Derictor], [f].[Name], [f].[Year]
+FROM [Films] AS [f]
+Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.3028ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[task3WebAPI.Models.FilmModel, task3WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 18.7636ms
+Request finished in 34.2151ms 200 application/json; charset=utf-8
+Failed to authenticate HTTPS connection.
+Failed to authenticate HTTPS connection.
+Request starting HTTP/1.1 GET https://localhost:5001/api/films  
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 4.5182ms
+An unhandled exception has occurred while executing the request.
+Request finished in 206.9595ms 500 text/html; charset=utf-8
+Failed to authenticate HTTPS connection.
+Failed to authenticate HTTPS connection.
+Request starting HTTP/1.1 GET https://localhost:5001/api/films  
+Route matched with {action = "Get", controller = "Films"}. Executing action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Entity Framework Core 2.1.1-rtm-30846 initialized 'FilmsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+Executing action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) - Validation state: Valid
+Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[Country], [f].[Derictor], [f].[Name], [f].[Year]
+FROM [Films] AS [f]
+Executed action method task3WebAPI.Controllers.FilmsController.Get (task3WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 144.9945ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[task3WebAPI.Models.FilmModel, task3WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action task3WebAPI.Controllers.FilmsController.Get (task3WebAPI) in 265.7927ms
+Request finished in 398.931ms 200 application/json; charset=utf-8

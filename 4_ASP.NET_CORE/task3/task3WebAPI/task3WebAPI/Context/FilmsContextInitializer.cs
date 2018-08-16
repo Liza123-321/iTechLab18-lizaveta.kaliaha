@@ -9,7 +9,7 @@ using task3WebAPI.Models;
 
 namespace task3WebAPI.Context
 {
-     public class FilmsContextInit
+     public class FilmsContextInitializer
     {
         public static void Seed(IApplicationBuilder applicationBuilder)
         {
