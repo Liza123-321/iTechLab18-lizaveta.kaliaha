@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "2ef6be62-08a5-42f1-9672-30c2bff72bd5",
+		"name": "core_task1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "9c5b437c-6690-4e08-ba1e-b74f6243a211",
+			"name": "sum_json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/values?a=49&b=-567",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"values"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "49"
+						},
+						{
+							"key": "b",
+							"value": "-567"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "a91d37ad-336c-441d-b16b-3f98bf919f0c",
+			"name": "sum_xml",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/values?a=49&b=-567",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"values"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "49"
+						},
+						{
+							"key": "b",
+							"value": "-567"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "bcb8e4c3-8d31-4c77-b977-876f8deab4d3",
+			"name": "error_params_not_found",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/values?c=sd&b=-567",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"values"
+					],
+					"query": [
+						{
+							"key": "c",
+							"value": "sd"
+						},
+						{
+							"key": "b",
+							"value": "-567"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "643929ee-223a-4bd2-bcce-05ed99986f22",
+			"name": "error_a must be >0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/values?a=-49&b=-567",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"values"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "-49"
+						},
+						{
+							"key": "b",
+							"value": "-567"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "6889b6a7-fde8-401f-b7df-76fddabd6d56",
+			"name": "error_b must be <0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/values?a=49&b=567",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"values"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "49"
+						},
+						{
+							"key": "b",
+							"value": "567"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
