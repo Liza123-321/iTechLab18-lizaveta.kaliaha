@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using log4net;
+using log4net.Config;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -14,6 +17,8 @@ namespace task3WebAPI
     {
         public static void Main(string[] args)
         {
+            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
             BuildWebHost(args).Run();
         }
 
@@ -22,5 +27,6 @@ namespace task3WebAPI
                 .UseStartup<Startup>()
                 .ConfigureLogging(logging => logging.SetMinimumLevel(LogLevel.Trace))
             .Build();
+
     }
 }

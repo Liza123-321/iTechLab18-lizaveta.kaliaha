@@ -38,11 +38,14 @@ namespace task3WebAPI
                 options.UseSqlServer(connection));
             services.AddScoped<IFilmsService, FilmsService>();
             services.AddSingleton<IMyFileLogger,MyFileLogger>();
+            services.AddSingleton<ILog4netService, Log4netService>();
             services.AddSingleton<LogActionAttribute>();
-            
+            services.AddSingleton<LogExceptionAttribute>();
+
             services.AddMvc(options=>
             {
-                options.Filters.Add(typeof(LogActionAttribute)); 
+                options.Filters.Add(typeof(LogActionAttribute));
+                options.Filters.Add(typeof(LogExceptionAttribute));
 
             }).AddXmlDataContractSerializerFormatters();
    

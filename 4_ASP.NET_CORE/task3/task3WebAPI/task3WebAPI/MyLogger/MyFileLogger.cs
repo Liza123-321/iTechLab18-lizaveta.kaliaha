@@ -15,6 +15,19 @@ namespace task3WebAPI.MyLogger
             this.filePath = "myLog.txt";
         }
 
+        public void Error(Exception context)
+        {
+            using (StreamWriter stream = new StreamWriter(filePath, true, System.Text.Encoding.Default))
+            {
+                stream.WriteLine("_____________________________Do Exception filter!_____________________________");
+                stream.WriteLine("Date: " + DateTime.Now);
+                stream.WriteLine("Exception: " + context.Message);
+                stream.WriteLine("Source: " + context.Source);
+                stream.WriteLine(context.HelpLink);
+                stream.WriteLine(context.HResult);
+            }
+        }
+
         public void Log(ActionExecutedContext context)
         {
             using (StreamWriter stream = new StreamWriter(filePath, true, System.Text.Encoding.Default))

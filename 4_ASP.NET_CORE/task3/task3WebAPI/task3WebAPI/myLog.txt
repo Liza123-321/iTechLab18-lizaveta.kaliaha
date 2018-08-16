@@ -3,131 +3,17 @@ GET
 /api/films
 HTTP/1.1
 Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:41:24
+Date: 16.08.2018 14:24:35
 _____________________________Do action filter!_____________________________
 GET
 /api/films
 HTTP/1.1
 Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:41:32
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:42:24
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:42:27
-_____________________________Do action filter!_____________________________
-GET
-/api/films/4
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 15.08.2018 14:42:33
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 11:42:44
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 11:42:46
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 11:45:47
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 11:45:51
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 11:48:44
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 13:37:44
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 13:38:03
-_____________________________Do action filter!_____________________________
-GET
-/api/films/4
-HTTP/1.1
-___400 Bad Request___
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 13:38:08
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 13:38:35
-_____________________________Do action filter!_____________________________
-POST
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
-Date: 16.08.2018 13:38:56
-_____________________________Do action filter!_____________________________
-POST
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
-Date: 16.08.2018 13:38:57
-_____________________________Do action filter!_____________________________
-POST
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
-Date: 16.08.2018 13:38:57
-_____________________________Do action filter!_____________________________
-POST
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Post (task3WebAPI)
-Date: 16.08.2018 13:38:58
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 13:39:00
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 13:39:05
-_____________________________Do action filter!_____________________________
-GET
-/api/films
-HTTP/1.1
-Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 13:39:13
+Date: 16.08.2018 14:25:33
 _____________________________Do action filter!_____________________________
 GET
 /api/films/2
 HTTP/1.1
+___400 Bad Request___
 Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
-Date: 16.08.2018 13:39:22
+Date: 16.08.2018 14:25:40

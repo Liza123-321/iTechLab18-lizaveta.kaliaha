@@ -18,12 +18,11 @@ namespace task3WebAPI.Controllers
     public class FilmsController : ControllerBase
     {
         private readonly IFilmsService _filmsService;
-        private readonly ILogger _logger;
-        
-        public FilmsController(IFilmsService filmsService,ILogger<FilmsController> logger)
+
+        public FilmsController(IFilmsService filmsService)
         {
             this._filmsService = filmsService;
-            this._logger = logger;
+
         }
         // GET api/films
         [HttpGet]

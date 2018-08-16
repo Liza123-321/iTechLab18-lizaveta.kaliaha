@@ -9,5 +9,6 @@ namespace task3WebAPI.MyLogger
     public interface IMyFileLogger
     {
         void Log(ActionExecutedContext context);
+        void Error(Exception context);
     }
 }
