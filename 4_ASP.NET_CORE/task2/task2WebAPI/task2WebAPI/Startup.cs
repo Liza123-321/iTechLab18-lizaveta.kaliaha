@@ -30,7 +30,7 @@ namespace task2WebAPI
 
             services.AddMvc().AddXmlDataContractSerializerFormatters();
             services.AddAutoMapper();
-            services.AddScoped<IStarsService, StarsService>();
+            services.AddSingleton<IStarsService, StarsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

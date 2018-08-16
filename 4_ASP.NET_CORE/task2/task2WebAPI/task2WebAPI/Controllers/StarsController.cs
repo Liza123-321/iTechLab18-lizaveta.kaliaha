@@ -7,6 +7,7 @@ using System.Net;
 using task2WebAPI.Models;
 using Newtonsoft.Json;
 using task2WebAPI.Services;
+using AutoMapper;
 
 namespace task2WebAPI.Controllers
 {
@@ -15,30 +16,31 @@ namespace task2WebAPI.Controllers
     public class StarsController : ControllerBase
     {
         private readonly IStarsService _starsService;
-        public StarsController(IStarsService starsService)
+        private readonly IMapper _mapper;
+        public StarsController(IStarsService starsService, IMapper mapper)
         {
             this._starsService = starsService;
+            this._mapper = mapper;
         }
         // GET api/stars/sync
         [HttpGet("sync")]
         public ActionResult GetSync()
         {
-            return new ObjectResult(_starsService.GetStarsSync());
+            return new ObjectResult(_mapper.Map<StarsResultWithNext, StarsResult>(_starsService.GetStarsSync()));
 
         }
         // GET api/stars/async
         [HttpGet("async")]
         public async Task<ActionResult> GetAsync()
         {
-            return new ObjectResult(await _starsService.GetStarsAsync());
+            return new ObjectResult(_mapper.Map<StarsResultWithNext, StarsResult>(await _starsService.GetStarsAsync()));
 
         }
         // GET api/stars/async/all
         [HttpGet("async/all")]
         public async Task<ActionResult> GetAsyncAll()
         {
-
-            return new ObjectResult(await _starsService.GetAllStarsAsync());
+            return new ObjectResult(_mapper.Map<StarsResultWithNext, StarsResult>(await  _starsService.GetAllStarsAsync()));
         }
     }
     
