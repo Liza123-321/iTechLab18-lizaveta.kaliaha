@@ -1,0 +1,19 @@
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 16.08.2018 14:24:35
+_____________________________Do action filter!_____________________________
+GET
+/api/films
+HTTP/1.1
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 16.08.2018 14:25:33
+_____________________________Do action filter!_____________________________
+GET
+/api/films/2
+HTTP/1.1
+___400 Bad Request___
+Action: task3WebAPI.Controllers.FilmsController.Get (task3WebAPI)
+Date: 16.08.2018 14:25:40
