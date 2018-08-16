@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace server_task4.DAL.Models
 {
-    public class Gallery
+    public class Photo
     {
         public int Id { get; set; }
-        public Film Film { get; set; }
         public string PhotoUrl { get; set; }
     }
 }

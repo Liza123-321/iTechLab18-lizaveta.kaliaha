@@ -9,12 +9,12 @@ namespace server_task4.Services
     public interface IUserService
     {
 
-        Task<List<User>> getAllUsers();
-        List<User> getAllUsersSync();
-        Task<User> getUserById(int id);
-        Task<User> register(User user);
-        Task<User> updateUser(User user);
-        Task<User> deleteUser(int id);
-        Task<Object> login(User user);
+        Task<List<User>> GetAllUsers();
+        List<User> GetAllUsersSync();
+        Task<User> GetUserById(int id);
+        Task<User> RegisterUser(User user);
+        Task<User> UpdateUser(User user);
+        Task<User> DeleteUser(int id);
+        Task<Object> LoginUser(User user);
     }
 }

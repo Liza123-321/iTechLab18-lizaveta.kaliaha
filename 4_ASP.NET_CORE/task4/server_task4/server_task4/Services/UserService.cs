@@ -19,14 +19,8 @@ namespace server_task4.Services
         public UserService(dbContext users)
         {
             this.db = users;
-            if (!db.Users.Any())
-            {
-                db.Users.Add(new User { Email = "qwerty@mail.ru", Password = "12345", Role = "user" });
-                db.Users.Add(new User { Email = "admin@mail.ru", Password = "admin", Role = "admin" });
-                db.SaveChanges();
-            }
         }
-        public async Task<User> deleteUser(int id)
+        public async Task<User> DeleteUser(int id)
         {
            User user = db.Users.FirstOrDefault(x => x.Id == id);
             if (user == null)
@@ -38,25 +32,21 @@ namespace server_task4.Services
             return user;
         }
 
-        public async Task<List<User>> getAllUsers()
+        public async Task<List<User>> GetAllUsers()
         {
             return await db.Users.ToListAsync();
         }
-        public List<User> getAllUsersSync()
+        public List<User> GetAllUsersSync()
         {
             return  db.Users.ToList();
         }
-        public async Task<User> getUserById(int id)
+        public async Task<User> GetUserById(int id)
         {
             return await db.Users.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<User> register(User user)
+        public async Task<User> RegisterUser(User user)
         {
-            if (user == null)
-            {
-                return null;
-            }
             if(db.Users.Any(x => x.Email == user.Email))
             {
                 return null;
@@ -66,7 +56,7 @@ namespace server_task4.Services
             return user;
         }
 
-        public async Task<Object> login(User user)
+        public async Task<Object> LoginUser(User user)
         {
             var identity = GetIdentity(user.Email, user.Password);
             if (identity == null)
@@ -96,7 +86,7 @@ namespace server_task4.Services
             return response;
         }
 
-        public async Task<User> updateUser(User user)
+        public async Task<User> UpdateUser(User user)
         {
             if (user== null)
             {

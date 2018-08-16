@@ -1,0 +1,65 @@
+2018-08-16 15:03:58,382 [13] ERROR App  
+ Exception: The seed entity for entity type 'User' cannot be added because there was no value provided for the required property 'Id'. Microsoft.EntityFrameworkCore  
+ 
+2018-08-16 15:04:28,469 [8] ERROR App  
+ Exception: The seed entity for entity type 'User' cannot be added because there was no value provided for the required property 'Id'. Microsoft.EntityFrameworkCore  
+ 
+2018-08-16 15:06:21,270 [13] INFO  App  
+ POST /api/account/login HTTP/1.1 Action: server_task4.Controllers.AccountController.Token (server_task4) 
+ 
+2018-08-16 15:06:24,970 [13] INFO  App  
+ POST /api/account/login HTTP/1.1 Action: server_task4.Controllers.AccountController.Token (server_task4) 
+ 
+2018-08-16 15:06:53,171 [8] INFO  App  
+ GET /api/values/getlogin HTTP/1.1 Action: server_task4.Controllers.ValuesController.GetLogin (server_task4) 
+ 
+2018-08-16 15:13:07,264 [34] INFO  App  
+ POST /api/account/register HTTP/1.1 Action: server_task4.Controllers.AccountController.Register (server_task4) 
+ 
+2018-08-16 15:13:12,282 [29] INFO  App  
+ POST /api/account/register HTTP/1.1 Action: server_task4.Controllers.AccountController.Register (server_task4) 
+ 
+2018-08-16 15:13:17,758 [29] INFO  App  
+ POST /api/account/register HTTP/1.1 Action: server_task4.Controllers.AccountController.Register (server_task4) 
+ 
+2018-08-16 15:14:40,473 [10] INFO  App  
+ POST /api/account/register HTTP/1.1 Action: server_task4.Controllers.AccountController.Register (server_task4) 
+ 
+2018-08-16 15:15:43,374 [8] INFO  App  
+ POST /api/account/register HTTP/1.1 Action: server_task4.Controllers.AccountController.Register (server_task4) 
+ 
+2018-08-16 15:16:03,779 [14] INFO  App  
+ POST /api/account/register HTTP/1.1 Action: server_task4.Controllers.AccountController.Register (server_task4) 
+ 
+2018-08-16 16:12:10,265 [7] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: server_task4.Controllers.UserController.Token (server_task4) 
+ 
+2018-08-16 16:12:26,846 [13] INFO  App  
+ GET /api/values/getlogin HTTP/1.1 Action: server_task4.Controllers.ValuesController.GetLogin (server_task4) 
+ 
+2018-08-16 16:12:50,257 [15] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-16 16:12:50,265 [15] ERROR App  
+ Exception: Invalid column name 'Country'.
+Invalid column name 'Name'.
+Invalid column name 'Poster'.
+Invalid column name 'Producer'.
+Invalid column name 'Year'. Core .Net SqlClient Data Provider  
+ 
+2018-08-16 16:12:59,522 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-16 16:12:59,523 [13] ERROR App  
+ Exception: Invalid column name 'Country'.
+Invalid column name 'Name'.
+Invalid column name 'Poster'.
+Invalid column name 'Producer'.
+Invalid column name 'Year'. Core .Net SqlClient Data Provider  
+ 
+2018-08-16 16:14:15,673 [10] INFO  App  
+ GET /api/user HTTP/1.1 Action: server_task4.Controllers.UserController.Get (server_task4) 
+ 
+2018-08-16 16:14:20,624 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 

@@ -14,6 +14,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using server_task4.DAL.Context;
+using server_task4.Filters;
+using server_task4.Logger;
 using server_task4.Services;
 
 namespace server_task4
@@ -57,8 +59,16 @@ namespace server_task4
                             ValidateIssuerSigningKey = true,
                        };
                    });
+            services.AddSingleton<ILog4NetService, Log4NetService>();
             services.AddTransient<IUserService, UserService>();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddTransient<IFilmService, FilmService>();
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(typeof(LogActionAttribute));
+                options.Filters.Add(typeof(LogExceptionAttribute));
+
+            }).AddXmlDataContractSerializerFormatters();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

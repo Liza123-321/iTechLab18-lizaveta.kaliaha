@@ -15,10 +15,10 @@ namespace server_task4.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AccountController : ControllerBase
+    public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-        public AccountController(IUserService userService)
+        public UserController(IUserService userService)
         {
             this._userService = userService;
         }
@@ -26,21 +26,21 @@ namespace server_task4.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Token([FromBody]User user)
         {
-            return new ObjectResult(await _userService.login(user));
+            return new ObjectResult(await _userService.LoginUser(user));
         }
 
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> Get()
         {
-            return await _userService.getAllUsers();
+            return await _userService.GetAllUsers();
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody]User user)
         {
-            var myUser = await _userService.register(user);
-            if (user == null) return BadRequest(new { message = "Fail" });
+            var myUser = await _userService.RegisterUser(user);
+            if (myUser == null) return BadRequest(new { message = "This email used by other user" });
             return Ok(user);
 
         }
