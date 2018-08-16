@@ -26,16 +26,15 @@ namespace task2WebAPI.Services
         {
             RestRequest restRequest = new RestRequest(Method.GET);
             StarsResultWithNext result = new StarsResultWithNext();
-            var client = _restClient;
             while (true)
             {
-                StarsResultWithNext starsOnePage = await client.GetTaskAsync<StarsResultWithNext>(restRequest);
-                setIndex(_mapper.Map<StarsResultWithNext, StarsResult>(result));
+                StarsResultWithNext starsOnePage = await _restClient.GetTaskAsync<StarsResultWithNext>(restRequest);
                 result.Results.AddRange(starsOnePage.Results);
                 result.Count = result.Results.Count();
-                if (starsOnePage.Next != null) client = new RestClient(starsOnePage.Next);
+                if (starsOnePage.Next != null) restRequest = new RestRequest(starsOnePage.Next,Method.GET);
                 else break;
             }
+            setIndex(_mapper.Map<StarsResultWithNext, StarsResult>(result));
             return _mapper.Map<StarsResultWithNext, StarsResult>(result);
         }
 
