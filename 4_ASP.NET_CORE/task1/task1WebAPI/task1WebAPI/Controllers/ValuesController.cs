@@ -22,8 +22,7 @@ namespace task1WebAPI.Controllers
         {
             if (ModelState.IsValid)
             {
-                int sum = _sumService.sum((int)model.A,(int) model.B);
-                return Ok(new SumModel { A = (int)model.A, B =(int)model.B, Sum = sum });
+                return Ok(_sumService.Sum(model));
             }
             else
             {

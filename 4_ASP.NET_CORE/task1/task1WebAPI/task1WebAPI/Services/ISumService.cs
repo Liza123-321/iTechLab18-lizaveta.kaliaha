@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using task1WebAPI.Models;
 
 namespace task1WebAPI.Services
 {
-   public interface ISumService
+    public interface ISumService
     {
-        int sum(int a, int b);
-    }
+        SumModel Sum(DataModel data);
+     }
 }

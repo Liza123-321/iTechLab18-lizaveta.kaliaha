@@ -14,27 +14,25 @@ namespace task2WebAPI.Services
     {
         private const string url = "https://swapi.co/api/starships/";
         private readonly IMapper _mapper;
-        private readonly RestRequest _restRequest;
+        //private readonly RestRequest _restRequest;
         private readonly RestClient _restClient;
         public StarsService(IMapper mapper)
         {
             this._mapper = mapper;
-            this._restRequest= new RestRequest(Method.GET);
+            //this._restRequest= new RestRequest(Method.GET);
             this._restClient = new RestClient(url);
         }
         public async Task<StarsResult> GetAllStarsAsync()
         {
+            RestRequest restRequest = new RestRequest(Method.GET);
             StarsResultWithNext result = new StarsResultWithNext();
             var client = _restClient;
             while (true)
             {
-                StarsResultWithNext starsOnePage = await client.GetTaskAsync<StarsResultWithNext>(_restRequest);
-                for (int j = 0; j < starsOnePage.Results.Count; j++)
-                {
-                    starsOnePage.Results[j].Index = result.Count+j+1;
-                }
+                StarsResultWithNext starsOnePage = await client.GetTaskAsync<StarsResultWithNext>(restRequest);
+                setIndex(_mapper.Map<StarsResultWithNext, StarsResult>(result));
                 result.Results.AddRange(starsOnePage.Results);
-                result.Count += starsOnePage.Results.Count;
+                result.Count = result.Results.Count();
                 if (starsOnePage.Next != null) client = new RestClient(starsOnePage.Next);
                 else break;
             }
@@ -43,20 +41,22 @@ namespace task2WebAPI.Services
 
         public async Task<StarsResult> GetStarsAsync()
         {
-            StarsResult result = await _restClient.GetTaskAsync<StarsResult>(_restRequest);
+            RestRequest restRequest = new RestRequest(Method.GET);
+            StarsResult result = await _restClient.GetTaskAsync<StarsResult>(restRequest);
             setIndex(result);
             return result;
         }
 
         public StarsResult GetStarsSync()
         {
-            StarsResult result = _restClient.Execute<StarsResult>(_restRequest).Data;
+            RestRequest restRequest = new RestRequest(Method.GET);
+            StarsResult result = _restClient.Execute<StarsResult>(restRequest).Data;
             setIndex(result);
             return result;
         }
-        private void setIndex(StarsResult starsRes)
+        private void setIndex(StarsResult starsRes, int startIndex = 0)
         {
-            for (int i = 0; i < starsRes.Results.Count; i++)
+            for (int i = startIndex; i < starsRes.Results.Count; i++)
             {
                 starsRes.Results[i].Index = i + 1;
             }

@@ -26,7 +26,7 @@ namespace task1WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<ISumService, SumService>();
+            services.AddSingleton<ISumService, SumService>();
             services.AddMvc().AddXmlDataContractSerializerFormatters();
         }
 
