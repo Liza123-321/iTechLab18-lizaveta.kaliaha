@@ -9,21 +9,14 @@ using task3WebAPI.Models;
 
 namespace task3WebAPI.Context
 {
-     public class FilmsContextInitializer
+    public static class FilmsContextInitializer
     {
-        public static void Seed(IApplicationBuilder applicationBuilder)
+        public static void Seed(this ModelBuilder modelBuilder)
         {
-            using (var serviceScope = applicationBuilder.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
-            {
-                FilmsContext context = serviceScope.ServiceProvider.GetService<FilmsContext>();
-                if (!context.Films.Any())
-                {
-                    context.Films.Add(new FilmModel { Name = "Test", Country = "USA", Year = 1783, Derictor = "Liza" });
-                    context.Films.Add(new FilmModel { Name = "ITechArt", Country = "Belarus", Year = 2007, Derictor = "Liza" });
-                    context.SaveChanges();
-                }
-                context.SaveChanges();
-            }
+            modelBuilder.Entity<FilmModel>().HasData(
+             new FilmModel {Id = 1, Name = "Test", Country = "USA", Year = 1783, Derictor = "Liza" },
+             new FilmModel { Id = 2, Name = "ITechArt", Country = "Belarus", Year = 2007, Derictor = "Liza" });
+
         }
     }
 }
