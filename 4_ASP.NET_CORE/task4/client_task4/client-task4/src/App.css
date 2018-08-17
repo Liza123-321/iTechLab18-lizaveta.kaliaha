@@ -1,5 +1,4 @@
 .App {
-
   text-align: center;
 }
 
@@ -9,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: darkgray;
   height: 80px;
   padding: 20px;
   color: white;

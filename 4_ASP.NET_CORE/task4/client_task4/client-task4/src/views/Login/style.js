@@ -26,13 +26,13 @@ const styles = theme => ({
 		color: '#ff1a75',
 	},
 	card: {
-		marginTop: 10,
+		marginTop: 30,
 		marginLeft: 'auto',
 		marginRight: 'auto',
 		paddingTop: 20,
 		justifyContent: 'center',
 		flexWrap: 'wrap',
-		maxWidth: 1000,
+		maxWidth: 700,
 	},
 	inputGroup: {
 		marginTop: 30,

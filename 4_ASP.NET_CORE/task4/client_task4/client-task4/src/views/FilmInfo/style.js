@@ -4,14 +4,44 @@ const styles = theme => ({
 		maxHeight: 30,
 	},
 	title: {
+		paddingTop: 15,
+		paddingBottom: 20,
 		width: 345,
+		fontWeight: 600,
+		fontFamily: 'Georgia',
+		fontSize: 26,
+		color: '#ff1a75',
+	},
+	text: {
+		fontFamily: 'Georgia',
+		fontSize: 16,
+		color: '#222222',
+	},
+	text_pink: {
+		fontFamily: 'Georgia',
+		fontSize: 18,
+		color: '#ff1a75',
+	},
+	stars: {
+		display: 'flex',
+		justifyContent: 'center',
+	},
+	textPadding: {
+		paddingTop: 70,
 	},
 	container: {
 		justify: 'center',
 	},
 	media: {
-		width: 500,
-		height: 800,
+		marginRight: 20,
+		width: 400,
+		height: 600,
+	},
+	description: {
+		paddingLeft: 20,
+		paddingRight: 30,
+		justifyContent: 'center',
+		display: 'flex',
 	},
 	top: {
 		justifyContent: 'center',

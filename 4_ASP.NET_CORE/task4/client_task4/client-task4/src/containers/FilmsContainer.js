@@ -20,7 +20,14 @@ class FilmsContainer extends React.Component {
 		});
 	}
 	eachTask = i => {
-		return <Film filmPoster={i.poster} filmName={i.name} filmId={i.id} />;
+		return (
+			<Film
+				filmPoster={i.poster}
+				filmName={i.name}
+				filmId={i.id}
+				filmRating={i.averageRating}
+			/>
+		);
 	};
 	render() {
 		return (

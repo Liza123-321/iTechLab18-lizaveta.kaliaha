@@ -922,3 +922,1359 @@
 2018-08-17 16:34:55,209 [127] INFO  App  
  GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
  
+2018-08-17 16:36:35,673 [131] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:38:18,235 [126] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:38:22,202 [126] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:38:23,761 [126] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:38:25,142 [126] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:38:29,177 [143] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:58:24,450 [152] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:58:33,444 [152] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:58:42,685 [152] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:58:47,883 [140] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:59:25,642 [145] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:59:27,441 [150] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:59:32,285 [135] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:59:47,372 [135] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 16:59:51,450 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:00:24,777 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:00:46,564 [133] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:00:54,496 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:01:29,954 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:01:34,410 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:02:18,347 [129] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:02:40,284 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:02:47,868 [131] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:02:58,760 [129] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:00,434 [8] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:02,511 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:03,691 [139] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:05,064 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:06,348 [8] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:07,851 [131] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:48,999 [122] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:51,522 [122] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:54,361 [122] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:03:56,784 [131] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:04:05,874 [122] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:04:07,630 [122] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:04:09,121 [122] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:05:53,180 [13] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:05:55,830 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:05:57,917 [17] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:06:03,557 [16] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:06:05,832 [16] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:06:11,986 [16] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:06:12,583 [13] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:06:14,276 [19] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:06:20,207 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:06:24,709 [19] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:06:26,508 [16] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:07:36,442 [24] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:08:02,178 [35] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:08:04,195 [35] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:08:35,601 [28] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:08:49,180 [25] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:08:53,151 [35] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:09:15,126 [35] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:09:16,320 [33] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:11:10,249 [44] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:11:11,782 [39] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:11:13,123 [44] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:11:15,156 [39] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:13:00,216 [42] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:13:10,948 [48] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:13:40,296 [54] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:14:00,988 [48] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:14:02,321 [48] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:14:04,752 [54] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:14:07,537 [48] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:14:28,579 [67] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:14:29,612 [67] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:14:31,270 [63] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:15:13,885 [63] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:15:16,056 [71] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:15:27,288 [63] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:15:27,805 [71] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:15:32,338 [59] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:15:33,795 [59] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:16:32,335 [71] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:16:33,546 [71] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:16:34,663 [68] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:16:50,434 [70] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:16:52,242 [86] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:16:54,423 [68] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:18,394 [86] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:19,710 [72] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:21,111 [71] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:28,038 [71] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:29,151 [68] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:30,207 [76] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:39,141 [68] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:43,459 [68] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:45,845 [86] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:50,226 [86] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:17:51,666 [76] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:18:28,505 [83] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:18:29,687 [83] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:18:30,661 [81] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:18:33,121 [81] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:19:04,328 [98] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:19:18,041 [98] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:20:38,475 [82] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:20:40,257 [90] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:20:41,423 [90] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:20:44,748 [90] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:02,053 [90] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:03,740 [90] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:06,422 [90] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:08,623 [90] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:27,523 [90] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:32,835 [90] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:33,853 [89] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:35,253 [82] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:36,171 [90] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:38,508 [90] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:41,182 [90] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:44,761 [90] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:48,129 [90] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:51,490 [89] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:53,728 [90] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:55,932 [90] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:21:57,989 [90] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:04,481 [92] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:05,993 [90] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:15,311 [92] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:19,223 [89] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:20,370 [100] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:22,192 [100] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:44,873 [100] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:47,372 [100] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:49,293 [103] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:49,889 [105] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:52,973 [103] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:22:53,986 [103] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:23:43,888 [115] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:23:47,272 [115] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:23:48,740 [111] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:24:32,228 [114] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:25:11,248 [112] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:26:29,053 [102] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:27:11,559 [166] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:27:16,822 [166] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:28:42,772 [102] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:28:49,164 [113] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:28:52,541 [120] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:30:29,646 [117] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:30:49,283 [108] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:31:25,720 [108] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:31:43,249 [95] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:32:01,697 [105] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:32:10,755 [111] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:32:37,187 [101] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:32:47,618 [101] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:32:54,938 [101] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:32:58,826 [111] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:33:00,766 [111] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:33:01,934 [101] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:33:06,059 [114] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:33:34,718 [114] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:33:36,514 [114] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:33:38,189 [93] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:33:45,049 [97] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:34:49,487 [97] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:34:50,624 [82] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:35:06,397 [82] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:35:18,497 [92] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:35:30,313 [114] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:35:48,241 [84] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:36:01,099 [82] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:36:04,195 [82] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:36:11,773 [82] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:36:19,805 [77] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:36:23,508 [84] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:36:55,764 [76] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:03,585 [76] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:04,319 [73] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:05,608 [86] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:06,519 [73] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:07,902 [73] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:09,029 [76] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:10,204 [76] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:11,302 [76] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:11,873 [76] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:12,750 [69] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:14,041 [69] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:17,924 [86] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:18,472 [86] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:19,413 [77] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:20,135 [77] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:21,107 [77] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:22,192 [77] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:30,589 [86] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:46,704 [86] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:48,334 [86] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:49,776 [76] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:50,252 [76] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:52,190 [76] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:53,338 [77] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:54,087 [77] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:55,157 [77] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:56,846 [73] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:58,019 [66] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:37:59,631 [69] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:38:01,217 [66] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:38:15,249 [69] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:38:37,723 [69] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:38:54,462 [86] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:39:15,580 [56] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:39:21,378 [61] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:39:25,121 [59] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:40:19,706 [63] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:40:26,872 [62] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:40:47,639 [52] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:40:51,253 [43] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:40:52,616 [43] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:40:53,682 [43] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:41:38,197 [47] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:41:40,919 [42] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:41:46,062 [48] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:41:51,118 [53] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:41:55,712 [53] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:42:26,206 [37] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:43:01,404 [45] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:43:21,350 [45] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:43:30,636 [45] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:43:38,997 [51] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:43:45,515 [51] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:44:06,716 [51] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:44:12,150 [51] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:45:06,110 [33] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:45:16,518 [33] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:45:24,951 [28] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:45:34,712 [28] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:45:43,366 [51] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:45:58,267 [51] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:05,783 [46] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:23,726 [26] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:25,146 [28] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:27,303 [26] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:28,648 [26] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:30,213 [26] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:32,383 [51] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:34,111 [51] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:34,569 [51] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:35,334 [28] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:36,125 [31] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:37,328 [46] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:38,202 [51] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:39,668 [46] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:40,395 [32] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:41,485 [46] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:43,304 [46] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:49,832 [31] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:51,729 [32] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:46:52,924 [32] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:47:01,482 [31] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:47:06,255 [28] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:47:07,894 [31] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:47:08,805 [31] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:47:10,973 [31] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:47:27,117 [31] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:47:45,982 [31] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:48:01,370 [51] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:48:12,936 [51] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:48:42,776 [51] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:48:51,916 [51] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:49:02,728 [17] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:49:43,935 [15] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:50:05,892 [13] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:50:26,581 [10] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:50:41,430 [13] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:51:20,182 [123] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:51:21,750 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:51:23,038 [129] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:51:24,256 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:51:43,964 [125] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:51:45,419 [125] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:51:47,756 [123] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:52:15,324 [123] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:52:16,865 [123] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:52:18,706 [121] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:52:19,530 [123] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:52:21,798 [121] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:52:35,977 [132] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:52:38,265 [139] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:52:59,642 [139] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:53:01,114 [134] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:53:08,032 [138] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:53:34,346 [137] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:53:54,231 [130] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:54:56,262 [147] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:55:34,417 [149] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:55:48,376 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:55:49,355 [151] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:55:51,410 [151] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:55:52,331 [151] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:55:53,638 [148] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:55:54,369 [148] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:01,308 [143] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:02,266 [147] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:03,004 [143] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:03,629 [147] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:04,346 [153] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:30,596 [149] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:32,397 [153] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:33,346 [147] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:34,620 [156] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:35,480 [149] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:36,913 [156] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:38,164 [149] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:38,946 [156] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:39,831 [147] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:43,147 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:44,151 [148] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:45,514 [156] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:46,931 [156] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:48,798 [156] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:51,247 [156] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:54,714 [156] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:56,251 [148] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:56,948 [157] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:56:57,858 [156] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:01,422 [157] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:02,298 [157] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:04,766 [157] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:07,763 [157] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:09,758 [157] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:11,917 [157] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:17,878 [149] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:19,404 [147] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:22,887 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:24,299 [149] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:24,872 [157] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:26,097 [157] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:27,130 [156] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:28,609 [157] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:29,651 [157] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 17:57:31,229 [147] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:00:07,810 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:00:36,838 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:00:39,393 [9] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:00:40,128 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:00:40,965 [9] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:00:50,803 [10] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:00:51,486 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:01:35,788 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:01:49,669 [7] INFO  App  
+ GET /api/film/4 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:01:51,454 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:01:53,596 [13] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:01:55,398 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:01:55,985 [7] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:01:56,486 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:03,585 [9] INFO  App  
+ GET /api/film/4 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:04,710 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:05,948 [9] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:08,626 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:09,667 [9] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:11,370 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:12,539 [7] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:14,627 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:15,538 [7] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:16,724 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:17,808 [7] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:19,035 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:21,247 [7] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:02:22,083 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:06:21,378 [10] ERROR App  
+ Exception: Database 'task4test3' already exists. Choose a different database name. Core .Net SqlClient Data Provider  
+ 
+2018-08-17 18:06:22,012 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:06:49,797 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:06:57,911 [10] INFO  App  
+ GET /api/film/5 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:06,300 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:14,895 [7] INFO  App  
+ GET /api/film/5 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:16,428 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:17,754 [7] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:18,811 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:20,423 [14] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:22,101 [14] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:26,274 [13] INFO  App  
+ GET /api/film/5 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:27,236 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:35,305 [10] INFO  App  
+ GET /api/film/5 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:07:37,026 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:08:48,905 [20] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:08:50,277 [20] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:08:51,575 [20] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:08:55,963 [18] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:08:57,078 [23] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:08:59,051 [18] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:09:01,115 [24] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:09:05,960 [24] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:09:11,624 [18] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:09:16,151 [23] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:09:18,820 [23] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:09:19,868 [23] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:09:21,042 [23] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:02,812 [36] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:04,940 [34] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:05,685 [28] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:07,883 [34] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:08,760 [34] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:10,129 [36] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:11,056 [36] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:12,389 [36] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:16,044 [34] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:17,282 [36] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:32,107 [36] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:40,596 [31] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:12:45,849 [31] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:14:57,434 [39] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:15:04,364 [39] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:15:06,044 [44] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:20:17,074 [59] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:20:53,765 [64] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:21:12,893 [64] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:21:31,200 [68] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:21:39,514 [64] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:21:52,328 [57] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:22:03,219 [64] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:22:06,682 [57] INFO  App  
+ GET /api/film/9 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:22:09,425 [68] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:22:10,999 [68] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:22:12,385 [68] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:22:38,064 [61] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:22:42,271 [68] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:23:00,636 [74] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:23:45,213 [71] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:24:13,029 [71] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:24:35,045 [83] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:25:43,914 [76] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:25:45,234 [75] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:25:46,141 [75] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:25:46,930 [82] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:25:47,707 [81] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:25:48,730 [75] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:26:43,943 [80] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:27:23,570 [70] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:27:24,487 [70] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:27:36,861 [72] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:27:38,392 [78] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:27:39,186 [70] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:27:51,486 [80] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:28:16,441 [64] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:28:28,135 [67] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:28:34,582 [67] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:28:39,917 [73] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:28:40,933 [73] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:28:41,873 [64] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:29:14,138 [64] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:29:15,883 [64] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:30:11,246 [61] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:30:12,322 [55] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:30:13,612 [55] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:30:14,723 [55] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:30:37,157 [58] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-17 18:30:39,369 [47] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 

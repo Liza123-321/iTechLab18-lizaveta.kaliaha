@@ -26,6 +26,10 @@ const styles = theme => ({
 			height: 700,
 		},
 	},
+	stars: {
+		display: 'flex',
+		justifyContent: 'center',
+	},
 });
 
 export default styles;

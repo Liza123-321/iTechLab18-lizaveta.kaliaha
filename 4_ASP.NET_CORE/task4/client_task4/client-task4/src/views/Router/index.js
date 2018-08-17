@@ -13,7 +13,7 @@ let MyRouter = ({ handleChange, activeTabValue, classes, viewToolbar }) => {
 	return (
 		<div>
 			{viewToolbar !== false && (
-				<AppBar position="static">
+				<AppBar position="static" className={classes.nav}>
 					<Toolbar className={classes.myNav}>
 						<Tabs value={activeTabValue} onChange={handleChange}>
 							<Tab

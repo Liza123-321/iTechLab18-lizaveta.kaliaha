@@ -11,6 +11,13 @@ const styles = theme => ({
 		display: 'flex',
 		justifyContent: 'center',
 	},
+	nav: {
+		backgroundColor: 'white',
+		color: 'black',
+		display: 'flex',
+		justifyContent: 'center',
+		marginTop: 20,
+	},
 });
 
 export default styles;

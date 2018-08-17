@@ -8,18 +8,19 @@ class FilmContainer extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			filmId: 1,
 			filmData: {},
 		};
 	}
+	//убрать эту дичь
 	componentDidMount() {
-		var self = this;
-		axios
-			.get(`https://localhost:5001/api/film/` + self.state.filmId)
-			.then(function(res) {
-				console.log(res.data);
-				self.setState({ filmData: res.data });
-			});
+		let self = this;
+		let strId = this.props.history.location.pathname.replace(
+			/\/React_task1/g,
+			''
+		);
+		axios.get(`https://localhost:5001/api` + strId).then(function(res) {
+			self.setState({ filmData: res.data });
+		});
 	}
 	render() {
 		return (
@@ -28,6 +29,10 @@ class FilmContainer extends React.Component {
 				filmName={this.state.filmData.name}
 				filmId={this.state.filmData.id}
 				filmDescription={this.state.filmData.description}
+				filmYear={this.state.filmData.year}
+				filmCountry={this.state.filmData.country}
+				filmProducer={this.state.filmData.producer}
+				filmRating={this.state.filmData.averageRating}
 			/>
 		);
 	}
