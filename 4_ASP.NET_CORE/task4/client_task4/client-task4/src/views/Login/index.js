@@ -16,6 +16,7 @@ let Login = ({
 	handleUserInput,
 	formErrors,
 	formValid,
+	loginClick,
 }) => {
 	return (
 		<div>
@@ -50,12 +51,8 @@ let Login = ({
 					<Button
 						variant="raised"
 						color="secondary"
-						type="submit"
 						disabled={!formValid}
-						onClick={() => {
-							console.log(email + ' : ' + password);
-							alert(JSON.stringify(email + ' : ' + password));
-						}}
+						onClick={loginClick}
 						className={classes.button}
 					>
 						Login

@@ -11,7 +11,7 @@ namespace server_task4.Services
         Task<List<Film>> GetAllFilms();
         Task<Film> GetFilmById(int id);
         Task<Film> CreateFilm(Film film);
-        Task<Film> UpdateFilm(User user);
+        Task<Film> UpdateFilm(Film film);
         Task<Film> DeleteFilm(int id);
     }
 }

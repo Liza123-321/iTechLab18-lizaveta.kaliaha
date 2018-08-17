@@ -35,6 +35,7 @@ namespace server_task4
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<dbContext>(options =>
                 options.UseSqlServer(connection));
+            services.AddCors();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    .AddJwtBearer(options =>
                    {
@@ -74,6 +75,7 @@ namespace server_task4
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors(builder => builder.AllowAnyOrigin());
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

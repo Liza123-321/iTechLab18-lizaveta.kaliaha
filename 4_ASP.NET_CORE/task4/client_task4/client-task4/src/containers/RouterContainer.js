@@ -10,6 +10,8 @@ import {
 } from 'react-router-dom';
 import NotFound from '../views/NotFound/index';
 import Login from './LoginContainer';
+import FilmsContainer from './FilmsContainer';
+import FilmContainer from './FilmContainer';
 
 const VIRTUAL_PATH = '/React_task1';
 const pathNameTab = [
@@ -63,6 +65,8 @@ class RouterContainer extends React.Component {
 					/>
 					<Switch>
 						<Route exact path={VIRTUAL_PATH + '/'} component={null} />
+						<Route path={VIRTUAL_PATH + '/film/'} component={FilmContainer} />
+						<Route path={VIRTUAL_PATH + '/films'} component={FilmsContainer} />
 						<Route path={VIRTUAL_PATH + '/login'} component={Login} />
 						<Route path={VIRTUAL_PATH + '/404'} component={NotFound} />
 						<Route

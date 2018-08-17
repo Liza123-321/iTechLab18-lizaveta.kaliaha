@@ -1,4 +1,5 @@
 .App {
+
   text-align: center;
 }
 
@@ -13,11 +14,19 @@
   padding: 20px;
   color: white;
 }
-
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  color: white;
+}
 .App-title {
   font-size: 1.5em;
 }
-
+.App-films{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .App-intro {
   font-size: large;
 }

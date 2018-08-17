@@ -27,28 +27,37 @@ namespace server_task4.Controllers
         }
 
         // GET: api/Film/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
         {
-            return "value";
+            var film = await _filmService.GetFilmById(id);
+            if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });
+            return Ok(film);
         }
 
         // POST: api/Film
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody]Film film)
         {
+            return Ok(await _filmService.CreateFilm(film));
         }
 
         // PUT: api/Film/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Put([FromBody]Film film)
         {
+            var getfilm = await _filmService.UpdateFilm(film);
+            if (getfilm == null) return BadRequest("Film with this id {" + film.Id + "} not found");
+            return Ok(getfilm);
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            var film = await _filmService.DeleteFilm(id);
+            if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });
+            return Ok(film);
         }
     }
 }

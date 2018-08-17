@@ -88,10 +88,6 @@ namespace server_task4.Services
 
         public async Task<User> UpdateUser(User user)
         {
-            if (user== null)
-            {
-                return null;
-            }
             if (!db.Users.Any(x => x.Id == user.Id))
             {
                 return null;

@@ -15,14 +15,27 @@ namespace server_task4.Services
         {
             this.db = films;
         }
-        public Task<Film> CreateFilm(Film film)
+        public async Task<Film> CreateFilm(Film film)
         {
-            throw new NotImplementedException();
+            if (db.Films.Any(x => x.Name == film.Name))
+            {
+                return null;
+            }
+            db.Films.Add(film);
+            await db.SaveChangesAsync();
+            return film;
         }
 
-        public Task<Film> DeleteFilm(int id)
+        public async Task<Film> DeleteFilm(int id)
         {
-            throw new NotImplementedException();
+            Film film = db.Films.FirstOrDefault(x => x.Id == id);
+            if (film == null)
+            {
+                return null;
+            }
+            db.Films.Remove(film);
+            await db.SaveChangesAsync();
+            return film;
         }
 
         public async  Task<List<Film>> GetAllFilms()
@@ -30,14 +43,21 @@ namespace server_task4.Services
             return await db.Films.ToListAsync();
         }
 
-        public Task<Film> GetFilmById(int id)
+        public async Task<Film> GetFilmById(int id)
         {
-            throw new NotImplementedException();
+            return await db.Films.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public Task<Film> UpdateFilm(User user)
+        public async Task<Film> UpdateFilm(Film film)
         {
-            throw new NotImplementedException();
+            if (!db.Films.Any(x => x.Id == film.Id))
+            {
+                return null;
+            }
+
+            db.Films.Update(film);
+            await db.SaveChangesAsync();
+            return film;
         }
     }
 }

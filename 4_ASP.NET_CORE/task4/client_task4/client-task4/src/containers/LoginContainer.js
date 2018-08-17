@@ -1,5 +1,6 @@
 import React from 'react';
 import Login from '../views/Login/index';
+import axios from 'axios';
 import { validateForm, validateField } from '../validation';
 
 class LoginContainer extends React.Component {
@@ -8,6 +9,7 @@ class LoginContainer extends React.Component {
 		this.handleUserInput = this.handleUserInput.bind(this);
 		this.validateField = validateField.bind(this);
 		this.validateForm = validateForm.bind(this);
+		this.loginClick = this.loginClick.bind(this);
 		this.state = {
 			email: '',
 			password: '',
@@ -26,6 +28,11 @@ class LoginContainer extends React.Component {
 		});
 	};
 
+	loginClick() {
+		console.log('login');
+		axios.post(`https://localhost:5001/api/user/login`).then(function(res) {});
+	}
+
 	render() {
 		return (
 			<Login
@@ -34,6 +41,7 @@ class LoginContainer extends React.Component {
 				handleUserInput={this.handleUserInput}
 				formErrors={this.state.formErrors}
 				formValid={this.state.formValid}
+				loginClick={this.loginClick}
 			/>
 		);
 	}
