@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "081a48dc-6b66-4cf6-bbf8-f30d268e9640",
+		"name": "core_task3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_all_films",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t       \"name\": \"Test\",\n    \"country\": \"qqqq11111657561q\",\n    \"year\": 1783,\n    \"derictor\": \"Liza\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/films",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one film",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/films/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"films",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create film",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t      \"name\": \"Test\",\n        \"country\": \"USA\",\n        \"year\": 1783,\n        \"derictor\": \"Liza\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/films",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete film",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/films/26",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"films",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update film",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t    \"id\": 25,\n    \"name\": \"Test\",\n    \"country\": \"U2234234234SA\",\n    \"year\": 0,\n    \"derictor\": \"Liza\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/films",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"films"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
