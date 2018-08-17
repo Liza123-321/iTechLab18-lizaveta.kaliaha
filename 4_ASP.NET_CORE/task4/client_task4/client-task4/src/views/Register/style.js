@@ -2,6 +2,8 @@ import green from '@material-ui/core/colors/green';
 const styles = theme => ({
 	button: {
 		margin: theme.spacing.unit,
+		height: 50,
+		width: 150,
 	},
 	input: {
 		display: 'none',
@@ -22,7 +24,7 @@ const styles = theme => ({
 		paddingBottom: 25,
 		fontWeight: 500,
 		fontSize: 34,
-		backgroundColor: '#3f51b5',
+		backgroundColor: '#e91e63',
 		color: 'white',
 	},
 	text_gray: {
@@ -32,13 +34,6 @@ const styles = theme => ({
 	authIcon: {
 		width: 70,
 		height: 70,
-	},
-	loginButton: {
-		width: 340,
-		height: 50,
-		borderColor: '#e91e63',
-		borderStyle: 'solid',
-		margin: theme.spacing.unit,
 	},
 	menu: {
 		width: 200,

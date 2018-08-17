@@ -9,9 +9,8 @@ import PasswordError from '../Errors/PasswordError';
 import styles from './style';
 import PropTypes from 'prop-types';
 import Checkbox from '@material-ui/core/Checkbox';
-import { Link } from 'react-router-dom';
 
-let Login = ({
+let Register = ({
 	classes,
 	email,
 	password,
@@ -24,7 +23,7 @@ let Login = ({
 		<div>
 			<form>
 				<Card className={classes.card}>
-					<div className={classes.textLogin}>Login</div>
+					<div className={classes.textLogin}>Register</div>
 					<br />
 					<TextField
 						id="email"
@@ -34,7 +33,6 @@ let Login = ({
 						value={email}
 						onChange={handleUserInput}
 					/>
-					{formErrors.email.length > 0 && <EmailError />}
 					<br />
 
 					<TextField
@@ -43,36 +41,35 @@ let Login = ({
 						type="password"
 						className={classes.textField}
 						margin="normal"
-						onChange={handleUserInput}
 						value={password}
+						onChange={handleUserInput}
 					/>
-					{formErrors.password.length > 0 && <PasswordError />}
+
+					<TextField
+						id="confirmPassword"
+						label="Confirm Password"
+						type="password"
+						className={classes.textField}
+						margin="normal"
+						onChange={handleUserInput}
+					/>
 					<br />
 
-					<div className={classes.text_gray}>
-						<Checkbox checked={true} value="Remember me" />
-						Remember me
-					</div>
 					<br />
 					<Button
 						variant="raised"
-						color="secondary"
-						disabled={!formValid}
+						color="primary"
 						onClick={loginClick}
-						className={classes.loginButton}
+						className={classes.button}
 					>
-						Login
-					</Button>
-					<br />
-					<Button variant="raised" color="primary" className={classes.button}>
-						<Link to={'/React_task1/register'}> Register</Link>
+						Register
 					</Button>
 				</Card>
 			</form>
 		</div>
 	);
 };
-Login.propTypes = {
+Register.propTypes = {
 	handleChange: PropTypes.func,
 	email: PropTypes.string.isRequired,
 	password: PropTypes.string.isRequired,
@@ -80,4 +77,4 @@ Login.propTypes = {
 	formValid: PropTypes.bool.isRequired,
 };
 
-export default withStyles(styles)(Login);
+export default withStyles(styles)(Register);

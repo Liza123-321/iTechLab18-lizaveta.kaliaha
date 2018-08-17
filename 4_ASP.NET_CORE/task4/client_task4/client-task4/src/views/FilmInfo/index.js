@@ -43,7 +43,7 @@ let FilmInfo = ({
 							<ReactStars
 								count={5}
 								value={filmRating / 2}
-								size={30}
+								size={40}
 								color2={'#ffd700'}
 							/>
 						</div>

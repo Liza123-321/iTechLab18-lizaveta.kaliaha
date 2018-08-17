@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import NotFound from '../views/NotFound/index';
 import Login from './LoginContainer';
+import Register from './RegisterContainer';
 import FilmsContainer from './FilmsContainer';
 import FilmContainer from './FilmContainer';
 
@@ -67,6 +68,7 @@ class RouterContainer extends React.Component {
 						<Route exact path={VIRTUAL_PATH + '/'} component={null} />
 						<Route path={VIRTUAL_PATH + '/film/'} component={FilmContainer} />
 						<Route path={VIRTUAL_PATH + '/films'} component={FilmsContainer} />
+						<Route path={VIRTUAL_PATH + '/register'} component={Register} />
 						<Route path={VIRTUAL_PATH + '/login'} component={Login} />
 						<Route path={VIRTUAL_PATH + '/404'} component={NotFound} />
 						<Route
