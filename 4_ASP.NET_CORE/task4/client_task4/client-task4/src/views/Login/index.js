@@ -65,7 +65,7 @@ let Login = ({
 					</Button>
 					<br />
 					<Button variant="raised" color="primary" className={classes.button}>
-						<Link to={'/React_task1/register'}> Register</Link>
+						<Link to={'/register'}> Register</Link>
 					</Button>
 				</Card>
 			</form>

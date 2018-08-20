@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -36,6 +37,7 @@ namespace server_task4
             services.AddDbContext<dbContext>(options =>
                 options.UseSqlServer(connection));
             services.AddCors();
+                
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    .AddJwtBearer(options =>
                    {
@@ -63,12 +65,14 @@ namespace server_task4
             services.AddSingleton<ILog4NetService, Log4NetService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IFilmService, FilmService>();
+            services.AddTransient<IPhotoGaleryService, PhotoGaleryService>();
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(LogActionAttribute));
                 options.Filters.Add(typeof(LogExceptionAttribute));
 
             }).AddXmlDataContractSerializerFormatters();
+            services.AddAutoMapper();
 
         }
 

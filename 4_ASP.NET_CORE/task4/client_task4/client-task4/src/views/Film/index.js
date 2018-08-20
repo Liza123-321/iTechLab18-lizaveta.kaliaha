@@ -26,7 +26,7 @@ let Film = ({ classes, filmPoster, filmName, filmId, filmRating }) => {
 			</div>
 			<br />
 			<Button variant="raised" color="secondary" className={classes.button}>
-				<Link to={'/React_task1/film/' + filmId}> Подробно </Link>
+				<Link to={'/film/' + filmId}> Подробно </Link>
 			</Button>
 		</Card>
 	);

@@ -23,14 +23,14 @@ let LogOut = ({ classes, logOut }) => {
 					className={classes.loginButton}
 					onClick={logOut}
 				>
-					<Link to={'/React_task1/login'}> Yes</Link>
+					<Link to={'/login'}> Yes</Link>
 				</Button>{' '}
 				<Button
 					variant="raised"
 					color="secondary"
 					className={classes.loginButton}
 				>
-					<Link to={'/React_task1/films'}>No</Link>
+					<Link to={'/films'}>No</Link>
 				</Button>
 				<br />
 			</Card>

@@ -15,31 +15,18 @@ let MyRouter = ({
 	viewToolbar,
 	isAuth,
 }) => {
-	const VIRTUAL_PATH = '/React_task1';
 	return (
 		<div>
 			{viewToolbar !== false && (
 				<AppBar position="static" className={classes.nav}>
 					<Toolbar className={classes.myNav}>
 						<Tabs value={activeTabValue} onChange={handleChange}>
-							<Tab
-								label="Films"
-								component={Link}
-								to={VIRTUAL_PATH + '/films'}
-							/>
+							<Tab label="Films" component={Link} to={'/films'} />
 							{isAuth == false && (
-								<Tab
-									label="Login"
-									component={Link}
-									to={VIRTUAL_PATH + '/login'}
-								/>
+								<Tab label="Login" component={Link} to={'/login'} />
 							)}
 							{isAuth != false && (
-								<Tab
-									label="LogOut"
-									component={Link}
-									to={VIRTUAL_PATH + '/logout'}
-								/>
+								<Tab label="LogOut" component={Link} to={'/logout'} />
 							)}
 						</Tabs>
 					</Toolbar>

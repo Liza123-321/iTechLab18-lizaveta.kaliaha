@@ -15,22 +15,21 @@ import FilmsContainer from './FilmsContainer';
 import LogOutContainer from './LogOutContainer';
 import FilmContainer from './FilmContainer';
 
-const VIRTUAL_PATH = '/React_task1';
 const pathNameTab = [
 	{
-		pathName: '/React_task1/films',
+		pathName: '/films',
 		activeTabValue: 0,
 	},
 	{
-		pathName: '/React_task1/login',
+		pathName: '/login',
 		activeTabValue: 1,
 	},
 	{
-		pathName: '/React_task1/logout',
+		pathName: '/logout',
 		activeTabValue: 1,
 	},
 	{
-		pathName: '/React_task1/',
+		pathName: '/',
 		activeTabValue: false,
 	},
 ];
@@ -73,25 +72,15 @@ class RouterContainer extends React.Component {
 						isAuth={this.state.isAuth}
 					/>
 					<Switch>
-						<Route exact path={VIRTUAL_PATH + '/'} component={null} />
-						<Route path={VIRTUAL_PATH + '/film/'} component={FilmContainer} />
-						<Route path={VIRTUAL_PATH + '/films'} component={FilmsContainer} />
-						<Route path={VIRTUAL_PATH + '/register'} component={Register} />
-						<Route
-							path={VIRTUAL_PATH + '/logout'}
-							component={LogOutContainer}
-						/>
-						<Route path={VIRTUAL_PATH + '/login'} component={Login} />
+						<Route exact path={'/'} component={null} />
+						<Route path={'/film/:id'} component={FilmContainer} />
+						<Route path={'/films'} component={FilmsContainer} />
+						<Route path={'/register'} component={Register} />
+						<Route path={'/logout'} component={LogOutContainer} />
+						<Route path={'/login'} component={Login} />
 
-						<Route path={VIRTUAL_PATH + '/404'} component={NotFound} />
-						<Route
-							path={VIRTUAL_PATH + '/*'}
-							render={() => <Redirect to={VIRTUAL_PATH + '/404'} />}
-						/>
-						<Route
-							path="/*"
-							render={() => <Redirect to={VIRTUAL_PATH + '/'} />}
-						/>
+						<Route path={'/404'} component={NotFound} />
+						<Route path={'/*'} render={() => <Redirect to={'/404'} />} />
 					</Switch>
 				</div>
 			</Router>

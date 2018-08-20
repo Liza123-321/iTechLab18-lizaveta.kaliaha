@@ -46,7 +46,7 @@ class LoginContainer extends React.Component {
 				if (res.data) {
 					alert('Success autorize');
 					sessionStorage.setItem('jwt_token', res.data.access_token);
-				}
+				} else alert('Cant find user with this email and password');
 			});
 	}
 

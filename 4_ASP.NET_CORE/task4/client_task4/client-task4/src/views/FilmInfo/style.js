@@ -48,9 +48,8 @@ const styles = theme => ({
 		display: 'flex',
 	},
 	card: {
-		paddingBottom: 20,
 		display: 'flex',
-		margin: 20,
+		marginTop: 20,
 		justifyContent: 'center',
 		flexWrap: 'wrap',
 		width: 900,

@@ -50,9 +50,6 @@ let FilmInfo = ({
 					</div>
 				</div>
 				<br />
-				<Button variant="raised" color="secondary" className={classes.button}>
-					<Link to={'/React_task1/films'}> Назад </Link>
-				</Button>
 			</Card>
 		</div>
 	);
