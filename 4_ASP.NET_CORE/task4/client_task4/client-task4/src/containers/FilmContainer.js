@@ -5,6 +5,8 @@ import '../App.css';
 import PropTypes from 'prop-types';
 import PhotoGalleryContainer from './PhotoGalleryContainer';
 
+import AddCommentContainer from './AddCommentContainer';
+
 class FilmContainer extends React.Component {
 	constructor(props) {
 		super(props);
@@ -35,6 +37,7 @@ class FilmContainer extends React.Component {
 					filmRating={this.state.filmData.averageRating}
 				/>
 				<PhotoGalleryContainer id={this.state.id} />
+				<AddCommentContainer id={this.state.id} />
 			</div>
 		);
 	}

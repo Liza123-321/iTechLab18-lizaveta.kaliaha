@@ -17,5 +17,6 @@ namespace server_task4.DAL.Models
         public int Year { get; set; }
         public List<Genre> Genres { get; set; }
         public ICollection<Photo> Photos { get; set; }
+        public ICollection<Comment> Comments { get; set; }
     }
 }

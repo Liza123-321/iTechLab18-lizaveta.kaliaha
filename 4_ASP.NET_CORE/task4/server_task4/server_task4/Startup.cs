@@ -65,6 +65,7 @@ namespace server_task4
             services.AddSingleton<ILog4NetService, Log4NetService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IFilmService, FilmService>();
+            services.AddTransient<ICommentsService, CommentsService>();
             services.AddTransient<IPhotoGaleryService, PhotoGaleryService>();
             services.AddMvc(options =>
             {

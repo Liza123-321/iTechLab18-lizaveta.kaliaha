@@ -7,5 +7,8 @@ namespace server_task4.Models
 {
     public class CommentDTO
     {
+        public int Id { get; set; }
+        public string CommentMessage { get; set; }
+        public int UserId { get; set; }
     }
 }

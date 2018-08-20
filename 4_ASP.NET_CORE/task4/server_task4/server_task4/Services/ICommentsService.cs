@@ -1,11 +1,16 @@
-﻿using System;
+﻿using server_task4.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace server_task4.Services
 {
-    public class ICommentsService
+    public interface ICommentsService
     {
+        Task<List<CommentDTO>> GetAllComments();
+        Task<List<CommentDTO>> GetCommentsByFilmId(int id);
+        Task<CommentDTO> DeleteCommentById(int id);
+        Task<CommentDTO> AddComment(int filmId);
     }
 }

@@ -22,12 +22,23 @@ const styles = theme => ({
 	},
 	card: {
 		marginTop: 10,
-		paddingBottom: 15,
-		paddingTop: 15,
+		display: 'flex',
+		flexWrap: 'wrap',
+		width: 600,
+		backgroundColor: 'DarkGrey',
+	},
+	row: {
 		display: 'flex',
 		justifyContent: 'center',
-		flexWrap: 'wrap',
-		width: 900,
+	},
+	avatar: {
+		margin: 10,
+		color: '#fff',
+		backgroundColor: '#e91e63',
+	},
+	bigAvatar: {
+		width: 60,
+		height: 60,
 	},
 });
 
