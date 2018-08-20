@@ -15,6 +15,7 @@ namespace server_task4.DAL.Models
         public string Producer { get; set; }
         public string Poster { get; set; }
         public int Year { get; set; }
+        public string Video { get; set; }
         public List<Genre> Genres { get; set; }
         public ICollection<Photo> Photos { get; set; }
         public ICollection<Comment> Comments { get; set; }

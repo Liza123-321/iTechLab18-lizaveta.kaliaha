@@ -20,6 +20,7 @@ class FilmContainer extends React.Component {
 		axios
 			.get(`https://localhost:5001/api/film/` + self.state.id)
 			.then(function(res) {
+				console.log(res.data);
 				self.setState({ filmData: res.data });
 			});
 	}
@@ -35,6 +36,7 @@ class FilmContainer extends React.Component {
 					filmCountry={this.state.filmData.country}
 					filmProducer={this.state.filmData.producer}
 					filmRating={this.state.filmData.averageRating}
+					videoUrl={this.state.filmData.video}
 				/>
 				<PhotoGalleryContainer id={this.state.id} />
 				<AddCommentContainer id={this.state.id} />

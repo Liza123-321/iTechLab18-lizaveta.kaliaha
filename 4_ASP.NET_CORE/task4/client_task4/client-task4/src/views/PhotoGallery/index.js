@@ -8,16 +8,18 @@ import styles from './style';
 
 let PhotoGallery = ({ classes, photos }) => {
 	return (
-		<div className={classes.top}>
-			<Card className={classes.card}>
-				<GridList cellHeight={200} className={classes.gridList} cols={3}>
-					{photos.map(tile => (
-						<GridListTile key={tile.photoUrl}>
-							<img src={tile.photoUrl} />
-						</GridListTile>
-					))}
-				</GridList>
-			</Card>
+		<div>
+			<div className={classes.top}>
+				<Card className={classes.card}>
+					<GridList cellHeight={200} className={classes.gridList} cols={3}>
+						{photos.map(tile => (
+							<GridListTile key={tile.photoUrl}>
+								<img src={tile.photoUrl} />
+							</GridListTile>
+						))}
+					</GridList>
+				</Card>
+			</div>
 		</div>
 	);
 };

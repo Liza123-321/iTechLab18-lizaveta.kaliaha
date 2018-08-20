@@ -20,37 +20,52 @@ let FilmInfo = ({
 	filmCountry,
 	filmProducer,
 	filmRating,
+	videoUrl,
 }) => {
 	return (
-		<div className={classes.top}>
-			<Card className={classes.card}>
-				<div className={classes.title}>{filmName}</div>
-				<div className={classes.description}>
-					<img src={filmPoster} className={classes.media} />
-					<div className={classes.textPadding}>
-						<div className={classes.text_pink}>
-							Год:
-							{filmYear}{' '}
-						</div>
-						<hr />
-						<div className={classes.text_pink}>Страна: {filmCountry}</div>
-						<hr />
-						<div className={classes.text_pink}>Режисер: {filmProducer}</div>
-						<hr />
-						<div className={classes.text}>{filmDescription}</div>
-						<hr />
-						<div className={classes.stars}>
-							<ReactStars
-								count={5}
-								value={filmRating / 2}
-								size={40}
-								color2={'#ffd700'}
-							/>
+		<div>
+			<div className={classes.top}>
+				<Card className={classes.card}>
+					<div className={classes.title}>{filmName}</div>
+					<div className={classes.description}>
+						<img src={filmPoster} className={classes.media} />
+						<div className={classes.textPadding}>
+							<div className={classes.text_pink}>
+								Год:
+								{filmYear}{' '}
+							</div>
+							<hr />
+							<div className={classes.text_pink}>Страна: {filmCountry}</div>
+							<hr />
+							<div className={classes.text_pink}>Режисер: {filmProducer}</div>
+							<hr />
+							<div className={classes.text}>{filmDescription}</div>
+							<hr />
+							<div className={classes.stars}>
+								<ReactStars
+									count={5}
+									value={filmRating / 2}
+									size={40}
+									color2={'#ffd700'}
+								/>
+							</div>
 						</div>
 					</div>
-				</div>
-				<br />
-			</Card>
+					<br />
+				</Card>
+			</div>
+			<div className={classes.top}>
+				<Card className={classes.card}>
+					<iframe
+						width="850"
+						height="540"
+						src={videoUrl}
+						frameBorder="0"
+						allow="autoplay; encrypted-media"
+						allowFullScreen
+					/>
+				</Card>
+			</div>
 		</div>
 	);
 };
