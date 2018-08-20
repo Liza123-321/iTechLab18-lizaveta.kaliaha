@@ -8,7 +8,7 @@ export function validateField(fieldName, value) {
 			fieldValidationErrors.email = emailValid ? '' : ' Invalid email';
 			break;
 		case 'password':
-			passwordValid = value.length >= 6;
+			passwordValid = value.length >= 5;
 			fieldValidationErrors.password = passwordValid
 				? ''
 				: 'Password is to short';

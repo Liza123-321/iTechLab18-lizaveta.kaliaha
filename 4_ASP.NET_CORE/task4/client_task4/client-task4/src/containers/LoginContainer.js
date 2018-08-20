@@ -29,8 +29,25 @@ class LoginContainer extends React.Component {
 	};
 
 	loginClick() {
+		let config = {
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		};
+		let self = this;
+		let user = JSON.stringify({
+			email: self.state.email,
+			password: self.state.password,
+		});
 		console.log('login');
-		axios.post(`https://localhost:5001/api/user/login`).then(function(res) {});
+		axios
+			.post(`https://localhost:5001/api/user/login`, user, config)
+			.then(function(res) {
+				if (res.data) {
+					alert('Success autorize');
+					sessionStorage.setItem('jwt_token', res.data.access_token);
+				}
+			});
 	}
 
 	render() {

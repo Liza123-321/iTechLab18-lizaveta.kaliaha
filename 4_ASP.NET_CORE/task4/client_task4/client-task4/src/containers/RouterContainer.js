@@ -12,6 +12,7 @@ import NotFound from '../views/NotFound/index';
 import Login from './LoginContainer';
 import Register from './RegisterContainer';
 import FilmsContainer from './FilmsContainer';
+import LogOutContainer from './LogOutContainer';
 import FilmContainer from './FilmContainer';
 
 const VIRTUAL_PATH = '/React_task1';
@@ -22,6 +23,10 @@ const pathNameTab = [
 	},
 	{
 		pathName: '/React_task1/login',
+		activeTabValue: 1,
+	},
+	{
+		pathName: '/React_task1/logout',
 		activeTabValue: 1,
 	},
 	{
@@ -38,11 +43,13 @@ class RouterContainer extends React.Component {
 			login: 'anon',
 			password: 'anon',
 			viewToolbar: true,
+			isAuth: sessionStorage.getItem('jwt_token') != null,
 		};
 	}
 
 	handleChange = (event, value) => {
 		this.setState({ activeTabValue: value });
+		this.setState({ isAuth: sessionStorage.getItem('jwt_token') != null });
 	};
 
 	componentWillMount() {
@@ -63,13 +70,19 @@ class RouterContainer extends React.Component {
 						login={this.state.login}
 						password={this.state.password}
 						viewToolbar={this.state.viewToolbar}
+						isAuth={this.state.isAuth}
 					/>
 					<Switch>
 						<Route exact path={VIRTUAL_PATH + '/'} component={null} />
 						<Route path={VIRTUAL_PATH + '/film/'} component={FilmContainer} />
 						<Route path={VIRTUAL_PATH + '/films'} component={FilmsContainer} />
 						<Route path={VIRTUAL_PATH + '/register'} component={Register} />
+						<Route
+							path={VIRTUAL_PATH + '/logout'}
+							component={LogOutContainer}
+						/>
 						<Route path={VIRTUAL_PATH + '/login'} component={Login} />
+
 						<Route path={VIRTUAL_PATH + '/404'} component={NotFound} />
 						<Route
 							path={VIRTUAL_PATH + '/*'}

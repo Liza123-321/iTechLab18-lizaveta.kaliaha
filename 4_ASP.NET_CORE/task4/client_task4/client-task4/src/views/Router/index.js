@@ -8,7 +8,13 @@ import styles from './style';
 import { withStyles } from '@material-ui/core/styles/index';
 import PropTypes from 'prop-types';
 
-let MyRouter = ({ handleChange, activeTabValue, classes, viewToolbar }) => {
+let MyRouter = ({
+	handleChange,
+	activeTabValue,
+	classes,
+	viewToolbar,
+	isAuth,
+}) => {
 	const VIRTUAL_PATH = '/React_task1';
 	return (
 		<div>
@@ -21,11 +27,20 @@ let MyRouter = ({ handleChange, activeTabValue, classes, viewToolbar }) => {
 								component={Link}
 								to={VIRTUAL_PATH + '/films'}
 							/>
-							<Tab
-								label="Login"
-								component={Link}
-								to={VIRTUAL_PATH + '/login'}
-							/>
+							{isAuth == false && (
+								<Tab
+									label="Login"
+									component={Link}
+									to={VIRTUAL_PATH + '/login'}
+								/>
+							)}
+							{isAuth != false && (
+								<Tab
+									label="LogOut"
+									component={Link}
+									to={VIRTUAL_PATH + '/logout'}
+								/>
+							)}
 						</Tabs>
 					</Toolbar>
 				</AppBar>

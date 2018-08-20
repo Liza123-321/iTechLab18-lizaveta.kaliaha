@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 
 namespace server_task4.Models
 {
-    public class UserModel
+    public class RegisterDTO
     {
         public string Email { get; set; }
         public string Password { get; set; }
+        public string ConfirmPassword { get; set; }
     }
 }
