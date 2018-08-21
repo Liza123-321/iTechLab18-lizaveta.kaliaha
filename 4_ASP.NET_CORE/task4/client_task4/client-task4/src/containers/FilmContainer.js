@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import PhotoGalleryContainer from './PhotoGalleryContainer';
 
 import AddCommentContainer from './AddCommentContainer';
+import CommentsContainer from './CommentsContainer';
 
 class FilmContainer extends React.Component {
 	constructor(props) {
@@ -20,7 +21,6 @@ class FilmContainer extends React.Component {
 		axios
 			.get(`https://localhost:5001/api/film/` + self.state.id)
 			.then(function(res) {
-				console.log(res.data);
 				self.setState({ filmData: res.data });
 			});
 	}

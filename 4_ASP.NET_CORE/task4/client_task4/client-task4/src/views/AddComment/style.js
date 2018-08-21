@@ -16,9 +16,20 @@ const styles = theme => ({
 		justifyContent: 'center',
 		display: 'flex',
 	},
+	textField: {
+		marginLeft: theme.spacing.unit,
+		marginRight: theme.spacing.unit,
+		marginBottom: 20,
+		width: 450,
+	},
 	button: {
 		margin: theme.spacing.unit,
 		maxHeight: 30,
+		marginTop: 25,
+		width: 100,
+	},
+	send: {
+		marginLeft: 10,
 	},
 	card: {
 		marginTop: 10,

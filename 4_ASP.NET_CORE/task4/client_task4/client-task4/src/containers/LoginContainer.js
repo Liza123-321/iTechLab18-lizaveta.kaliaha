@@ -39,7 +39,6 @@ class LoginContainer extends React.Component {
 			email: self.state.email,
 			password: self.state.password,
 		});
-		console.log('login');
 		axios
 			.post(`https://localhost:5001/api/user/login`, user, config)
 			.then(function(res) {

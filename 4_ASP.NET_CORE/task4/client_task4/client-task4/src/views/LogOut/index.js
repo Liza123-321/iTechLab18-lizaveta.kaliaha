@@ -22,15 +22,19 @@ let LogOut = ({ classes, logOut }) => {
 					color="secondary"
 					className={classes.loginButton}
 					onClick={logOut}
+					component={Link}
+					to={'/login'}
 				>
-					<Link to={'/login'}> Yes</Link>
+					Yes
 				</Button>{' '}
 				<Button
 					variant="raised"
 					color="secondary"
 					className={classes.loginButton}
+					component={Link}
+					to={'/films'}
 				>
-					<Link to={'/films'}>No</Link>
+					No
 				</Button>
 				<br />
 			</Card>

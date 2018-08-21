@@ -35,7 +35,6 @@ namespace server_task4.Controllers
         {
             return await _userService.GetAllUsers();
         }
-
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody]User user)
         {

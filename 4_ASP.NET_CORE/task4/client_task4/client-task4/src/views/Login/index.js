@@ -64,8 +64,14 @@ let Login = ({
 						Login
 					</Button>
 					<br />
-					<Button variant="raised" color="primary" className={classes.button}>
-						<Link to={'/register'}> Register</Link>
+					<Button
+						variant="raised"
+						color="primary"
+						className={classes.button}
+						component={Link}
+						to={'/register'}
+					>
+						Register
 					</Button>
 				</Card>
 			</form>

@@ -14,14 +14,18 @@ namespace server_task4.Services
     {
         private dbContext db;
         private readonly IMapper _mapper;
-        public CommentsService(dbContext comments, IMapper mapper)
+        private readonly IUserService _userService;
+        public CommentsService(dbContext comments, IMapper mapper, IUserService userService)
         {
             this._mapper = mapper;
             this.db = comments;
+            this._userService = userService;
         }
-        public async Task<CommentDTO> AddComment(int filmId)
+        public async Task<CommentDTO> AddComment(Comment comment)
         {
-            throw new NotImplementedException();
+            db.Comments.Add(comment);
+            await db.SaveChangesAsync();
+            return _mapper.Map<Comment, CommentDTO>(comment);
         }
 
         public Task<CommentDTO> DeleteCommentById(int id)
@@ -34,9 +38,15 @@ namespace server_task4.Services
             return _mapper.Map<List<Comment>, List<CommentDTO>>(await db.Comments.ToListAsync());
         }
 
-        public async Task<List<CommentDTO>> GetCommentsByFilmId(int id)
+        public async Task<List<CommentWithEmailDTO>> GetCommentsByFilmId(int id)
         {
-            return _mapper.Map<List<Comment>, List<CommentDTO>>(await(db.Comments.Where(x => x.FilmId == id).ToListAsync()));
+            var comments = _mapper.Map<List<Comment>, List<CommentDTO>>(await (db.Comments.Where(x => x.FilmId == id).ToListAsync()));
+            List<CommentWithEmailDTO> commentsWithEmail = new List<CommentWithEmailDTO>();
+            for(int i = 0; i < comments.Count; i++)
+            {
+                commentsWithEmail.Add(new CommentWithEmailDTO { CommentMessage = comments[i].CommentMessage, Data = comments[i].Data, UserName = await _userService.GetEmailById(comments[i].UserId) });
+            }
+            return commentsWithEmail;
         }
     }
 }

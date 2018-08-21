@@ -25,8 +25,14 @@ let Film = ({ classes, filmPoster, filmName, filmId, filmRating }) => {
 				/>
 			</div>
 			<br />
-			<Button variant="raised" color="secondary" className={classes.button}>
-				<Link to={'/film/' + filmId}> Подробно </Link>
+			<Button
+				variant="raised"
+				color="secondary"
+				className={classes.button}
+				component={Link}
+				to={'/film/' + filmId}
+			>
+				Подробно
 			</Button>
 		</Card>
 	);

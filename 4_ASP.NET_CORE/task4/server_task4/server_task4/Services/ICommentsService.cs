@@ -1,4 +1,5 @@
-﻿using server_task4.Models;
+﻿using server_task4.DAL.Models;
+using server_task4.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,8 @@ namespace server_task4.Services
     public interface ICommentsService
     {
         Task<List<CommentDTO>> GetAllComments();
-        Task<List<CommentDTO>> GetCommentsByFilmId(int id);
+        Task<List<CommentWithEmailDTO>> GetCommentsByFilmId(int id);
         Task<CommentDTO> DeleteCommentById(int id);
-        Task<CommentDTO> AddComment(int filmId);
+        Task<CommentDTO> AddComment(Comment comment);
     }
 }

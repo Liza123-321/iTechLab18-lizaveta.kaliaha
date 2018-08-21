@@ -38,10 +38,10 @@ namespace server_task4.DAL.Initializer
             );
 
             modelBuilder.Entity<Comment>().HasData(
-                new Comment { Id = 1, CommentMessage="some comment message",UserId=1, FilmId = 1 },
-                 new Comment { Id = 2, CommentMessage = "testing films", UserId = 2, FilmId = 1 },
-                 new Comment { Id = 3, CommentMessage = "some comment message", UserId = 1, FilmId = 2 },
-                 new Comment { Id = 4, CommentMessage = "some comment message", UserId = 1, FilmId = 3 }
+                new Comment { Id = 1, CommentMessage="some comment message",UserId=1, FilmId = 1, Data= "19/06/2015 17:35:50" },
+                 new Comment { Id = 2, CommentMessage = "testing films", UserId = 2, FilmId = 1,Data= "19/07/2015 19:35:50" },
+                 new Comment { Id = 3, CommentMessage = "some comment message", UserId = 1, FilmId = 2 , Data = "19/07/2015 19:35:50" },
+                 new Comment { Id = 4, CommentMessage = "some comment message", UserId = 1, FilmId = 3, Data = "19/07/2015 19:35:50" }
 
                 );
 

@@ -15,6 +15,8 @@ namespace server_task4.Services
         Task<User> RegisterUser(User user);
         Task<User> UpdateUser(User user);
         Task<User> DeleteUser(int id);
+        Task<string> GetEmailById(int id);
+        Task<int> GetIdByEmail(string email);
         Task<Object> LoginUser(User user);
     }
 }

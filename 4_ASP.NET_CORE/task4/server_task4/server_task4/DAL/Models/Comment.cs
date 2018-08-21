@@ -13,5 +13,6 @@ namespace server_task4.DAL.Models
         public int FilmId { get; set; }
         public User User { get; set; }
         public int UserId { get; set; }
+        public string Data { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using server_task4.DAL.Models;
 using server_task4.Models;
 using server_task4.Services;
 using System;
@@ -25,9 +27,19 @@ namespace server_task4.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<List<CommentDTO>> Get(int id)
+        public async Task<List<CommentWithEmailDTO>> Get(int id)
         {
             return await _commentsService.GetCommentsByFilmId(id);
+        }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> AddComment([FromBody]Comment comment)
+        {
+            //return Ok($"Ваш логин: {User.Identity.Name}");
+            var myComment = await _commentsService.AddComment(comment);
+            if (myComment == null) return BadRequest(new { message = "BadRequest" });
+            return Ok(myComment);
+
         }
     }
 }

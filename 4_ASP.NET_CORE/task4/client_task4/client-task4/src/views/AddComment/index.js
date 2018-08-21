@@ -4,22 +4,66 @@ import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles/index';
 import Card from '@material-ui/core/Card';
 import '../../App.css';
-import Avatar from '@material-ui/core/Avatar';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import ReactStars from 'react-stars';
-import Typography from '@material-ui/core/Typography';
+import Send from '@material-ui/icons/Send';
 import styles from './style';
 
-let AddComment = ({ classes, message, userId }) => {
+let AddComment = ({
+	classes,
+	commentMessage,
+	addComment,
+	handleUserInput,
+	isAuth,
+}) => {
 	return (
-		<div className={classes.top}>
-			<div className={classes.card}>
-				<Button variant="raised" color="secondary" className={classes.button}>
-					<Link to={'/films'}> Назад </Link>
-				</Button>
+		<div>
+			{isAuth != false && (
+				<div className={classes.top}>
+					<Card className={classes.card}>
+						<TextField
+							label="comment"
+							id="commentMessage"
+							type="text"
+							className={classes.textField}
+							margin="normal"
+							value={commentMessage}
+							onChange={handleUserInput}
+						/>
+						<Button
+							variant="raised"
+							color="secondary"
+							className={classes.button}
+							onClick={addComment}
+						>
+							Send <Send className={classes.send} />
+						</Button>
+					</Card>
+				</div>
+			)}
+			<div className={classes.top}>
+				<div className={classes.card}>
+					{isAuth == false && (
+						<Button
+							variant="raised"
+							color="primary"
+							component={Link}
+							to={'/login'}
+							className={classes.button}
+							onClick={addComment}
+						>
+							Login
+						</Button>
+					)}
+					<Button
+						variant="raised"
+						color="secondary"
+						className={classes.button}
+						component={Link}
+						to={'/films'}
+					>
+						Back
+					</Button>
+				</div>
 			</div>
 		</div>
 	);

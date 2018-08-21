@@ -97,6 +97,21 @@ namespace server_task4.Services
             await db.SaveChangesAsync();
             return user;
         }
+
+      public async Task<string> GetEmailById(int id)
+        {
+            User user = await GetUserById(id);
+            if (user != null) return user.Email;
+            else return null;
+        }
+
+
+        public async Task<int> GetIdByEmail(string email)
+        {
+            User user = await db.Users.FirstOrDefaultAsync(x => x.Email == email);
+            if (user != null) return user.Id;
+            else return 0;
+        }
         private ClaimsIdentity GetIdentity(string email, string password)
         {
             User user = db.Users.FirstOrDefault(x => x.Email == email && x.Password == password);
