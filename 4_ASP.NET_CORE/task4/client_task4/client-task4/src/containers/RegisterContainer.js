@@ -9,14 +9,20 @@ class RegisterContainer extends React.Component {
 		this.handleUserInput = this.handleUserInput.bind(this);
 		this.validateField = validateField.bind(this);
 		this.validateForm = validateForm.bind(this);
-		this.loginClick = this.loginClick.bind(this);
+		this.registerClick = this.registerClick.bind(this);
 		this.state = {
 			email: '',
 			password: '',
-			formErrors: { email: 'Invalid email', password: 'Password is to short' },
+			confirm: '',
+			formErrors: {
+				email: 'Invalid email',
+				password: 'Password is to short',
+				confirm: 'Password != confirm Password',
+			},
 			emailValid: false,
 			passwordValid: false,
 			formValid: false,
+			confirmValid: false,
 		};
 	}
 
@@ -28,9 +34,19 @@ class RegisterContainer extends React.Component {
 		});
 	};
 
-	loginClick() {
-		console.log('login');
-		axios.post(`https://localhost:5001/api/user/login`).then(function(res) {});
+	registerClick() {
+		let self = this;
+		axios
+			.post(`https://localhost:5001/api/user/register`, {
+				email: self.state.email,
+				password: self.state.password,
+			})
+			.then(function(res) {
+				console.log(res);
+				if (res.data) {
+					alert('Success register');
+				}
+			});
 	}
 
 	render() {
@@ -38,10 +54,11 @@ class RegisterContainer extends React.Component {
 			<Register
 				email={this.state.email}
 				password={this.state.password}
+				confirm={this.state.confirm}
 				handleUserInput={this.handleUserInput}
 				formErrors={this.state.formErrors}
 				formValid={this.state.formValid}
-				loginClick={this.loginClick}
+				registerClick={this.registerClick}
 			/>
 		);
 	}

@@ -35,7 +35,7 @@ class AddCommentContainer extends React.Component {
 					`https://localhost:5001/api/comments/`,
 					{
 						commentMessage: self.state.commentMessage,
-						userId: 1,
+						userId: 0,
 						filmId: self.props.id,
 						data:
 							now.getDate() +

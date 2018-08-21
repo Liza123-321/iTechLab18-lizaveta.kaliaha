@@ -12,6 +12,6 @@ namespace server_task4.Services
         Task<List<CommentDTO>> GetAllComments();
         Task<List<CommentWithEmailDTO>> GetCommentsByFilmId(int id);
         Task<CommentDTO> DeleteCommentById(int id);
-        Task<CommentDTO> AddComment(Comment comment);
+        Task<CommentDTO> AddComment(Comment comment, string name);
     }
 }

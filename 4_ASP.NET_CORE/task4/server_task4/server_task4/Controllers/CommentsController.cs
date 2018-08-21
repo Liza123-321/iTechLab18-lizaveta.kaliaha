@@ -35,8 +35,7 @@ namespace server_task4.Controllers
         [HttpPost]
         public async Task<IActionResult> AddComment([FromBody]Comment comment)
         {
-            //return Ok($"Ваш логин: {User.Identity.Name}");
-            var myComment = await _commentsService.AddComment(comment);
+            var myComment = await _commentsService.AddComment(comment, User.Identity.Name);
             if (myComment == null) return BadRequest(new { message = "BadRequest" });
             return Ok(myComment);
 

@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using server_task4.DAL.Models;
+using server_task4.Models;
 using server_task4.Services;
 using System;
 using System.Collections.Generic;
@@ -18,9 +20,11 @@ namespace server_task4.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-        public UserController(IUserService userService)
+        private readonly IMapper _mapper;
+        public UserController(IUserService userService, IMapper mapper)
         {
             this._userService = userService;
+            this._mapper = mapper;
         }
 
         [HttpPost("login")]
@@ -36,7 +40,7 @@ namespace server_task4.Controllers
             return await _userService.GetAllUsers();
         }
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody]User user)
+        public async Task<IActionResult> Register([FromBody]LoginDTO user)
         {
             var myUser = await _userService.RegisterUser(user);
             if (myUser == null) return BadRequest(new { message = "This email used by other user" });

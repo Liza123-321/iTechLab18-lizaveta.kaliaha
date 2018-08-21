@@ -6,6 +6,7 @@ import Card from '@material-ui/core/Card';
 import AuthIcon from '@material-ui/icons/Person';
 import EmailError from '../Errors/EmailError';
 import PasswordError from '../Errors/PasswordError';
+import ConfirmPasswordError from '../Errors/ConfirmPasswordError';
 import styles from './style';
 import PropTypes from 'prop-types';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -17,7 +18,7 @@ let Register = ({
 	handleUserInput,
 	formErrors,
 	formValid,
-	loginClick,
+	registerClick,
 }) => {
 	return (
 		<div>
@@ -34,6 +35,8 @@ let Register = ({
 						onChange={handleUserInput}
 					/>
 					<br />
+					{formErrors.email.length > 0 && <EmailError />}
+					<br />
 
 					<TextField
 						id="password"
@@ -44,9 +47,10 @@ let Register = ({
 						value={password}
 						onChange={handleUserInput}
 					/>
-
+					{formErrors.password.length > 0 && <PasswordError />}
+					<br />
 					<TextField
-						id="confirmPassword"
+						id="confirm"
 						label="Confirm Password"
 						type="password"
 						className={classes.textField}
@@ -54,12 +58,13 @@ let Register = ({
 						onChange={handleUserInput}
 					/>
 					<br />
-
+					{formErrors.confirm.length > 0 && <ConfirmPasswordError />}
 					<br />
 					<Button
 						variant="raised"
 						color="primary"
-						onClick={loginClick}
+						onClick={registerClick}
+						disabled={!formValid}
 						className={classes.button}
 					>
 						Register

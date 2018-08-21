@@ -26285,3 +26285,624 @@ System.Collections.Generic.List`1[[server_task4.DAL.Models.Comment, server_task4
 2018-08-21 16:08:24,606 [96] INFO  App  
  GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
  
+2018-08-21 16:09:04,792 [85] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:20,259 [77] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:09:20,259 [79] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:09:20,291 [82] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:24,506 [79] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:25,821 [83] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:25,831 [78] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:09:25,861 [78] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:09:30,958 [78] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:32,050 [83] INFO  App  
+ GET /api/photogalery/5 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:09:32,055 [78] INFO  App  
+ GET /api/film/5 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:32,056 [80] INFO  App  
+ GET /api/comments/5 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:09:33,451 [83] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:34,759 [83] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:34,767 [79] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:09:34,828 [81] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:09:40,576 [81] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:42,891 [79] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:45,831 [79] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:47,216 [82] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:09:47,247 [79] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:09:47,273 [81] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:09:49,559 [81] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:14:55,223 [63] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:14:56,700 [68] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:14:56,727 [68] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:14:56,744 [58] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:15:05,040 [68] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: server_task4.Controllers.UserController.Token (server_task4) 
+ 
+2018-08-21 16:15:07,027 [55] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:15:08,238 [55] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:15:08,249 [55] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:15:08,287 [58] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:15:10,842 [61] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: server_task4.Controllers.CommentsController.AddComment (server_task4) 
+ 
+2018-08-21 16:15:10,850 [61] ERROR App  
+ Exception: An error occurred while updating the entries. See the inner exception for details. Microsoft.EntityFrameworkCore.Relational  
+ 
+2018-08-21 16:15:27,024 [55] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:15:27,056 [55] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:15:27,222 [59] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:21:45,604 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:21:47,167 [9] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:21:47,361 [13] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:21:47,411 [8] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:22:01,685 [10] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: server_task4.Controllers.UserController.Token (server_task4) 
+ 
+2018-08-21 16:22:03,403 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:22:04,609 [7] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:22:04,615 [9] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:22:04,667 [13] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:22:07,716 [9] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: server_task4.Controllers.CommentsController.AddComment (server_task4) 
+ 
+2018-08-21 16:22:09,107 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:22:10,270 [8] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:22:10,284 [16] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:22:10,324 [17] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:22:19,050 [19] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:22:28,804 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:22:30,166 [7] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:22:30,166 [8] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:22:30,233 [16] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:22:32,287 [7] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: server_task4.Controllers.CommentsController.AddComment (server_task4) 
+ 
+2018-08-21 16:22:33,780 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:22:34,706 [9] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:22:34,706 [7] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:22:34,752 [8] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:22:37,490 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:31:48,225 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:32:16,964 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:32:18,786 [13] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:32:19,006 [9] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:32:19,068 [10] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:32:26,821 [8] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: server_task4.Controllers.UserController.Token (server_task4) 
+ 
+2018-08-21 16:32:28,414 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:32:29,768 [13] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:32:29,771 [8] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:32:29,778 [15] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:32:35,034 [13] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: server_task4.Controllers.CommentsController.AddComment (server_task4) 
+ 
+2018-08-21 16:32:37,384 [15] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:32:38,349 [18] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:32:38,350 [13] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:32:38,374 [8] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:33:24,243 [21] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:33:27,068 [21] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:33:28,254 [20] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:33:28,290 [13] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:33:28,319 [20] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:33:35,667 [26] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:33:36,612 [25] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:33:36,615 [25] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:33:36,636 [25] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:33:40,758 [25] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:33:49,565 [21] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:33:49,578 [25] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:33:49,617 [20] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:39:31,959 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:41:46,819 [22] INFO  App  
+ POST /api/user/register HTTP/1.1 Action: server_task4.Controllers.UserController.Register (server_task4) 
+ 
+2018-08-21 16:42:05,684 [22] INFO  App  
+ POST /api/user/register HTTP/1.1 Action: server_task4.Controllers.UserController.Register (server_task4) 
+ 
+2018-08-21 16:42:22,734 [22] INFO  App  
+ POST /api/user/register HTTP/1.1 Action: server_task4.Controllers.UserController.Register (server_task4) 
+ 
+2018-08-21 16:43:05,559 [20] INFO  App  
+ GET /api/user/ HTTP/1.1 Action: server_task4.Controllers.UserController.Get (server_task4) 
+ 
+2018-08-21 16:43:14,100 [32] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:43:27,349 [21] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: server_task4.Controllers.UserController.Token (server_task4) 
+ 
+2018-08-21 16:43:29,361 [34] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:43:30,564 [35] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:43:30,778 [34] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:43:30,829 [20] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:43:34,397 [32] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: server_task4.Controllers.CommentsController.AddComment (server_task4) 
+ 
+2018-08-21 16:43:35,201 [32] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:43:36,567 [22] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:43:36,569 [36] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:43:36,597 [35] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:43:46,257 [22] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:44:37,822 [40] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:44:37,823 [38] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:44:37,835 [41] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:44:40,478 [41] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:44:41,978 [48] INFO  App  
+ GET /api/photogalery/5 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:44:41,980 [41] INFO  App  
+ GET /api/comments/5 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:44:41,983 [38] INFO  App  
+ GET /api/film/5 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:44:44,043 [48] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:44:46,555 [38] INFO  App  
+ GET /api/film/4 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:44:46,556 [41] INFO  App  
+ GET /api/photogalery/4 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:44:46,557 [40] INFO  App  
+ GET /api/comments/4 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:44:52,126 [38] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: server_task4.Controllers.CommentsController.AddComment (server_task4) 
+ 
+2018-08-21 16:44:53,310 [46] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:44:54,516 [44] INFO  App  
+ GET /api/film/4 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:44:54,517 [38] INFO  App  
+ GET /api/photogalery/4 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:44:54,517 [46] INFO  App  
+ GET /api/comments/4 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:44:56,461 [46] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:44:59,092 [40] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:45:02,306 [44] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:45:03,997 [45] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:45:03,997 [40] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:45:04,050 [44] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:45:16,619 [47] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:45:18,494 [44] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:45:18,496 [41] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:45:18,541 [41] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:45:20,453 [48] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:45:56,091 [43] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:45:56,092 [51] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:45:56,147 [43] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:45:58,908 [43] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:46:26,873 [43] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:46:36,241 [51] INFO  App  
+ POST /api/user/register HTTP/1.1 Action: server_task4.Controllers.UserController.Register (server_task4) 
+ 
+2018-08-21 16:46:51,844 [51] INFO  App  
+ GET /api/user/ HTTP/1.1 Action: server_task4.Controllers.UserController.Get (server_task4) 
+ 
+2018-08-21 16:48:00,208 [58] INFO  App  
+ POST /api/user/register HTTP/1.1 Action: server_task4.Controllers.UserController.Register (server_task4) 
+ 
+2018-08-21 16:48:08,584 [55] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:48:11,219 [64] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:48:11,221 [65] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:48:11,271 [60] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:48:13,385 [64] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:13,389 [85] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:13,708 [86] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:15,477 [84] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:15,592 [84] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:55:15,628 [84] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:55:17,580 [84] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:18,952 [84] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:55:18,960 [87] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:18,997 [88] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:55:26,576 [88] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: server_task4.Controllers.UserController.Token (server_task4) 
+ 
+2018-08-21 16:55:30,111 [88] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:31,634 [85] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:55:31,663 [80] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:31,682 [84] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:55:41,539 [84] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: server_task4.Controllers.CommentsController.AddComment (server_task4) 
+ 
+2018-08-21 16:55:42,900 [88] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:43,783 [85] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:55:43,786 [88] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:43,803 [88] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:55:48,413 [85] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:55:54,536 [85] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:56:01,121 [85] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:56:02,664 [84] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:56:02,664 [80] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:56:02,714 [80] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:56:18,227 [80] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:56:20,712 [88] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:56:22,129 [88] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:56:22,131 [80] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:56:22,186 [79] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:56:26,510 [80] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:57:13,673 [93] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:57:13,673 [95] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:57:13,718 [95] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:57:22,063 [93] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: server_task4.Controllers.UserController.Token (server_task4) 
+ 
+2018-08-21 16:57:24,744 [93] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:57:27,261 [93] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:57:27,261 [94] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:57:27,516 [93] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:57:29,675 [93] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:58:19,005 [101] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:58:19,007 [93] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:58:19,045 [101] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:58:22,452 [101] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:58:24,732 [105] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:58:24,736 [93] INFO  App  
+ GET /api/photogalery/3 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:58:24,798 [105] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:58:33,183 [105] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:58:34,476 [106] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:58:34,486 [93] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:58:34,541 [101] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:58:40,487 [93] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:59:10,398 [93] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:59:10,404 [106] INFO  App  
+ GET /api/photogalery/1 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:59:10,434 [101] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:59:17,648 [93] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:59:19,013 [112] INFO  App  
+ GET /api/photogalery/2 HTTP/1.1 Action: server_task4.Controllers.PhotoGaleryController.Get (server_task4) 
+ 
+2018-08-21 16:59:19,022 [93] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 
+2018-08-21 16:59:19,059 [117] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: server_task4.Controllers.CommentsController.Get (server_task4) 
+ 
+2018-08-21 16:59:20,924 [106] INFO  App  
+ GET /api/film HTTP/1.1 Action: server_task4.Controllers.FilmController.Get (server_task4) 
+ 

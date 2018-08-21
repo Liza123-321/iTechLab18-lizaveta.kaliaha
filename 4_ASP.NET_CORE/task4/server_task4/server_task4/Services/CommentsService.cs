@@ -21,8 +21,9 @@ namespace server_task4.Services
             this.db = comments;
             this._userService = userService;
         }
-        public async Task<CommentDTO> AddComment(Comment comment)
+        public async Task<CommentDTO> AddComment(Comment comment,string name)
         {
+            comment.UserId =await _userService.GetIdByEmail(name);
             db.Comments.Add(comment);
             await db.SaveChangesAsync();
             return _mapper.Map<Comment, CommentDTO>(comment);

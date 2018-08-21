@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using server_task4.DAL.Context;
 using server_task4.DAL.Models;
+using server_task4.Models;
 
 namespace server_task4.Services
 {
@@ -45,13 +46,14 @@ namespace server_task4.Services
             return await db.Users.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<User> RegisterUser(User user)
+        public async Task<LoginDTO> RegisterUser(LoginDTO user)
         {
-            if(db.Users.Any(x => x.Email == user.Email))
+            if (db.Users.Any(x => x.Email == user.Email))
             {
                 return null;
             }
-            db.Users.Add(user);
+            User myUser = new User { Email = user.Email, Password = user.Password, Role = "user" };
+            db.Users.Add(myUser);
             await db.SaveChangesAsync();
             return user;
         }
