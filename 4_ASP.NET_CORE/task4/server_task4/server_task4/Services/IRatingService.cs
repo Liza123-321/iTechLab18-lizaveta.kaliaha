@@ -1,4 +1,5 @@
-﻿using server_task4.Models;
+﻿using server_task4.DAL.Models;
+using server_task4.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace server_task4.Services
         Task<List<RatingDTO>> GetRatingByUserId(int id);
         Task<RatingDTO> SetRating(RatingDTO rating,string name);
         Task<RatingDTO> UpdateRating(RatingDTO rating);
+        Task<RatingMark> GetRatingFromUserAndFilm(int userId, int filmId);
         Task<List<RatingDTO>> DeleteRatingByFilmId(int id);
         double GetAverageFilmRating(List<RatingDTO> ratings);
     }

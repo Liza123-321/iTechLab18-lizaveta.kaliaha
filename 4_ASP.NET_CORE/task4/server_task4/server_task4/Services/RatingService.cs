@@ -47,7 +47,10 @@ namespace server_task4.Services
             else return 0;
 
         }
-
+        public async Task<RatingMark> GetRatingFromUserAndFilm(int userId,int filmId)
+        {
+            return await (db.RatingMarks.FirstOrDefaultAsync(x => x.UserId == userId && x.FilmId==filmId));
+        }
         public async Task<List<RatingDTO>> GetRatingByUserId(int id)
         {
             return _mapper.Map<List<RatingMark>, List<RatingDTO>>(await (db.RatingMarks.Where(x => x.UserId == id).ToListAsync()));
@@ -56,6 +59,11 @@ namespace server_task4.Services
         public async Task<RatingDTO> SetRating(RatingDTO rating,string email)
         {
             rating.UserId = await _userService.GetIdByEmail(email);
+            var ratingMark = await GetRatingFromUserAndFilm(rating.UserId, rating.FilmId);
+            if (ratingMark!=null)
+            {
+                db.RatingMarks.Remove(ratingMark);
+            }
             db.RatingMarks.Add(new RatingMark { UserId=rating.UserId, FilmId=rating.FilmId, Mark=rating.Mark});
             await db.SaveChangesAsync();
             return rating;
