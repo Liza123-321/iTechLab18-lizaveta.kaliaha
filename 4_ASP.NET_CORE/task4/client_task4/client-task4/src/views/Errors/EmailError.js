@@ -4,7 +4,7 @@ import styles from './style';
 import PropTypes from 'prop-types';
 
 let EmailError = ({ classes }) => {
-	return <div className={classes.error}>Invalid email</div>;
+	return <div className={classes.error}>Невалидный email</div>;
 };
 EmailError.propTypes = {
 	classes: PropTypes.object.isRequired,

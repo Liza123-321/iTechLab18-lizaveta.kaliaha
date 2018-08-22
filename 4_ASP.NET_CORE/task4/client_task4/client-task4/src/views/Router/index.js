@@ -21,12 +21,12 @@ let MyRouter = ({
 				<AppBar position="static" className={classes.nav}>
 					<Toolbar className={classes.myNav}>
 						<Tabs value={activeTabValue} onChange={handleChange}>
-							<Tab label="Films" component={Link} to={'/films'} />
+							<Tab label="Фильмы" component={Link} to={'/films'} />
 							{isAuth === false && (
-								<Tab label="Login" component={Link} to={'/login'} />
+								<Tab label="Вход" component={Link} to={'/login'} />
 							)}
 							{isAuth !== false && (
-								<Tab label="LogOut" component={Link} to={'/logout'} />
+								<Tab label="Выход" component={Link} to={'/logout'} />
 							)}
 						</Tabs>
 					</Toolbar>

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace server_task4.Models
 {
-    public class PhotoGaleryDTO
+    public class PhotoGalleryDTO
     {
         public string Src { get; set; }
     }

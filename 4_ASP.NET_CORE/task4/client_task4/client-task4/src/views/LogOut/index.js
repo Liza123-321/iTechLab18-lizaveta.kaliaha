@@ -10,7 +10,7 @@ let LogOut = ({ classes, logOut }) => {
 	return (
 		<div>
 			<Card className={classes.card}>
-				<div className={classes.textLogin}>LogOut</div>
+				<div className={classes.textLogin}>Выход</div>
 				<br />
 				<Button
 					variant="raised"
@@ -20,7 +20,7 @@ let LogOut = ({ classes, logOut }) => {
 					component={Link}
 					to={'/login'}
 				>
-					Yes
+					Да
 				</Button>{' '}
 				<Button
 					variant="raised"
@@ -29,7 +29,7 @@ let LogOut = ({ classes, logOut }) => {
 					component={Link}
 					to={'/films'}
 				>
-					No
+					Нет
 				</Button>
 				<br />
 			</Card>

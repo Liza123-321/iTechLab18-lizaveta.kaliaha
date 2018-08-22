@@ -36,7 +36,8 @@ let AddComment = ({
 							className={classes.button}
 							onClick={addComment}
 						>
-							Send <Send className={classes.send} />
+							Отправить
+							<Send className={classes.send} />
 						</Button>
 					</Card>
 				</div>
@@ -52,7 +53,7 @@ let AddComment = ({
 							className={classes.button}
 							onClick={addComment}
 						>
-							Login
+							Вход
 						</Button>
 					)}
 					<Button
@@ -62,7 +63,7 @@ let AddComment = ({
 						component={Link}
 						to={'/films'}
 					>
-						Back
+						Назад
 					</Button>
 				</div>
 			</div>

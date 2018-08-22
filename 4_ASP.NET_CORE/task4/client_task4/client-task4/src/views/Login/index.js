@@ -23,7 +23,7 @@ let Login = ({
 		<div>
 			<form>
 				<Card className={classes.card}>
-					<div className={classes.textLogin}>Login</div>
+					<div className={classes.textLogin}>Вход</div>
 					<br />
 					<TextField
 						id="email"
@@ -38,7 +38,7 @@ let Login = ({
 
 					<TextField
 						id="password"
-						label="Password"
+						label="Пароль"
 						type="password"
 						className={classes.textField}
 						margin="normal"
@@ -50,7 +50,7 @@ let Login = ({
 
 					<div className={classes.text_gray}>
 						<Checkbox checked={true} value="Remember me" />
-						Remember me
+						Запомнить меня
 					</div>
 					<br />
 					<Button
@@ -60,7 +60,7 @@ let Login = ({
 						onClick={loginClick}
 						className={classes.loginButton}
 					>
-						Login
+						Вход
 					</Button>
 					<br />
 					<Button
@@ -70,7 +70,7 @@ let Login = ({
 						component={Link}
 						to={'/register'}
 					>
-						Register
+						Регистрация
 					</Button>
 				</Card>
 			</form>

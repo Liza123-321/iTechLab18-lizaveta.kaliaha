@@ -11,9 +11,11 @@ namespace server_task4.Services
     public class FilmService : IFilmService
     {
         private dbContext db;
-        public FilmService(dbContext films)
+        private readonly IRatingService _ratingService;
+        public FilmService(dbContext films, IRatingService ratingService)
         {
             this.db = films;
+            this._ratingService = ratingService;
         }
         public async Task<Film> CreateFilm(Film film)
         {
@@ -40,14 +42,27 @@ namespace server_task4.Services
 
         public async  Task<List<Film>> GetAllFilms()
         {
-            return await db.Films.ToListAsync();
+            return await SetFilmsRating( await db.Films.ToListAsync());
+        }
+
+        private async Task<List<Film>> SetFilmsRating(List<Film> films)
+        {
+            for(int i = 0; i < films.Count; i++)
+            {
+                films[i].AverageRating = _ratingService.GetAverageFilmRating(await _ratingService.GetRatingByFilmId(films[i].Id));
+            }
+            return films;
         }
 
         public async Task<Film> GetFilmById(int id)
         {
-            return await db.Films.FirstOrDefaultAsync(x => x.Id == id);
+            return await SetFilmRating(await db.Films.FirstOrDefaultAsync(x => x.Id == id));
         }
-
+        private async Task<Film> SetFilmRating(Film film)
+        {
+            film.AverageRating = _ratingService.GetAverageFilmRating(await _ratingService.GetRatingByFilmId(film.Id));
+            return film;
+        }
         public async Task<Film> UpdateFilm(Film film)
         {
             if (!db.Films.Any(x => x.Id == film.Id))

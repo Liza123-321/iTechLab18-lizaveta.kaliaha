@@ -4,7 +4,9 @@ import styles from './style';
 import PropTypes from 'prop-types';
 
 export let ConfirmPasswordError = ({ classes }) => {
-	return <div className={classes.error}>Password != confirm Password</div>;
+	return (
+		<div className={classes.error}>Пароль не совпадает с подтверждением</div>
+	);
 };
 ConfirmPasswordError.propTypes = {
 	classes: PropTypes.object.isRequired,

@@ -11,24 +11,24 @@ namespace server_task4.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PhotoGaleryController : ControllerBase
+    public class PhotoGalleryController : ControllerBase
     {
-        private readonly IPhotoGaleryService _photosService;
-        public PhotoGaleryController(IPhotoGaleryService photosService)
+        private readonly IPhotoGalleryService _photosService;
+        public PhotoGalleryController(IPhotoGalleryService photosService)
         {
             this._photosService = photosService;
         }
 
         [HttpGet]
-        public async Task<List<PhotoGaleryDTO>> Get()
+        public async Task<List<PhotoGalleryDTO>> Get()
         {
-            return await _photosService.GetAllPhotosGalery();
+            return await _photosService.GetAllPhotosGallery();
         }
 
         [HttpGet("{id}")]
-        public async Task<List<PhotoGaleryDTO>> Get(int id)
+        public async Task<List<PhotoGalleryDTO>> Get(int id)
         {
-            return await _photosService.GetGaleryByFilmId(id);
+            return await _photosService.GetGalleryByFilmId(id);
         }
     }
 }

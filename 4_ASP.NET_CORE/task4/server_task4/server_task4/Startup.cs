@@ -66,7 +66,8 @@ namespace server_task4
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IFilmService, FilmService>();
             services.AddTransient<ICommentsService, CommentsService>();
-            services.AddTransient<IPhotoGaleryService, PhotoGaleryService>();
+            services.AddTransient<IRatingService, RatingService>();
+            services.AddTransient<IPhotoGalleryService, PhotoGalleryService>();
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(LogActionAttribute));

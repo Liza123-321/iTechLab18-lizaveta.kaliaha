@@ -22,7 +22,7 @@ let Register = ({
 		<div>
 			<form>
 				<Card className={classes.card}>
-					<div className={classes.textLogin}>Register</div>
+					<div className={classes.textLogin}>Регистрация</div>
 					<br />
 					<TextField
 						id="email"
@@ -38,7 +38,7 @@ let Register = ({
 
 					<TextField
 						id="password"
-						label="Password"
+						label="Пароль"
 						type="password"
 						className={classes.textField}
 						margin="normal"
@@ -49,7 +49,7 @@ let Register = ({
 					<br />
 					<TextField
 						id="confirm"
-						label="Confirm Password"
+						label="Подтверждение пароля"
 						type="password"
 						className={classes.textField}
 						margin="normal"
@@ -65,7 +65,7 @@ let Register = ({
 						disabled={!formValid}
 						className={classes.button}
 					>
-						Register
+						Регистрация
 					</Button>
 				</Card>
 			</form>

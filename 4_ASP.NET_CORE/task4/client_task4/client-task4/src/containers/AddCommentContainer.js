@@ -4,6 +4,7 @@ import axios from 'axios';
 import '../App.css';
 import CommentsContainer from './CommentsContainer';
 import PropTypes from 'prop-types';
+import Card from '@material-ui/core/Card';
 
 class AddCommentContainer extends React.Component {
 	constructor(props) {
@@ -13,6 +14,7 @@ class AddCommentContainer extends React.Component {
 		this.state = {
 			id: this.props.id,
 			commentMessage: '',
+			comments: [],
 			isAuth: sessionStorage.getItem('jwt_token') !== null,
 		};
 	}
@@ -21,6 +23,15 @@ class AddCommentContainer extends React.Component {
 		const value = e.target.value;
 		this.setState({ [name]: value });
 	};
+
+	componentDidMount() {
+		let self = this;
+		axios
+			.get(`https://localhost:5001/api/comments/` + self.state.id)
+			.then(function(res) {
+				self.setState({ comments: res.data });
+			});
+	}
 	addComment() {
 		let now = new Date();
 		let self = this;
@@ -29,12 +40,14 @@ class AddCommentContainer extends React.Component {
 				Authorization: 'Bearer ' + sessionStorage.getItem('jwt_token'),
 			},
 		};
+		let commentMsg = self.state.commentMessage;
+		this.setState({ commentMessage: '' });
 		if (self.state.commentMessage.length !== 0) {
 			axios
 				.post(
 					`https://localhost:5001/api/comments/`,
 					{
-						commentMessage: self.state.commentMessage,
+						commentMessage: commentMsg,
 						userId: 0,
 						filmId: self.props.id,
 						data:
@@ -46,27 +59,38 @@ class AddCommentContainer extends React.Component {
 							' ' +
 							now.getHours() +
 							':' +
-							now.getSeconds() +
+							now.getMinutes() +
 							':' +
-							now.getMilliseconds(),
+							now.getSeconds(),
 					},
 					config
 				)
-				.then(function(res) {
-					self.setState({ commentMessage: '' });
-				})
 				.catch(res => {
 					alert(res.toString());
+					sessionStorage.removeItem('jwt_token');
+				})
+				.then(function() {
+					axios
+						.get(`https://localhost:5001/api/comments/` + self.state.id)
+						.then(function(res) {
+							console.log(res.data);
+							self.setState({ comments: res.data });
+						});
 				});
 		}
 	}
 	render() {
 		return (
 			<div>
-				<CommentsContainer id={this.state.id} />
+				<Card className="card">
+					<CommentsContainer
+						id={this.state.id}
+						comments={this.state.comments}
+					/>
+				</Card>
 				<AddComment
 					addComment={this.addComment}
-					commentMeaasge={this.state.commentMessage}
+					commentMessage={this.state.commentMessage}
 					handleUserInput={this.handleUserInput}
 					isAuth={this.state.isAuth}
 				/>

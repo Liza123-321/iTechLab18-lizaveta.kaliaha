@@ -15,7 +15,7 @@ class PhotoGalleryContainer extends React.Component {
 	componentDidMount() {
 		let self = this;
 		axios
-			.get(`https://localhost:5001/api/photogalery/` + self.state.id)
+			.get(`https://localhost:5001/api/photogallery/` + self.state.id)
 			.then(function(res) {
 				self.setState({ photoGallery: res.data });
 			});

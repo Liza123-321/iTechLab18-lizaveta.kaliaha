@@ -19,6 +19,7 @@ let Film = ({ classes, filmPoster, filmName, filmId, filmRating }) => {
 					count={5}
 					value={filmRating / 2}
 					size={30}
+					edit={false}
 					color2={'#ffd700'}
 				/>
 			</div>
@@ -30,7 +31,7 @@ let Film = ({ classes, filmPoster, filmName, filmId, filmRating }) => {
 				component={Link}
 				to={'/film/' + filmId}
 			>
-				Подробно
+				Подробнее
 			</Button>
 		</Card>
 	);

@@ -2,23 +2,17 @@ import React from 'react';
 import Comment from '../views/Comment/index';
 import axios from 'axios';
 import '../App.css';
+import Card from '@material-ui/core/Card';
 import PropTypes from 'prop-types';
 class CommentsContainer extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			comments: [],
+			comments: this.props.comments,
 			id: this.props.id,
 		};
 	}
-	componentDidMount() {
-		let self = this;
-		axios
-			.get(`https://localhost:5001/api/comments/` + self.state.id)
-			.then(function(res) {
-				self.setState({ comments: res.data });
-			});
-	}
+
 	eachTask = i => {
 		return (
 			<Comment
@@ -30,7 +24,7 @@ class CommentsContainer extends React.Component {
 		);
 	};
 	render() {
-		return <div>{this.state.comments.map(this.eachTask)}</div>;
+		return <div>{this.props.comments.map(this.eachTask)}</div>;
 	}
 }
 CommentsContainer.propTypes = {};

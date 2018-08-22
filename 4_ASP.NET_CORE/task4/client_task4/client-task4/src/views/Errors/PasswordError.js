@@ -4,7 +4,7 @@ import styles from './style';
 import PropTypes from 'prop-types';
 
 export let PasswordError = ({ classes }) => {
-	return <div className={classes.error}>Password is to short</div>;
+	return <div className={classes.error}>Слишком короткий пароль</div>;
 };
 PasswordError.propTypes = {
 	classes: PropTypes.object.isRequired,

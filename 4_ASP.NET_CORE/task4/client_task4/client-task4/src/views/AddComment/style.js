@@ -25,8 +25,9 @@ const styles = theme => ({
 	button: {
 		margin: theme.spacing.unit,
 		maxHeight: 30,
+		marginLeft: 100,
 		marginTop: 25,
-		width: 100,
+		minWidth: 100,
 	},
 	send: {
 		marginLeft: 10,

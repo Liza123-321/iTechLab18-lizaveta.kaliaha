@@ -17,6 +17,8 @@ let FilmInfo = ({
 	filmProducer,
 	filmRating,
 	videoUrl,
+	ratingChanged,
+	isAuth,
 }) => {
 	return (
 		<div>
@@ -41,10 +43,13 @@ let FilmInfo = ({
 								<ReactStars
 									count={5}
 									value={filmRating / 2}
+									onChange={ratingChanged}
 									size={40}
+									edit={isAuth}
 									color2={'#ffd700'}
 								/>
 							</div>
+							<div className={classes.text_pink}>Рейтинг: {filmRating}</div>
 						</div>
 					</div>
 					<br />

@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace server_task4.DAL.Models
+namespace server_task4.Models
 {
-    public class RatingMark
+    public class RatingDTO
     {
-        public int Id { get; set; }
         public int Mark { get; set; }
         public int FilmId { get; set; }
         public int UserId { get; set; }
-        public Film Film { get; set; }
-        public User User { get; set; }
     }
 }
