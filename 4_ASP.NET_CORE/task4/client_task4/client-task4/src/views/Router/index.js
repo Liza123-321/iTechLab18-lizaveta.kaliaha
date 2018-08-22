@@ -22,10 +22,10 @@ let MyRouter = ({
 					<Toolbar className={classes.myNav}>
 						<Tabs value={activeTabValue} onChange={handleChange}>
 							<Tab label="Films" component={Link} to={'/films'} />
-							{isAuth == false && (
+							{isAuth === false && (
 								<Tab label="Login" component={Link} to={'/login'} />
 							)}
-							{isAuth != false && (
+							{isAuth !== false && (
 								<Tab label="LogOut" component={Link} to={'/logout'} />
 							)}
 						</Tabs>

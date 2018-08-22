@@ -1,7 +1,5 @@
 import React from 'react';
 import LogOut from '../views/LogOut/index';
-import axios from 'axios';
-import { validateForm, validateField } from '../validation';
 
 class LogOutContainer extends React.Component {
 	constructor(props) {

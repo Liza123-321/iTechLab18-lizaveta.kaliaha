@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 import PhotoGalleryContainer from './PhotoGalleryContainer';
 
 import AddCommentContainer from './AddCommentContainer';
-import CommentsContainer from './CommentsContainer';
 
 class FilmContainer extends React.Component {
 	constructor(props) {

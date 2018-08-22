@@ -1,13 +1,11 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles/index';
 import Card from '@material-ui/core/Card';
 import '../../App.css';
 import { Link } from 'react-router-dom';
 import ReactStars from 'react-stars';
 import PropTypes from 'prop-types';
-import Typography from '@material-ui/core/Typography';
 import styles from './style';
 
 let Film = ({ classes, filmPoster, filmName, filmId, filmRating }) => {

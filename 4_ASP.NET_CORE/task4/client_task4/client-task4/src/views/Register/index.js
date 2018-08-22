@@ -3,13 +3,11 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles/index';
 import Card from '@material-ui/core/Card';
-import AuthIcon from '@material-ui/icons/Person';
 import EmailError from '../Errors/EmailError';
 import PasswordError from '../Errors/PasswordError';
 import ConfirmPasswordError from '../Errors/ConfirmPasswordError';
 import styles from './style';
 import PropTypes from 'prop-types';
-import Checkbox from '@material-ui/core/Checkbox';
 
 let Register = ({
 	classes,

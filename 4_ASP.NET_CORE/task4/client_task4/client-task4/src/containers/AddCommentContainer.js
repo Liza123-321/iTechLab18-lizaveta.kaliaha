@@ -13,7 +13,7 @@ class AddCommentContainer extends React.Component {
 		this.state = {
 			id: this.props.id,
 			commentMessage: '',
-			isAuth: sessionStorage.getItem('jwt_token') != null,
+			isAuth: sessionStorage.getItem('jwt_token') !== null,
 		};
 	}
 	handleUserInput = e => {
@@ -29,7 +29,7 @@ class AddCommentContainer extends React.Component {
 				Authorization: 'Bearer ' + sessionStorage.getItem('jwt_token'),
 			},
 		};
-		if (self.state.commentMessage.length != 0) {
+		if (self.state.commentMessage.length !== 0) {
 			axios
 				.post(
 					`https://localhost:5001/api/comments/`,
@@ -74,6 +74,8 @@ class AddCommentContainer extends React.Component {
 		);
 	}
 }
-AddCommentContainer.propTypes = {};
+AddCommentContainer.propTypes = {
+	id: PropTypes.string.isRequired,
+};
 
 export default AddCommentContainer;

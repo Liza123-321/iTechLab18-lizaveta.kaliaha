@@ -22,6 +22,7 @@ class FilmsContainer extends React.Component {
 	eachTask = i => {
 		return (
 			<Film
+				key={i.id}
 				filmPoster={i.poster}
 				filmName={i.name}
 				filmId={i.id}

@@ -7,6 +7,6 @@ namespace server_task4.Models
 {
     public class PhotoGaleryDTO
     {
-        public string PhotoUrl { get; set; }
+        public string Src { get; set; }
     }
 }

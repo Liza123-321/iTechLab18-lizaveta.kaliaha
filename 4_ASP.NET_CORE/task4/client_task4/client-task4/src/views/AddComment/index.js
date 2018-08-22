@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles/index';
 import Card from '@material-ui/core/Card';
 import '../../App.css';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Send from '@material-ui/icons/Send';
 import styles from './style';
 

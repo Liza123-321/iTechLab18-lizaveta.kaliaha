@@ -7,7 +7,8 @@ const styles = theme => ({
 		backgroundColor: theme.palette.background.paper,
 	},
 	gridList: {
-		width: 850,
+		marginLeft: 'auto',
+		marginRight: 'auto',
 	},
 	subheader: {
 		width: '100%',
@@ -22,12 +23,8 @@ const styles = theme => ({
 	},
 	card: {
 		marginTop: 10,
-		paddingBottom: 15,
-		paddingTop: 15,
-		display: 'flex',
-		justifyContent: 'center',
-		flexWrap: 'wrap',
-		width: 900,
+		padding: 15,
+		width: 870,
 	},
 });
 

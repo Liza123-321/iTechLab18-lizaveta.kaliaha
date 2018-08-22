@@ -24,6 +24,8 @@ class PhotoGalleryContainer extends React.Component {
 		return <PhotoGallery photos={this.state.photoGallery} />;
 	}
 }
-PhotoGalleryContainer.propTypes = {};
+PhotoGalleryContainer.propTypes = {
+	id: PropTypes.string.isRequired,
+};
 
 export default PhotoGalleryContainer;

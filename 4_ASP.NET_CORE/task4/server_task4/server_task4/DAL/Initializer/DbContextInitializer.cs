@@ -46,27 +46,27 @@ namespace server_task4.DAL.Initializer
                 );
 
             modelBuilder.Entity<Photo>().HasData(
-                new Photo { Id = 1, PhotoUrl = "https://i.ytimg.com/vi/rs7lyEWy36k/maxresdefault.jpg", FilmId = 1 },
-                new Photo { Id = 2, PhotoUrl = "https://f.otzyv.ru/f/kino/2017/5527/1311171414432.jpg", FilmId = 1 },
-                new Photo { Id = 3, PhotoUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwI6v00CUbzC1qyivySLIL1NM-zIvDEt2UNKMlB7CPVEP0qum8TA", FilmId = 1 },
-                new Photo { Id = 4, PhotoUrl = "https://x-torrent.pro/_ld/86/79739157.jpg", FilmId = 1 },
-                new Photo { Id = 5, PhotoUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_Sl7ms5xcLReKI8HsMMv4CPfKtkIttyQHMQIjttKPFGw7Iaf", FilmId = 1 },
-                new Photo { Id = 6, PhotoUrl = "http://www.mediapapa.org/uploads/posts/2018-02/1518183136_28.jpg", FilmId = 1 },
-                new Photo { Id = 7, PhotoUrl = "https://www.screengeek.net/wp-content/uploads/2016/11/Captain-America-Chris-Evans-and-The-Winter-Soldier-Sebastian-Stan.jpg", FilmId = 2 },
-                new Photo { Id = 8, PhotoUrl = "https://i1.wp.com/media-news.com.ua/wp-content/uploads/2018/02/infinity-war.jpg?resize=720%2C395&ssl=1", FilmId = 2 },
-                new Photo { Id = 9, PhotoUrl = "https://www.segodnya.ua/img/article/7822/4_main_new.1482431329.jpg", FilmId = 2 },
-                new Photo { Id = 10, PhotoUrl = "https://media.kg-portal.ru/production/avengers3/avengers3_26.jpg", FilmId = 2 },
-                new Photo { Id = 11, PhotoUrl = "https://www.soyuz.ru/public/uploads/files/5/7158148/1005x558_20171130142100e3542c0c87.jpg", FilmId = 2 },
-                new Photo { Id = 12, PhotoUrl = "https://kinolexx.ru/files/film/2017/2/7/112/mstiteli-voina-beskonechnosti-chast-1-006.jpg", FilmId = 2 },
-                new Photo { Id = 13, PhotoUrl = "https://cdn2.img.sputnik.by/images/103012/28/1030122831.jpg", FilmId = 3 },
-                new Photo { Id = 14, PhotoUrl = "https://art1.ru/media/photo/content/gogol.jpg", FilmId = 3 },
-                new Photo { Id = 15, PhotoUrl = "http://static.kinokopilka.pro/system/images/screenshots/images/000/363/244/363244_original.JPG", FilmId = 3 },
-                new Photo { Id = 16, PhotoUrl = "http://media.filmz.ru/players/img_36741.jpg", FilmId = 4 },
-                new Photo { Id = 17, PhotoUrl = "https://tvkinoradio.ru/upload/images/Image/45/59/80/45598013eb42381f8c72895abfbb9a6f.w590.jpg", FilmId = 4 },
-                new Photo { Id = 18, PhotoUrl = "http://info.sibnet.ru/ni/533/533962x630x0_1520597447.png", FilmId = 4 },
-                new Photo { Id = 19, PhotoUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVIiFQIOAnCHjC65_ESTNbEM7JO78GAYBflR2HSNZRk_j_2Jrj", FilmId = 5 },
-                new Photo { Id = 20, PhotoUrl = "http://www.fashiontime.ru/upload/articles-v3/53d6a58fa3b71w719.jpg", FilmId = 5 },
-                new Photo { Id = 21, PhotoUrl = "https://www.startfilm.ru/images/base/film/f_659425/startfilmru1331764.jpg", FilmId = 5 }
+                new Photo { Id = 1, Src = "https://i.ytimg.com/vi/rs7lyEWy36k/maxresdefault.jpg", FilmId = 1 },
+                new Photo { Id = 2, Src = "https://f.otzyv.ru/f/kino/2017/5527/1311171414432.jpg", FilmId = 1 },
+                new Photo { Id = 3, Src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwI6v00CUbzC1qyivySLIL1NM-zIvDEt2UNKMlB7CPVEP0qum8TA", FilmId = 1 },
+                new Photo { Id = 4, Src = "https://x-torrent.pro/_ld/86/79739157.jpg", FilmId = 1 },
+                new Photo { Id = 5, Src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_Sl7ms5xcLReKI8HsMMv4CPfKtkIttyQHMQIjttKPFGw7Iaf", FilmId = 1 },
+                new Photo { Id = 6, Src = "http://www.mediapapa.org/uploads/posts/2018-02/1518183136_28.jpg", FilmId = 1 },
+                new Photo { Id = 7, Src = "https://www.screengeek.net/wp-content/uploads/2016/11/Captain-America-Chris-Evans-and-The-Winter-Soldier-Sebastian-Stan.jpg", FilmId = 2 },
+                new Photo { Id = 8, Src = "https://i1.wp.com/media-news.com.ua/wp-content/uploads/2018/02/infinity-war.jpg?resize=720%2C395&ssl=1", FilmId = 2 },
+                new Photo { Id = 9, Src = "https://www.segodnya.ua/img/article/7822/4_main_new.1482431329.jpg", FilmId = 2 },
+                new Photo { Id = 10, Src = "https://media.kg-portal.ru/production/avengers3/avengers3_26.jpg", FilmId = 2 },
+                new Photo { Id = 11, Src = "https://www.soyuz.ru/public/uploads/files/5/7158148/1005x558_20171130142100e3542c0c87.jpg", FilmId = 2 },
+                new Photo { Id = 12, Src = "https://kinolexx.ru/files/film/2017/2/7/112/mstiteli-voina-beskonechnosti-chast-1-006.jpg", FilmId = 2 },
+                new Photo { Id = 13, Src = "https://cdn2.img.sputnik.by/images/103012/28/1030122831.jpg", FilmId = 3 },
+                new Photo { Id = 14, Src = "https://art1.ru/media/photo/content/gogol.jpg", FilmId = 3 },
+                new Photo { Id = 15, Src = "http://static.kinokopilka.pro/system/images/screenshots/images/000/363/244/363244_original.JPG", FilmId = 3 },
+                new Photo { Id = 16, Src = "http://media.filmz.ru/players/img_36741.jpg", FilmId = 4 },
+                new Photo { Id = 17, Src = "https://tvkinoradio.ru/upload/images/Image/45/59/80/45598013eb42381f8c72895abfbb9a6f.w590.jpg", FilmId = 4 },
+                new Photo { Id = 18, Src = "http://info.sibnet.ru/ni/533/533962x630x0_1520597447.png", FilmId = 4 },
+                new Photo { Id = 19, Src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVIiFQIOAnCHjC65_ESTNbEM7JO78GAYBflR2HSNZRk_j_2Jrj", FilmId = 5 },
+                new Photo { Id = 20, Src = "http://www.fashiontime.ru/upload/articles-v3/53d6a58fa3b71w719.jpg", FilmId = 5 },
+                new Photo { Id = 21, Src = "https://www.startfilm.ru/images/base/film/f_659425/startfilmru1331764.jpg", FilmId = 5 }
 
                 );
 
