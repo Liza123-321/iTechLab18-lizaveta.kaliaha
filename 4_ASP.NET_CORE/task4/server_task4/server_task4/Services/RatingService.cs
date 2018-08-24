@@ -21,10 +21,6 @@ namespace server_task4.Services
             this.db = ratings;
             this._userService = userService;
         }
-        public async Task<List<RatingDTO>> DeleteRatingByFilmId(int id)
-        {
-            throw new NotImplementedException();
-        }
 
         public async Task<List<RatingDTO>> GetAllRatings()
         {
@@ -69,9 +65,5 @@ namespace server_task4.Services
             return rating;
         }
 
-        public async Task<RatingDTO> UpdateRating(RatingDTO rating)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

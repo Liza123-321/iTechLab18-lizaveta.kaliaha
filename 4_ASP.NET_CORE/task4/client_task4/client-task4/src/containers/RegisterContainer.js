@@ -60,7 +60,7 @@ class RegisterContainer extends React.Component {
 					});
 			})
 			.catch(function(res) {
-				alert('You cant use this email!');
+				alert("You can't use this email!");
 			});
 	}
 

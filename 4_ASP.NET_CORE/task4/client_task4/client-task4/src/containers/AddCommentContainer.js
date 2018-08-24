@@ -67,13 +67,12 @@ class AddCommentContainer extends React.Component {
 				)
 				.catch(res => {
 					alert(res.toString());
-					sessionStorage.removeItem('jwt_token');
+					// sessionStorage.removeItem('jwt_token');
 				})
 				.then(function() {
 					axios
 						.get(`https://localhost:5001/api/comments/` + self.state.id)
 						.then(function(res) {
-							console.log(res.data);
 							self.setState({ comments: res.data });
 						});
 				});

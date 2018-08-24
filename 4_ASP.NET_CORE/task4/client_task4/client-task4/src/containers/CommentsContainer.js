@@ -15,12 +15,7 @@ class CommentsContainer extends React.Component {
 
 	eachTask = i => {
 		return (
-			<Comment
-				message={i.commentMessage}
-				userName={i.userName}
-				data={i.data}
-				key={i.data + i.userName}
-			/>
+			<Comment message={i.commentMessage} userName={i.userName} data={i.data} />
 		);
 	};
 	render() {
