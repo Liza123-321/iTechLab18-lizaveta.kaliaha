@@ -1,6 +1,7 @@
 import React from 'react';
 import Register from '../views/Register/index';
 import axios from 'axios';
+import { withAlert } from 'react-alert';
 import { validateFieldRegister, validateFormRegister } from '../validation';
 
 class RegisterContainer extends React.Component {
@@ -43,7 +44,7 @@ class RegisterContainer extends React.Component {
 			})
 			.then(function(res) {
 				if (res.data) {
-					alert('Success register');
+					self.props.alert.show('Success register', { type: 'success' });
 				}
 			})
 			.then(function() {
@@ -54,9 +55,9 @@ class RegisterContainer extends React.Component {
 					})
 					.then(function(res) {
 						if (res.data) {
-							alert('Success autorize');
+							self.props.alert.show('Success autorize', { type: 'success' });
 							sessionStorage.setItem('jwt_token', res.data.access_token);
-						} else alert('Cant find user with this email and password');
+						}
 					});
 			})
 			.catch(function(res) {
@@ -79,4 +80,4 @@ class RegisterContainer extends React.Component {
 	}
 }
 
-export default RegisterContainer;
+export default withAlert(RegisterContainer);

@@ -1,5 +1,6 @@
 import React from 'react';
 import LogOut from '../views/LogOut/index';
+import { withAlert } from 'react-alert';
 
 class LogOutContainer extends React.Component {
 	constructor(props) {
@@ -10,6 +11,7 @@ class LogOutContainer extends React.Component {
 
 	logOut() {
 		sessionStorage.removeItem('jwt_token');
+		this.props.alert.show('Logout', { type: 'info' });
 	}
 
 	render() {
@@ -17,4 +19,4 @@ class LogOutContainer extends React.Component {
 	}
 }
 
-export default LogOutContainer;
+export default withAlert(LogOutContainer);

@@ -71,6 +71,17 @@ let FilmInfo = ({
 	);
 };
 
-FilmInfo.propTypes = {};
+FilmInfo.propTypes = {
+	filmPoster: PropTypes.string,
+	filmName: PropTypes.string,
+	filmId: PropTypes.number,
+	filmDescription: PropTypes.string,
+	filmYear: PropTypes.number,
+	filmCountry: PropTypes.string,
+	filmProducer: PropTypes.string,
+	filmRating: PropTypes.number,
+	videoUrl: PropTypes.string,
+	ratingChanged: PropTypes.func,
+};
 
 export default withStyles(styles)(FilmInfo);

@@ -1,6 +1,7 @@
 import React from 'react';
 import Login from '../views/Login/index';
 import axios from 'axios';
+import { withAlert } from 'react-alert';
 import { validateForm, validateField } from '../validation';
 
 class LoginContainer extends React.Component {
@@ -43,9 +44,9 @@ class LoginContainer extends React.Component {
 			.post(`https://localhost:5001/api/user/login`, user, config)
 			.then(function(res) {
 				if (res.data) {
-					alert('Success autorize');
+					self.props.alert.show('Success autorize', { type: 'success' });
 					sessionStorage.setItem('jwt_token', res.data.access_token);
-				} else alert('Cant find user with this email and password');
+				} else self.props.alert.show('Cant find user with this email and password', { type: 'error' });
 			});
 	}
 
@@ -63,4 +64,4 @@ class LoginContainer extends React.Component {
 	}
 }
 
-export default LoginContainer;
+export default withAlert(LoginContainer);

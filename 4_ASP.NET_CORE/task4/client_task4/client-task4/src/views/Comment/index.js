@@ -22,6 +22,10 @@ let Comment = ({ classes, message, userName, data }) => {
 	);
 };
 
-Comment.propTypes = {};
+Comment.propTypes = {
+	message: PropTypes.string.isRequired,
+	userName: PropTypes.string.isRequired,
+	data: PropTypes.string.isRequired,
+};
 
 export default withStyles(styles)(Comment);

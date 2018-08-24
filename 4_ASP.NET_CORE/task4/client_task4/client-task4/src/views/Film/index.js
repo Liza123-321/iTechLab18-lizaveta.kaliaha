@@ -37,6 +37,11 @@ let Film = ({ classes, filmPoster, filmName, filmId, filmRating }) => {
 	);
 };
 
-Film.propTypes = {};
+Film.propTypes = {
+	filmPoster: PropTypes.string.isRequired,
+	filmName: PropTypes.string.isRequired,
+	filmId: PropTypes.number.isRequired,
+	filmRating: PropTypes.number.isRequired,
+};
 
 export default withStyles(styles)(Film);

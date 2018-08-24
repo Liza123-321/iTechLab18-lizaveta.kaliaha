@@ -2,6 +2,7 @@ import React from 'react';
 import AddComment from '../views/AddComment/index';
 import axios from 'axios';
 import '../App.css';
+import { withAlert } from 'react-alert';
 import CommentsContainer from './CommentsContainer';
 import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
@@ -65,9 +66,12 @@ class AddCommentContainer extends React.Component {
 					},
 					config
 				)
+				.then(function() {
+					self.props.alert.show('Success add comment', { type: 'success' });
+				})
 				.catch(res => {
-					alert(res.toString());
-					// sessionStorage.removeItem('jwt_token');
+					self.props.alert.show('You should login', { type: 'error' });
+					sessionStorage.removeItem('jwt_token');
 				})
 				.then(function() {
 					axios
@@ -101,4 +105,4 @@ AddCommentContainer.propTypes = {
 	id: PropTypes.string.isRequired,
 };
 
-export default AddCommentContainer;
+export default withAlert(AddCommentContainer);

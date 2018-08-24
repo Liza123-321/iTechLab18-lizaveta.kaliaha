@@ -2,7 +2,6 @@ import React from 'react';
 import Film from '../views/Film/index';
 import axios from 'axios';
 import '../App.css';
-import PropTypes from 'prop-types';
 
 class FilmsContainer extends React.Component {
 	constructor(props) {
@@ -38,6 +37,5 @@ class FilmsContainer extends React.Component {
 		);
 	}
 }
-FilmsContainer.propTypes = {};
 
 export default FilmsContainer;

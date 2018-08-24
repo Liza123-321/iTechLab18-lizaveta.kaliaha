@@ -18,7 +18,7 @@ let AddComment = ({
 }) => {
 	return (
 		<div>
-			{isAuth != false && (
+			{isAuth !== false && (
 				<div className={classes.top}>
 					<Card className={classes.card}>
 						<TextField
@@ -44,7 +44,7 @@ let AddComment = ({
 			)}
 			<div className={classes.top}>
 				<div className={classes.card}>
-					{isAuth == false && (
+					{isAuth === false && (
 						<Button
 							variant="raised"
 							color="primary"
@@ -71,6 +71,11 @@ let AddComment = ({
 	);
 };
 
-AddComment.propTypes = {};
+AddComment.propTypes = {
+	commentMessage: PropTypes.string.isRequired,
+	addComment: PropTypes.func.isRequired,
+	handleUserInput: PropTypes.func.isRequired,
+	isAuth: PropTypes.bool.isRequired,
+};
 
 export default withStyles(styles)(AddComment);

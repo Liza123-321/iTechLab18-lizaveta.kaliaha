@@ -1,8 +1,6 @@
 import React from 'react';
 import Comment from '../views/Comment/index';
-import axios from 'axios';
 import '../App.css';
-import Card from '@material-ui/core/Card';
 import PropTypes from 'prop-types';
 class CommentsContainer extends React.Component {
 	constructor(props) {
@@ -15,13 +13,21 @@ class CommentsContainer extends React.Component {
 
 	eachTask = i => {
 		return (
-			<Comment message={i.commentMessage} userName={i.userName} data={i.data} />
+			<Comment
+				message={i.commentMessage}
+				userName={i.userName}
+				data={i.data}
+				key={i.data + i.commentMessage + i.userName}
+			/>
 		);
 	};
 	render() {
 		return <div>{this.props.comments.map(this.eachTask)}</div>;
 	}
 }
-CommentsContainer.propTypes = {};
+CommentsContainer.propTypes = {
+	id: PropTypes.string.isRequired,
+	comments: PropTypes.array.isRequired,
+};
 
 export default CommentsContainer;

@@ -1,8 +1,8 @@
 import React from 'react';
 import FilmInfo from '../views/FilmInfo/index';
 import axios from 'axios';
+import { withAlert } from 'react-alert';
 import '../App.css';
-import PropTypes from 'prop-types';
 import PhotoGalleryContainer from './PhotoGalleryContainer';
 
 import AddCommentContainer from './AddCommentContainer';
@@ -45,7 +45,7 @@ class FilmContainer extends React.Component {
 				config
 			)
 			.then(function() {
-				alert('You success set rating');
+				self.props.alert.show('You success set rating', { type: 'success' });
 				axios
 					.get(`https://localhost:5001/api/film/` + self.state.id)
 					.then(function(res) {
@@ -53,7 +53,7 @@ class FilmContainer extends React.Component {
 					});
 			})
 			.catch(res => {
-				alert(res.toString());
+				self.props.alert.show('You should login', { type: 'error' });
 				sessionStorage.removeItem('jwt_token');
 			});
 	};
@@ -79,6 +79,5 @@ class FilmContainer extends React.Component {
 		);
 	}
 }
-FilmContainer.propTypes = {};
 
-export default FilmContainer;
+export default withAlert(FilmContainer);
