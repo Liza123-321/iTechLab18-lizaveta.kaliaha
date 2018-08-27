@@ -1,8 +1,10 @@
 import React from 'react';
 import Register from '../views/Register/index';
-import axios from 'axios';
 import { withAlert } from 'react-alert';
 import { validateFieldRegister, validateFormRegister } from '../validation';
+import UserRepository from '../repository/user';
+
+const userRepository = new UserRepository();
 
 class RegisterContainer extends React.Component {
 	constructor(props) {
@@ -35,34 +37,12 @@ class RegisterContainer extends React.Component {
 		});
 	};
 
-	registerClick() {
-		let self = this;
-		axios
-			.post(`https://localhost:5001/api/user/register`, {
-				email: self.state.email,
-				password: self.state.password,
-			})
-			.then(function(res) {
-				if (res.data) {
-					self.props.alert.show('Success register', { type: 'success' });
-				}
-			})
-			.then(function() {
-				axios
-					.post(`https://localhost:5001/api/user/login`, {
-						email: self.state.email,
-						password: self.state.password,
-					})
-					.then(function(res) {
-						if (res.data) {
-							self.props.alert.show('Success autorize', { type: 'success' });
-							sessionStorage.setItem('jwt_token', res.data.access_token);
-						}
-					});
-			})
-			.catch(function(res) {
-				alert("You can't use this email!");
-			});
+	async registerClick() {
+		await userRepository.registerUser(
+			this.state.email,
+			this.state.password,
+			this
+		);
 	}
 
 	render() {

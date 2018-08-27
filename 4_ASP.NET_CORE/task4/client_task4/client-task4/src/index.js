@@ -8,7 +8,6 @@ import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import loginForm from './reducers/index';
 import { reducer as formReducer } from 'redux-form';
 import thunk from 'redux-thunk';
 
@@ -22,7 +21,6 @@ const options = {
 
 let middleware = applyMiddleware(thunk);
 const rootReducer = combineReducers({
-	loginForm,
 	form: formReducer,
 	middleware,
 });

@@ -1,13 +1,14 @@
 import React from 'react';
 import FilmInfo from '../views/FilmInfo/index';
-import axios from 'axios';
 import { withAlert } from 'react-alert';
 import '../App.css';
 import FilmRepository from '../repository/film';
+import RatingRepository from '../repository/rating';
 import PhotoGalleryContainer from './PhotoGalleryContainer';
 import AddCommentContainer from './AddCommentContainer';
 
 const filmRepository = new FilmRepository();
+const ratingRepository = new RatingRepository();
 class FilmContainer extends React.Component {
 	constructor(props) {
 		super(props);
@@ -26,32 +27,8 @@ class FilmContainer extends React.Component {
 			this.setState({ rating: answer.data.averageRating });
 		}
 	}
-	ratingChanged(newRating) {
-		let config = {
-			headers: {
-				Authorization: 'Bearer ' + sessionStorage.getItem('jwt_token'),
-			},
-		};
-		let self = this;
-		axios
-			.post(
-				`https://localhost:5001/api/rating`,
-				{
-					mark: newRating * 2,
-					userId: 0,
-					filmId: self.state.id,
-				},
-				config
-			)
-			.then(async function() {
-				self.props.alert.show('You success set rating', { type: 'success' });
-				let answer = await filmRepository.getFilm(self.state.id);
-				self.setState({ rating: answer.data.averageRating });
-			})
-			.catch(() => {
-				self.props.alert.show('You should login', { type: 'error' });
-				sessionStorage.removeItem('jwt_token');
-			});
+	async ratingChanged(newRating) {
+		await ratingRepository.setRating(newRating, this.state.id, this);
 	}
 
 	render() {

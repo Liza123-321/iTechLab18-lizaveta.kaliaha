@@ -18,7 +18,7 @@ let LogOut = ({ classes, logOut }) => {
 					className={classes.loginButton}
 					onClick={logOut}
 					component={Link}
-					to={'/login'}
+					to={'/films'}
 				>
 					Да
 				</Button>{' '}

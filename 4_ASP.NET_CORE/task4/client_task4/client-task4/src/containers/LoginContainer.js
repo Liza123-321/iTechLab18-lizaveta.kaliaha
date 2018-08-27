@@ -1,9 +1,10 @@
 import React from 'react';
 import Login from '../views/Login/index';
-import axios from 'axios';
 import { withAlert } from 'react-alert';
 import { validateForm, validateField } from '../validation';
+import UserRepository from '../repository/user';
 
+const userRepository = new UserRepository();
 class LoginContainer extends React.Component {
 	constructor(props) {
 		super(props);
@@ -18,6 +19,7 @@ class LoginContainer extends React.Component {
 			emailValid: false,
 			passwordValid: false,
 			formValid: false,
+			isAuth: sessionStorage.getItem('jwt_token') != null,
 		};
 	}
 
@@ -29,25 +31,8 @@ class LoginContainer extends React.Component {
 		});
 	};
 
-	loginClick() {
-		let config = {
-			headers: {
-				'Content-Type': 'application/json',
-			},
-		};
-		let self = this;
-		let user = JSON.stringify({
-			email: self.state.email,
-			password: self.state.password,
-		});
-		axios
-			.post(`https://localhost:5001/api/user/login`, user, config)
-			.then(function(res) {
-				if (res.data) {
-					self.props.alert.show('Success autorize', { type: 'success' });
-					sessionStorage.setItem('jwt_token', res.data.access_token);
-				} else self.props.alert.show('Cant find user with this email and password', { type: 'error' });
-			});
+	async loginClick() {
+		await userRepository.loginUser(this.state.email, this.state.password, this);
 	}
 
 	render() {
