@@ -6,7 +6,9 @@ import { withAlert } from 'react-alert';
 import CommentsContainer from './CommentsContainer';
 import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
+import CommentRepository from '../repository/comment';
 
+const commentRepository = new CommentRepository();
 class AddCommentContainer extends React.Component {
 	constructor(props) {
 		super(props);
@@ -25,13 +27,11 @@ class AddCommentContainer extends React.Component {
 		this.setState({ [name]: value });
 	};
 
-	componentDidMount() {
-		let self = this;
-		axios
-			.get(`https://localhost:5001/api/comments/` + self.state.id)
-			.then(function(res) {
-				self.setState({ comments: res.data });
-			});
+	async componentDidMount() {
+		let res = await commentRepository.getComments(this.state.id);
+		if (res.status === 200) {
+			this.setState({ comments: res.data });
+		}
 	}
 	addComment() {
 		let now = new Date();
@@ -73,12 +73,9 @@ class AddCommentContainer extends React.Component {
 					self.props.alert.show('You should login', { type: 'error' });
 					sessionStorage.removeItem('jwt_token');
 				})
-				.then(function() {
-					axios
-						.get(`https://localhost:5001/api/comments/` + self.state.id)
-						.then(function(res) {
-							self.setState({ comments: res.data });
-						});
+				.then(async function() {
+					let res = await commentRepository.getComments(self.state.id);
+					self.setState({ comments: res.data });
 				});
 		}
 	}

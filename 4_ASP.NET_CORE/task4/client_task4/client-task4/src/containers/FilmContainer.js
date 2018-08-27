@@ -3,10 +3,11 @@ import FilmInfo from '../views/FilmInfo/index';
 import axios from 'axios';
 import { withAlert } from 'react-alert';
 import '../App.css';
+import FilmRepository from '../repository/film';
 import PhotoGalleryContainer from './PhotoGalleryContainer';
-
 import AddCommentContainer from './AddCommentContainer';
 
+const filmRepository = new FilmRepository();
 class FilmContainer extends React.Component {
 	constructor(props) {
 		super(props);
@@ -18,16 +19,14 @@ class FilmContainer extends React.Component {
 			isAuth: sessionStorage.getItem('jwt_token') != null,
 		};
 	}
-	componentDidMount() {
-		let self = this;
-		axios
-			.get(`https://localhost:5001/api/film/` + self.state.id)
-			.then(function(res) {
-				self.setState({ filmData: res.data });
-				self.setState({ rating: res.data.averageRating });
-			});
+	async componentDidMount() {
+		let answer = await filmRepository.getFilm(this.state.id);
+		if (answer.status === 200) {
+			this.setState({ filmData: answer.data });
+			this.setState({ rating: answer.data.averageRating });
+		}
 	}
-	ratingChanged = newRating => {
+	ratingChanged(newRating) {
 		let config = {
 			headers: {
 				Authorization: 'Bearer ' + sessionStorage.getItem('jwt_token'),
@@ -44,19 +43,17 @@ class FilmContainer extends React.Component {
 				},
 				config
 			)
-			.then(function() {
+			.then(async function() {
 				self.props.alert.show('You success set rating', { type: 'success' });
-				axios
-					.get(`https://localhost:5001/api/film/` + self.state.id)
-					.then(function(res) {
-						self.setState({ rating: res.data.averageRating });
-					});
+				let answer = await filmRepository.getFilm(self.state.id);
+				self.setState({ rating: answer.data.averageRating });
 			})
-			.catch(res => {
+			.catch(() => {
 				self.props.alert.show('You should login', { type: 'error' });
 				sessionStorage.removeItem('jwt_token');
 			});
-	};
+	}
+
 	render() {
 		return (
 			<div>

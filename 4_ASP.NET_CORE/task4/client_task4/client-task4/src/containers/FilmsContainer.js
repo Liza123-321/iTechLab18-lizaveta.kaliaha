@@ -1,7 +1,9 @@
 import React from 'react';
 import Film from '../views/Film/index';
-import axios from 'axios';
 import '../App.css';
+import FilmRepository from '../repository/film';
+
+const filmRepository = new FilmRepository();
 
 class FilmsContainer extends React.Component {
 	constructor(props) {
@@ -11,12 +13,12 @@ class FilmsContainer extends React.Component {
 			arrayFilms: [],
 		};
 	}
-	componentDidMount() {
-		var self = this;
-		axios.get(`https://localhost:5001/api/film`).then(function(res) {
-			self.setState({ arrayFilms: res.data });
-			self.setState({ countFilms: res.data.Count });
-		});
+
+	async componentDidMount() {
+		let answer = await filmRepository.getFilms();
+		if (answer.status === 200) {
+			this.setState({ arrayFilms: answer.data });
+		}
 	}
 	eachTask = i => {
 		return (
@@ -29,6 +31,7 @@ class FilmsContainer extends React.Component {
 			/>
 		);
 	};
+
 	render() {
 		return (
 			<div className="App-films">

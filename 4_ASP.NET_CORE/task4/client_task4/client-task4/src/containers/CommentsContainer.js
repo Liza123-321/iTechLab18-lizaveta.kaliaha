@@ -2,6 +2,7 @@ import React from 'react';
 import Comment from '../views/Comment/index';
 import '../App.css';
 import PropTypes from 'prop-types';
+
 class CommentsContainer extends React.Component {
 	constructor(props) {
 		super(props);
