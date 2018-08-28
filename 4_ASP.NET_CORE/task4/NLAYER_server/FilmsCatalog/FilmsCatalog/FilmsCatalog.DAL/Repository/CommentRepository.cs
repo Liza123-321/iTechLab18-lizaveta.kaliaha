@@ -2,10 +2,8 @@
 using FilmsCatalog.DAL.Interfaces;
 using FilmsCatalog.DAL.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace FilmsCatalog.DAL.Repository
@@ -19,6 +17,7 @@ namespace FilmsCatalog.DAL.Repository
         }
         public async Task<Comment> AddComment(Comment comment)
         {
+
             db.Comments.Add(comment);
             await db.SaveChangesAsync();
             return comment;

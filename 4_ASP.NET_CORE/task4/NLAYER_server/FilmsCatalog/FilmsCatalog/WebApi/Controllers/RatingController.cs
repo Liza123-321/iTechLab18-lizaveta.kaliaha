@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using FilmsCatalog.Business.Interfaces;
@@ -38,12 +37,13 @@ namespace FilmsCtalog.WebApi.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> AddRating([FromBody]RatingViewModel rating)
+        public async Task<IActionResult> AddRating([FromBody]RatingViewModel model)
         {
-            var myRating = await _ratingService.SetRating(_mapper.Map<RatingViewModel,RatingModel>(rating), Int32.Parse(HttpContext.GetUserIdAsync()));
-            if (myRating == null) return BadRequest(new { message = "BadRequest" });
-            return Ok(myRating);
-
+            if (ModelState.IsValid) {
+                var myRating = await _ratingService.SetRating(_mapper.Map<RatingViewModel, RatingModel>(model), Int32.Parse(HttpContext.GetUserIdAsync()));
+                return Ok(myRating);
+            }
+           else return BadRequest();
         }
     }
 }

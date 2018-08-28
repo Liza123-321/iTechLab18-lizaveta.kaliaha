@@ -21,7 +21,6 @@ export default class CommentRepository {
 				`https://localhost:5001/api/comments/`,
 				{
 					commentMessage: commentMsg,
-					userId: 0,
 					filmId: filmId,
 					data:
 						now.getDate() +

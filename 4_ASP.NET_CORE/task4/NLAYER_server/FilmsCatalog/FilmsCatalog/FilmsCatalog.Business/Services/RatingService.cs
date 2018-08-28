@@ -5,7 +5,6 @@ using FilmsCatalog.DAL.Interfaces;
 using FilmsCatalog.DAL.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace FilmsCatalog.Business.Services

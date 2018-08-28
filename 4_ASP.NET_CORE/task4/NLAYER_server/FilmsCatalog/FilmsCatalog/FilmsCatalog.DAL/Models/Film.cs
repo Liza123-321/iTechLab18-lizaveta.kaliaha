@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace FilmsCatalog.DAL.Models
 {
@@ -15,8 +13,8 @@ namespace FilmsCatalog.DAL.Models
         public string Poster { get; set; }
         public int Year { get; set; }
         public string Video { get; set; }
-        public List<Genre> Genres { get; set; }
         public ICollection<Photo> Photos { get; set; }
         public ICollection<Comment> Comments { get; set; }
+        public ICollection<FilmGenre> FilmGenres { get; set; }
     }
 }

@@ -68,16 +68,22 @@ namespace WebApi
                    });
             services.AddSingleton<ILog4NetService, Log4NetService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<IFilmService, FilmService>();
+            services.AddScoped<ICommentService, CommentService>();
+            services.AddScoped<IRatingService, RatingService>();
+            services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IPhotoGalleryService, PhotoGalleryService>();
+
+
             services.AddScoped<IRatingRepository, RatingRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICommentRepository, CommentRepository>();
             services.AddScoped<IFilmRepository, FilmRepository>();
             services.AddScoped<IPhotoRepository, PhotoRepository>();
-            services.AddScoped<ICommentService, CommentService>();
-            services.AddScoped<IRatingService, RatingService>();
-            services.AddScoped<ITokenService, TokenService>();
-            services.AddScoped<IPhotoGalleryService, PhotoGalleryService>();
+            services.AddScoped<IGenreRepository, GenreRepository>();
+
+
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(LogActionAttribute));

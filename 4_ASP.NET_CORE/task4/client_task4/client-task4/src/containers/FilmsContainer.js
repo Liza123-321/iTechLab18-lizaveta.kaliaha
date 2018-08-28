@@ -2,6 +2,7 @@ import React from 'react';
 import Film from '../views/Film/index';
 import '../App.css';
 import FilmRepository from '../repository/film';
+import GenreContainer from './GenresContainer';
 
 const filmRepository = new FilmRepository();
 
@@ -34,8 +35,11 @@ class FilmsContainer extends React.Component {
 
 	render() {
 		return (
-			<div className="App-films">
-				{this.state.arrayFilms.map(this.eachTask)}
+			<div>
+				<GenreContainer />
+				<div className="App-films">
+					{this.state.arrayFilms.map(this.eachTask)}
+				</div>
 			</div>
 		);
 	}

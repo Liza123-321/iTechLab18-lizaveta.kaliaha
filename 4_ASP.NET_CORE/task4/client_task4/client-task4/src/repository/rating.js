@@ -16,7 +16,6 @@ export default class RatingRepository {
 	setRating = (mark, filmId, self) => {
 		let obj = {
 			mark: mark * 2,
-			userId: 0,
 			filmId: filmId,
 		};
 		let token = sessionStorage.getItem('jwt_token');

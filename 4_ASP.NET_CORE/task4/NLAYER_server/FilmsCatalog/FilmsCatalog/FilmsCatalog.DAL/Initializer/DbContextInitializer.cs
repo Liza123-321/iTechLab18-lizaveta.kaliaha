@@ -1,7 +1,4 @@
-﻿using System;
-using FilmsCatalog.DAL.Models;
-using System.Collections.Generic;
-using System.Text;
+﻿using FilmsCatalog.DAL.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilmsCatalog.DAL.Initializer
@@ -23,6 +20,18 @@ namespace FilmsCatalog.DAL.Initializer
           .HasMany(c => c.Comments)
           .WithOne(e => e.User);
 
+            modelBuilder.Entity<FilmGenre>()
+        .HasKey(bc => new { bc.FilmId, bc.GenreId });
+
+            modelBuilder.Entity<FilmGenre>()
+                .HasOne(bc => bc.Film)
+                .WithMany(b => b.FilmGenres)
+                .HasForeignKey(bc => bc.FilmId);
+
+            modelBuilder.Entity<FilmGenre>()
+                .HasOne(bc => bc.Genre)
+                .WithMany(c => c.FilmGenres)
+                .HasForeignKey(bc => bc.GenreId);
 
             modelBuilder.Entity<User>().HasData(
              new User { Id = 1, Email = "qwerty@mail.ru", Password = "12345", Role = "user" },
@@ -84,6 +93,15 @@ namespace FilmsCatalog.DAL.Initializer
             new Genre { Id = 6, GenreName = "Драмы" },
             new Genre { Id = 7, GenreName = "Приключения" }
             );
+
+
+            modelBuilder.Entity<FilmGenre>().HasData(
+           new FilmGenre { FilmId = 1, GenreId = 1 },
+           new FilmGenre { FilmId = 2, GenreId = 1 },
+           new FilmGenre { FilmId = 3, GenreId = 1 },
+           new FilmGenre { FilmId = 1, GenreId = 5 },
+           new FilmGenre { FilmId = 1, GenreId = 7 }
+           );
         }
     }
 }

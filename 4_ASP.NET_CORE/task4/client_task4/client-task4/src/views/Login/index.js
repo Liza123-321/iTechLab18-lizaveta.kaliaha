@@ -59,8 +59,6 @@ let Login = ({
 						color="secondary"
 						disabled={!formValid}
 						onClick={loginClick}
-						component={Link}
-						to={'/films'}
 						className={classes.loginButton}
 					>
 						Вход

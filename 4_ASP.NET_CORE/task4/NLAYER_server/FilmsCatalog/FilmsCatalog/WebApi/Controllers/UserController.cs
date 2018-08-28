@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using AutoMapper;
 using FilmsCatalog.Business.Interfaces;
 using FilmsCatalog.Business.Models;
-using FilmsCatalog.DAL.Models;
 using FilmsCtalog.WebApi.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilmsCtalog.WebApi.Controllers
@@ -26,16 +21,23 @@ namespace FilmsCtalog.WebApi.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> GetToken([FromBody]LoginViewModel user)
         {
-            return new ObjectResult(await _userService.LoginUser(_mapper.Map<LoginViewModel,LoginModel>(user)));
+            if (ModelState.IsValid)
+            {
+                return new ObjectResult(await _userService.LoginUser(_mapper.Map<LoginViewModel, LoginModel>(user)));
+            }
+            else return BadRequest();
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody]LoginViewModel user)
+        public async Task<IActionResult> Register([FromBody]LoginViewModel model)
         {
-            var myUser = await _userService.RegisterUser(_mapper.Map<LoginViewModel, LoginModel>(user));
-            if (myUser == null) return BadRequest(new { message = "This email used by other user" });
-            return Ok(user);
-
+            if (ModelState.IsValid)
+            {
+                var myUser = await _userService.RegisterUser(_mapper.Map<LoginViewModel, LoginModel>(model));
+                if (myUser == null) return BadRequest(new { message = "This email used by other user" });
+                return Ok(model);
+            }
+            else return BadRequest();
         }
     }
 }

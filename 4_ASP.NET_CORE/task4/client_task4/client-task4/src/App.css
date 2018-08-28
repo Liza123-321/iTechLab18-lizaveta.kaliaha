@@ -26,6 +26,12 @@ a {
   justify-content: center;
   flex-wrap: wrap;
 }
+.App-genres{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .card{
   display: flex;
   margin-top: 10px;

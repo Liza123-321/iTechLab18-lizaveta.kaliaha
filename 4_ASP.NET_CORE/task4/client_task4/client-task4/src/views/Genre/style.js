@@ -1,20 +1,7 @@
 const styles = theme => ({
-	root: {
-		display: 'flex',
-		flexWrap: 'wrap',
-		justifyContent: 'space-around',
-		overflow: 'hidden',
-		backgroundColor: theme.palette.background.paper,
-	},
-	gridList: {
-		width: 850,
-	},
-	subheader: {
-		width: '100%',
-	},
 	top: {
-		flexWrap: 'wrap',
 		justifyContent: 'center',
+		flexWrap: 'wrap',
 		display: 'flex',
 	},
 	button: {
@@ -23,8 +10,10 @@ const styles = theme => ({
 	},
 	userName: {
 		paddingTop: 5,
-		color: '#834bff',
 		fontSize: 16,
+		'&:hover': {
+			color: '#e91e63',
+		},
 	},
 	commentMessage: {
 		paddingTop: 10,
@@ -37,10 +26,10 @@ const styles = theme => ({
 		color: 'grey',
 	},
 	card: {
-		marginTop: 10,
+		margin: 5,
+		padding: 10,
+		justifyContent: 'center',
 		display: 'flex',
-		flexWrap: 'wrap',
-		width: 600,
 		backgroundColor: 'DarkGrey',
 	},
 	column: {

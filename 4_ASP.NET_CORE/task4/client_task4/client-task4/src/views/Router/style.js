@@ -18,6 +18,9 @@ const styles = theme => ({
 		justifyContent: 'center',
 		marginTop: 20,
 	},
+	emailUser: {
+		marginRight: 200,
+	},
 });
 
 export default styles;

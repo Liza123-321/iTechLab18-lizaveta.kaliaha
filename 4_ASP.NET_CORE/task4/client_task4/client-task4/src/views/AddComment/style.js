@@ -15,6 +15,7 @@ const styles = theme => ({
 	top: {
 		justifyContent: 'center',
 		display: 'flex',
+		flexWrap: 'wrap',
 	},
 	textField: {
 		marginLeft: theme.spacing.unit,

@@ -3,9 +3,7 @@ using FilmsCatalog.Business.Interfaces;
 using FilmsCatalog.Business.Models;
 using FilmsCatalog.DAL.Interfaces;
 using FilmsCatalog.DAL.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace FilmsCatalog.Business.Services
@@ -29,6 +27,7 @@ namespace FilmsCatalog.Business.Services
         }
         private async Task<FilmModel> SetFilmRating(FilmModel film)
         {
+            if (film == null) return null;
             film.AverageRating = _ratingService.GetAverageFilmRating(await _ratingService.GetRatingByFilmId(film.Id));
             return film;
         }

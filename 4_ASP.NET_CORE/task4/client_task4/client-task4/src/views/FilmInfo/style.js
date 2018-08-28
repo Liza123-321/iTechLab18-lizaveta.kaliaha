@@ -4,6 +4,9 @@ const styles = theme => ({
 		maxHeight: 30,
 	},
 	title: {
+		display: 'flex',
+		flexWrap: 'wrap',
+		justifyContent: 'center',
 		paddingTop: 15,
 		paddingBottom: 20,
 		width: 345,
@@ -15,15 +18,22 @@ const styles = theme => ({
 	text: {
 		fontFamily: 'Georgia',
 		fontSize: 16,
+		display: 'flex',
+		flexWrap: 'wrap',
+		justifyContent: 'center',
 		color: '#222222',
 	},
 	text_pink: {
 		fontFamily: 'Georgia',
 		fontSize: 18,
+		display: 'flex',
+		flexWrap: 'wrap',
+		justifyContent: 'center',
 		color: '#ff1a75',
 	},
 	stars: {
 		display: 'flex',
+		flexWrap: 'wrap',
 		justifyContent: 'center',
 	},
 	textPadding: {
@@ -34,8 +44,8 @@ const styles = theme => ({
 	},
 	media: {
 		marginRight: 20,
-		width: 400,
-		height: 600,
+		maxWidth: 400,
+		maxHeight: 600,
 	},
 	description: {
 		paddingLeft: 20,
@@ -46,6 +56,7 @@ const styles = theme => ({
 	top: {
 		justifyContent: 'center',
 		display: 'flex',
+		flexWrap: 'wrap',
 	},
 	card: {
 		display: 'flex',

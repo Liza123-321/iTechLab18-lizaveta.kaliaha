@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using FilmsCatalog.Business.Interfaces;
 using FilmsCatalog.Business.Models;
-using FilmsCatalog.DAL.Models;
 using FilmsCtalog.WebApi.HttpBase;
 using FilmsCtalog.WebApi.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -26,8 +24,7 @@ namespace FilmsCtalog.WebApi.Controllers
             this._mapper = mapper;
 
         }
-
-  
+ 
         [HttpGet("{id}")]
         public async Task<List<CommentWithEmailViewModel>> Get(int id)
         {
@@ -35,11 +32,14 @@ namespace FilmsCtalog.WebApi.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> AddComment([FromBody]CommentViewModel comment)
+        public async Task<IActionResult> AddComment([FromBody]CommentViewModel model)
         {
-            var myComment = await _commentsService.AddComment(_mapper.Map<CommentViewModel,CommentModel>(comment),Int32.Parse(HttpContext.GetUserIdAsync()));
-            if (myComment == null) return BadRequest(new { message = "BadRequest" });
-            return Ok(myComment);
+            if (ModelState.IsValid)
+            {
+                var myComment = await _commentsService.AddComment(_mapper.Map<CommentViewModel, CommentModel>(model), Int32.Parse(HttpContext.GetUserIdAsync()));
+                return Ok(myComment);
+            }
+            else return BadRequest(new { message = "BadRequest" });
         }
     }
 }
