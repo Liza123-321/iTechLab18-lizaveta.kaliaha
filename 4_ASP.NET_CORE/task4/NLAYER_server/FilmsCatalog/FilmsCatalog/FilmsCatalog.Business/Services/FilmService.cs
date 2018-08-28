@@ -31,6 +31,16 @@ namespace FilmsCatalog.Business.Services
             film.AverageRating = _ratingService.GetAverageFilmRating(await _ratingService.GetRatingByFilmId(film.Id));
             return film;
         }
+        private async Task<FilmWithGenresModel> SetFilmRating(FilmWithGenresModel film)
+        {
+            if (film == null) return null;
+            film.AverageRating = _ratingService.GetAverageFilmRating(await _ratingService.GetRatingByFilmId(film.Id));
+            return film;
+        }
+        public async Task<FilmWithGenresModel> GetFilmByWithGenres(int id)
+        {
+            return await SetFilmRating(Mapper.Map<Film, FilmWithGenresModel>(await _filmRepository.GetFilmByWithGenres(id)));
+        }
         private async Task<List<FilmModel>> SetFilmsRating(List<FilmModel> films)
         {
             for (int i = 0; i < films.Count; i++)

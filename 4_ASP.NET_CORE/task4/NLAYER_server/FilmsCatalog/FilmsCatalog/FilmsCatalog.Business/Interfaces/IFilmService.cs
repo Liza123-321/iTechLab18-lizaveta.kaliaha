@@ -9,6 +9,7 @@ namespace FilmsCatalog.Business.Interfaces
         Task<List<FilmModel>> GetAllFilms();
         Task<FilmModel> GetFilmById(int id);
         Task<FilmModel> CreateFilm(FilmModel film);
+        Task<FilmWithGenresModel> GetFilmByWithGenres(int id);
         Task<FilmModel> UpdateFilm(FilmModel film);
     }
 }

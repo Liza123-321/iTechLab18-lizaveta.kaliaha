@@ -28,10 +28,18 @@ namespace FilmsCtalog.WebApi.Controllers
         }
 
         // GET: api/Film/5
+        //[HttpGet("{id}")]
+        //public async Task<IActionResult> Get(int id)
+        //{
+        //    FilmViewModel film = _mapper.Map<FilmModel,FilmViewModel>(await _filmService.GetFilmById(id));
+        //    if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });
+        //    return Ok(film);
+        //}
+
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetWithGenres(int id)
         {
-            FilmViewModel film = _mapper.Map<FilmModel,FilmViewModel>(await _filmService.GetFilmById(id));
+            FilmWithGenresViewModel film = _mapper.Map<FilmWithGenresModel, FilmWithGenresViewModel>(await _filmService.GetFilmByWithGenres(id));
             if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });
             return Ok(film);
         }

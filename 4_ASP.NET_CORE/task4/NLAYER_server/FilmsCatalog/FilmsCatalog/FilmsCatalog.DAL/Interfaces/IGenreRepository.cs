@@ -11,6 +11,7 @@ namespace FilmsCatalog.DAL.Interfaces
         Task<Genre> CreateGenre(Genre genre);
         Task<Genre> DeleteGenre(Genre genre);
         Task<List<Genre>> GetAllGenres();
+        Task<Genre> GetGenreByIdWithFilms(int id);
         Task<Genre> GetGenreById(int id);
         Task<Genre> UpdateGenre(Genre genre);
     }

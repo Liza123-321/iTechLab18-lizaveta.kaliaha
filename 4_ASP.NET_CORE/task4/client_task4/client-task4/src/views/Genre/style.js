@@ -11,9 +11,6 @@ const styles = theme => ({
 	userName: {
 		paddingTop: 5,
 		fontSize: 16,
-		'&:hover': {
-			color: '#e91e63',
-		},
 	},
 	commentMessage: {
 		paddingTop: 10,
@@ -31,6 +28,10 @@ const styles = theme => ({
 		justifyContent: 'center',
 		display: 'flex',
 		backgroundColor: 'DarkGrey',
+		'&:hover': {
+			backgroundColor: '#fff',
+			color: '#e91e63',
+		},
 	},
 	column: {
 		display: 'flex',

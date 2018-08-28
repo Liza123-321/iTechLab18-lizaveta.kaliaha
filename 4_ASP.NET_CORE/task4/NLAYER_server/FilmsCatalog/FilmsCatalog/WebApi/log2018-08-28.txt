@@ -2731,3 +2731,548 @@ System.Collections.Generic.List`1[[FilmsCatalog.DAL.Models.Comment, FilmsCatalog
 2018-08-28 16:41:32,891 [185] INFO  App  
  GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
  
+2018-08-28 16:42:08,690 [200] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:42:08,703 [202] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:48:09,261 [219] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:48:09,271 [219] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:55:10,496 [230] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:55:10,505 [231] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:55:14,269 [228] INFO  App  
+ GET /api/photogallery/5 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:55:14,277 [231] INFO  App  
+ GET /api/comments/5 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:55:14,278 [228] INFO  App  
+ GET /api/film/5 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:55:17,453 [220] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:55:17,468 [220] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:57:39,273 [224] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:57:39,286 [224] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:58:40,627 [219] INFO  App  
+ GET /api/photogallery/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:58:40,631 [216] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:58:40,637 [206] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:58:42,441 [207] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 16:58:42,448 [216] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:11:42,739 [178] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:11:42,747 [184] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:12:07,759 [180] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:12:07,768 [174] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:12:14,579 [178] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:12:14,591 [176] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:12:36,574 [172] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:12:36,579 [168] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:32:56,138 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:33:05,124 [9] INFO  App  
+ GET /api/film/genres/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:33:05,152 [9] ERROR App  
+ Exception: Error mapping types.
+
+Mapping types:
+Film -> FilmWithGenresModel
+FilmsCatalog.DAL.Models.Film -> FilmsCatalog.Business.Models.FilmWithGenresModel
+
+Type Map configuration:
+Film -> FilmWithGenresModel
+FilmsCatalog.DAL.Models.Film -> FilmsCatalog.Business.Models.FilmWithGenresModel
+
+Property:
+Genres Anonymously Hosted DynamicMethods Assembly  
+ 
+2018-08-28 17:39:19,637 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:39:21,848 [8] INFO  App  
+ GET /api/film/genres/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:45:54,602 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:45:59,606 [13] INFO  App  
+ GET /api/film/genres/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:48:05,277 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:48:13,717 [13] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:48:19,535 [9] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:51:28,583 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:51:30,306 [13] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:51:52,866 [17] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:51:52,899 [20] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:51:53,013 [17] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:52:57,277 [23] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:52:57,307 [26] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:52:57,307 [13] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:53:37,440 [29] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:53:37,440 [13] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:53:37,446 [13] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:54:24,504 [35] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:54:24,514 [13] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:54:24,532 [35] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:54:32,272 [36] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:54:32,304 [38] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:54:34,064 [39] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:54:34,067 [39] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:54:34,068 [35] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:55:17,755 [43] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:55:17,756 [35] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:55:17,790 [35] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:55:21,466 [45] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:55:21,487 [35] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:55:22,816 [45] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:55:22,817 [44] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:55:22,817 [35] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:56:05,193 [46] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:56:05,194 [50] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:56:05,200 [51] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:56:22,216 [51] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:56:22,219 [46] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:56:22,235 [56] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:56:28,026 [58] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:56:28,032 [58] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 17:56:28,033 [54] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:03:17,103 [76] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:03:17,103 [71] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:03:17,113 [76] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:06:34,286 [90] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:06:34,292 [89] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:06:34,317 [89] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:06:39,445 [96] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:06:39,446 [98] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:06:39,450 [89] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:08:16,716 [87] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:08:16,718 [101] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:08:16,724 [102] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:08:31,093 [99] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:08:31,093 [102] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:08:31,129 [101] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:08:37,621 [102] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:08:37,621 [103] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:08:37,641 [99] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:11:46,887 [115] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:11:46,896 [110] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:11:46,909 [115] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:11:53,789 [119] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:11:53,791 [116] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:11:53,815 [120] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:14:15,171 [130] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:14:15,188 [122] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:14:15,203 [130] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:14:36,952 [131] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:14:36,953 [130] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:14:36,964 [125] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:15:08,224 [137] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:15:08,231 [137] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:15:08,271 [135] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:15:28,785 [143] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:15:34,521 [140] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:15:34,521 [145] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:15:34,538 [140] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:11,960 [134] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:11,966 [140] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:11,966 [138] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:23,827 [140] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:23,838 [140] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:28,362 [134] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:28,362 [149] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:28,366 [140] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:44,046 [146] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:44,059 [146] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:45,274 [150] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:45,278 [146] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:16:45,284 [144] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:19:32,683 [167] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:19:32,691 [167] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:19:32,707 [167] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:19:57,576 [169] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:19:57,576 [170] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:19:57,616 [173] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:00,563 [170] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:00,605 [169] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:02,383 [173] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:02,383 [172] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:02,388 [169] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:03,537 [161] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:03,546 [169] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:05,132 [161] INFO  App  
+ GET /api/photogallery/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:05,135 [174] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:05,136 [169] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:08,397 [172] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:08,409 [174] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:10,202 [163] INFO  App  
+ GET /api/comments/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:10,202 [167] INFO  App  
+ GET /api/photogallery/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:10,204 [170] INFO  App  
+ GET /api/film/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:13,820 [170] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:13,832 [169] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:15,750 [161] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:15,753 [170] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:15,753 [173] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:55,081 [178] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:55,086 [178] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:55,116 [181] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:57,727 [180] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:57,748 [167] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:59,381 [184] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:59,381 [182] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:20:59,383 [167] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:00,481 [167] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:00,495 [182] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:01,598 [182] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:01,598 [181] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:01,604 [184] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:10,633 [184] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:10,647 [178] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:12,392 [185] INFO  App  
+ GET /api/comments/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:12,393 [184] INFO  App  
+ GET /api/photogallery/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:12,401 [178] INFO  App  
+ GET /api/film/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:15,015 [178] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:15,031 [181] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:17,109 [181] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:17,110 [185] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:17,118 [180] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:18,023 [181] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:18,037 [183] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:19,393 [167] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:19,400 [183] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:19,405 [181] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:20,896 [183] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-28 18:21:20,914 [178] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 

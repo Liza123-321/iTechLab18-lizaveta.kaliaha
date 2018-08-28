@@ -97,6 +97,8 @@ namespace WebApi
                 x.CreateMap<RatingModel, RatingMark>();
                 x.CreateMap<RatingMark, RatingModel>();
                 x.CreateMap<Comment, CommentWithEmailModel>().ForMember(u=>u.Email,u=>u.MapFrom(y=>y.User.Email));
+                x.CreateMap<Film, FilmWithGenresModel>().ForMember(dto => dto.Genres,opt=>opt.MapFrom(y => y.FilmGenres.Select(z=>z.Genre).ToList()));
+                x.CreateMap<FilmGenre, GenreModel>();
             } );
         }
 
