@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FilmsCatalog.BLL.Interfaces;
-using FilmsCatalog.BLL.ModelsBLL;
+using AutoMapper;
+using FilmsCatalog.Business.Interfaces;
+using FilmsCatalog.Business.Models;
+using FilmsCtalog.WebApi.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,21 +16,23 @@ namespace FilmsCtalog.WebApi.Controllers
     public class PhotoGalleryController : ControllerBase
     {
         private readonly IPhotoGalleryService _photosService;
-        public PhotoGalleryController(IPhotoGalleryService photosService)
+        private readonly IMapper _mapper;
+        public PhotoGalleryController(IPhotoGalleryService photosService, IMapper mapper)
         {
             this._photosService = photosService;
+            this._mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<List<PhotoGallery>> Get()
+        public async Task<List<PhotoGalleryViewModel>> Get()
         {
-            return await _photosService.GetAllPhotosGallery();
+            return _mapper.Map<List<PhotoGalleryModel>, List<PhotoGalleryViewModel>> (await _photosService.GetAllPhotosGallery());
         }
 
         [HttpGet("{id}")]
-        public async Task<List<PhotoGallery>> Get(int id)
+        public async Task<List<PhotoGalleryViewModel>> Get(int id)
         {
-            return await _photosService.GetGalleryByFilmId(id);
+            return _mapper.Map<List<PhotoGalleryModel>, List<PhotoGalleryViewModel>>(await _photosService.GetGalleryByFilmId(id));
         }
     }
 }

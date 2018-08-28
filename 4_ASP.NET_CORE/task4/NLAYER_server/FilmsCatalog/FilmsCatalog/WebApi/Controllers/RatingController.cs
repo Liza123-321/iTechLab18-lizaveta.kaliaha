@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FilmsCatalog.BLL.Interfaces;
-using FilmsCatalog.BLL.ModelsBLL;
+using AutoMapper;
+using FilmsCatalog.Business.Interfaces;
+using FilmsCatalog.Business.Models;
+using FilmsCtalog.WebApi.HttpBase;
+using FilmsCtalog.WebApi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,15 +18,17 @@ namespace FilmsCtalog.WebApi.Controllers
     public class RatingController : ControllerBase
     {
         private readonly IRatingService _ratingService;
-        public RatingController(IRatingService ratingService)
+        private readonly IMapper _mapper;
+        public RatingController(IRatingService ratingService, IMapper mapper)
         {
             this._ratingService = ratingService;
+            this._mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<List<Rating>> Get()
+        public async Task<List<RatingViewModel>> Get()
         {
-            return await _ratingService.GetAllRatings();
+            return _mapper.Map<List<RatingModel>,List<RatingViewModel>>(await _ratingService.GetAllRatings());
         }
 
         [HttpGet("{id}")]
@@ -33,9 +38,9 @@ namespace FilmsCtalog.WebApi.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> AddRating([FromBody]Rating rating)
+        public async Task<IActionResult> AddRating([FromBody]RatingViewModel rating)
         {
-            var myRating = await _ratingService.SetRating(rating, User.Identity.Name);
+            var myRating = await _ratingService.SetRating(_mapper.Map<RatingViewModel,RatingModel>(rating), Int32.Parse(HttpContext.GetUserIdAsync()));
             if (myRating == null) return BadRequest(new { message = "BadRequest" });
             return Ok(myRating);
 

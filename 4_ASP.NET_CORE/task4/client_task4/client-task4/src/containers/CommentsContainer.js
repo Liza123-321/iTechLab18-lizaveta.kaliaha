@@ -16,7 +16,7 @@ class CommentsContainer extends React.Component {
 		return (
 			<Comment
 				message={i.commentMessage}
-				userName={i.userName}
+				userName={i.email}
 				data={i.data}
 				key={i.data + i.commentMessage + i.userName}
 			/>

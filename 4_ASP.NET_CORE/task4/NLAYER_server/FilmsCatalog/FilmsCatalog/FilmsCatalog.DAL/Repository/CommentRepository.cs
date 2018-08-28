@@ -12,8 +12,8 @@ namespace FilmsCatalog.DAL.Repository
 {
     public class CommentRepository : ICommentRepository
     {
-        private dbContext db;
-        public CommentRepository(dbContext comments)
+        private ApplicationContext db;
+        public CommentRepository(ApplicationContext comments)
         {
             this.db = comments;
         }
@@ -38,7 +38,7 @@ namespace FilmsCatalog.DAL.Repository
 
         public async Task<List<Comment>> GetCommentsByFilmId(int id)
         {
-            return await db.Comments.Where(x => x.FilmId == id).ToListAsync();
+            return await db.Comments.Include(u=>u.User).Where(x => x.FilmId == id).ToListAsync();
         }
     }
 }

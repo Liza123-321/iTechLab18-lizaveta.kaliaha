@@ -72,9 +72,8 @@ class RouterContainer extends React.Component {
 						isAuth={this.state.isAuth}
 					/>
 					<Switch>
-						<Route exact path={'/'} component={null} />
-						<Route path={'/film/:id'} component={FilmContainer} />
 						<Route path={'/films'} component={FilmsContainer} />
+						<Route path={'/film/:id'} component={FilmContainer} />
 						<Route path={'/register'} component={Register} />
 						<Route path={'/logout'} component={LogOutContainer} />
 						<Route path={'/login'} component={Login} />

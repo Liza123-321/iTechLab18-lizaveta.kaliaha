@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using FilmsCatalog.BLL.Interfaces;
-using FilmsCatalog.BLL.ModelsBLL;
+using FilmsCatalog.Business.Interfaces;
+using FilmsCatalog.Business.Models;
 using FilmsCatalog.DAL.Models;
+using FilmsCtalog.WebApi.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,15 +24,15 @@ namespace FilmsCtalog.WebApi.Controllers
             this._mapper = mapper;
         }
         [HttpPost("login")]
-        public async Task<IActionResult> GetToken([FromBody]Login user)
+        public async Task<IActionResult> GetToken([FromBody]LoginViewModel user)
         {
-            return new ObjectResult(await _userService.LoginUser(user));
+            return new ObjectResult(await _userService.LoginUser(_mapper.Map<LoginViewModel,LoginModel>(user)));
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody]Login user)
+        public async Task<IActionResult> Register([FromBody]LoginViewModel user)
         {
-            var myUser = await _userService.RegisterUser(user);
+            var myUser = await _userService.RegisterUser(_mapper.Map<LoginViewModel, LoginModel>(user));
             if (myUser == null) return BadRequest(new { message = "This email used by other user" });
             return Ok(user);
 

@@ -12,9 +12,9 @@ namespace FilmsCatalog.DAL.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private dbContext db;
+        private ApplicationContext db;
 
-        public UserRepository(dbContext users)
+        public UserRepository(ApplicationContext users)
         {
             this.db = users;
         }

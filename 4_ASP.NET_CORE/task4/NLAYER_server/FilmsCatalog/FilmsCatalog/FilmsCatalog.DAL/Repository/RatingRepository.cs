@@ -12,9 +12,9 @@ namespace FilmsCatalog.DAL.Repository
 {
     public class RatingRepository : IRatingRepository
     {
-        private dbContext db;
+        private ApplicationContext db;
 
-        public RatingRepository(dbContext ratings)
+        public RatingRepository(ApplicationContext ratings)
         {
             this.db = ratings;
         }
@@ -48,11 +48,13 @@ namespace FilmsCatalog.DAL.Repository
 
         public async Task<RatingMark> RemoveRating(RatingMark rating)
         {
-            if (rating == null)
-            {
-                return null;
-            }
             db.RatingMarks.Remove(rating);
+            await db.SaveChangesAsync();
+            return rating;
+        }
+        public async Task<RatingMark> UpdateRating(RatingMark rating)
+        {
+            db.RatingMarks.Update(rating);
             await db.SaveChangesAsync();
             return rating;
         }

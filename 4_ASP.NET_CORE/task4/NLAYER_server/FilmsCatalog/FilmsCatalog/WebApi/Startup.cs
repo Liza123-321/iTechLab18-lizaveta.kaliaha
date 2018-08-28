@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using FilmsCatalog.BLL;
-using FilmsCatalog.BLL.Interfaces;
-using FilmsCatalog.BLL.Logger;
-using FilmsCatalog.BLL.Logger.Filters;
-using FilmsCatalog.BLL.ModelsBLL;
-using FilmsCatalog.BLL.Services;
+using FilmsCatalog.Business;
+using FilmsCatalog.Business.Interfaces;
+using FilmsCatalog.Business.Logger;
+using FilmsCatalog.Business.Logger.Filters;
+using FilmsCatalog.Business.Models;
+using FilmsCatalog.Business.Services;
 using FilmsCatalog.DAL.Context;
 using FilmsCatalog.DAL.Interfaces;
 using FilmsCatalog.DAL.Models;
@@ -40,7 +40,7 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             string connection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<dbContext>(options =>
+            services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(connection));
             services.AddCors();
 
@@ -67,17 +67,17 @@ namespace WebApi
                        };
                    });
             services.AddSingleton<ILog4NetService, Log4NetService>();
-            services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IFilmService, FilmService>();
-            services.AddTransient<IRatingRepository, RatingRepository>();
-            services.AddTransient<IUserRepository, UserRepository>();
-            services.AddTransient<ICommentRepository, CommentRepository>();
-            services.AddTransient<IFilmRepository, FilmRepository>();
-            services.AddTransient<IPhotoRepository, PhotoRepository>();
-            services.AddTransient<ICommentService, CommentService>();
-            services.AddTransient<IRatingService, RatingService>();
-            services.AddTransient<ITokenService, TokenService>();
-            services.AddTransient<IPhotoGalleryService, PhotoGalleryService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IFilmService, FilmService>();
+            services.AddScoped<IRatingRepository, RatingRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ICommentRepository, CommentRepository>();
+            services.AddScoped<IFilmRepository, FilmRepository>();
+            services.AddScoped<IPhotoRepository, PhotoRepository>();
+            services.AddScoped<ICommentService, CommentService>();
+            services.AddScoped<IRatingService, RatingService>();
+            services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IPhotoGalleryService, PhotoGalleryService>();
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(LogActionAttribute));
@@ -86,10 +86,11 @@ namespace WebApi
             }).AddXmlDataContractSerializerFormatters();
             services.AddAutoMapper();
 
-            Mapper.Initialize(x => { x.CreateMap<CommentBLL, Comment>();
-                x.CreateMap<Comment, CommentBLL>();
-                x.CreateMap<Rating, RatingMark>();
-                x.CreateMap<RatingMark, Rating>();
+            Mapper.Initialize(x => { x.CreateMap<CommentModel, Comment>();
+                x.CreateMap<Comment, CommentModel>();
+                x.CreateMap<RatingModel, RatingMark>();
+                x.CreateMap<RatingMark, RatingModel>();
+                x.CreateMap<Comment, CommentWithEmailModel>().ForMember(u=>u.Email,u=>u.MapFrom(y=>y.User.Email));
             } );
         }
 

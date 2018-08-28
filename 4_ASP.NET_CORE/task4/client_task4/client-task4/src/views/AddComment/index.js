@@ -51,7 +51,6 @@ let AddComment = ({
 							component={Link}
 							to={'/login'}
 							className={classes.button}
-							onClick={addComment}
 						>
 							Вход
 						</Button>

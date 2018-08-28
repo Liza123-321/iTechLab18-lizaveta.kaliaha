@@ -12,9 +12,9 @@ namespace FilmsCatalog.DAL.Repository
 {
     public class PhotoRepository : IPhotoRepository
     {
-        private dbContext db;
+        private ApplicationContext db;
 
-        public PhotoRepository(dbContext photos)
+        public PhotoRepository(ApplicationContext photos)
         {
             this.db = photos;
         }

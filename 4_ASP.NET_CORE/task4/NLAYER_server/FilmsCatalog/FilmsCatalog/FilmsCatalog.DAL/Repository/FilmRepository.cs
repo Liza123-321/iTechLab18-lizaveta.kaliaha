@@ -12,9 +12,9 @@ namespace FilmsCatalog.DAL.Repository
 {
     public class FilmRepository : IFilmRepository
     {
-        private dbContext db;
+        private ApplicationContext db;
 
-        public FilmRepository(dbContext films)
+        public FilmRepository(ApplicationContext films)
         {
             this.db = films;
         }
