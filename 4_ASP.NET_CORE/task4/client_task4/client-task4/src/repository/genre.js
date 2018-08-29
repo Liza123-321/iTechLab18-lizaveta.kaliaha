@@ -8,4 +8,7 @@ export default class GenreRepository {
 	getGenres = () => {
 		return axios.get('https://localhost:5001/api/genre');
 	};
+	getFilmsByGenre = name => {
+		return axios.get('https://localhost:5001/api/genre/' + name);
+	};
 }

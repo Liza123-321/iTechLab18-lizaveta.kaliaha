@@ -6,10 +6,10 @@ import '../../App.css';
 
 import styles from './style';
 
-let Genre = ({ classes, name }) => {
+let Genre = ({ classes, name, setGenre }) => {
 	return (
-		<Card className={classes.card}>
-			<div className={classes.userName}>{name}</div>
+		<Card className={classes.card} id={name} onClick={setGenre}>
+			{name}
 		</Card>
 	);
 };

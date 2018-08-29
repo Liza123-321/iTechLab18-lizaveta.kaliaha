@@ -85,13 +85,13 @@ namespace FilmsCatalog.DAL.Initializer
                 );
 
             modelBuilder.Entity<Genre>().HasData(
-            new Genre { Id = 1, GenreName = "Ужасы" },
-            new Genre { Id = 2, GenreName = "Детективы" },
-            new Genre { Id = 3, GenreName = "Комедии" },
-            new Genre { Id = 4, GenreName = "Спорт" },
-            new Genre { Id = 5, GenreName = "Фантастика" },
-            new Genre { Id = 6, GenreName = "Драмы" },
-            new Genre { Id = 7, GenreName = "Приключения" }
+            new Genre { Id = 1, GenreName = "Horrors" },
+            new Genre { Id = 2, GenreName = "Detectives" },
+            new Genre { Id = 3, GenreName = "Comedy" },
+            new Genre { Id = 4, GenreName = "Sport" },
+            new Genre { Id = 5, GenreName = "Fantastic" },
+            new Genre { Id = 6, GenreName = "Dramas" },
+            new Genre { Id = 7, GenreName = "Adventure" }
             );
 
 

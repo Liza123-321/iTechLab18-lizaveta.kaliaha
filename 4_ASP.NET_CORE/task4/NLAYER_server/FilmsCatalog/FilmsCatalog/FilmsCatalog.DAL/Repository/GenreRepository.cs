@@ -49,9 +49,9 @@ namespace FilmsCatalog.DAL.Repository
             return await db.Genres.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<Genre> GetGenreByIdWithFilms(int id)
+        public async Task<Genre> GetGenreByNameWithFilms(string name)
         {
-            return await db.Genres.Include(u=>u.FilmGenres).FirstOrDefaultAsync(x => x.Id == id);
+            return await db.Genres.Include(u=>u.FilmGenres).ThenInclude(e => e.Film).FirstOrDefaultAsync(x => x.GenreName == name);
         }
 
         public async Task<Genre> UpdateGenre(Genre genre)

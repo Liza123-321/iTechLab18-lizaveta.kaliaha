@@ -40,6 +40,7 @@ class FilmContainer extends React.Component {
 	render() {
 		return (
 			<div>
+				<div className="App-text"> Genres:</div>
 				<div className="App-genres">{this.state.genres.map(this.eachTask)}</div>
 				<FilmInfo
 					filmPoster={this.state.filmData.poster}

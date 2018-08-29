@@ -32,6 +32,14 @@ a {
   justify-content: center;
   flex-wrap: wrap;
 }
+.App-text{
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Georgia';
+  font-size: 26px;
+  color: #ff1a75;
+}
 .card{
   display: flex;
   margin-top: 10px;

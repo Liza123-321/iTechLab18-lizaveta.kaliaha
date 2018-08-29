@@ -37,6 +37,7 @@ class FilmsContainer extends React.Component {
 		return (
 			<div>
 				<GenreContainer />
+				<div className="App-text"> All Films:</div>
 				<div className="App-films">
 					{this.state.arrayFilms.map(this.eachTask)}
 				</div>

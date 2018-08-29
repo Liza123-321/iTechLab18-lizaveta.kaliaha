@@ -25,5 +25,9 @@ namespace FilmsCatalog.Business.Services
         {
             return _mapper.Map<List<Genre>, List<GenreModel>>(await _genreRepository.GetAllGenres());
         }
+       public async Task<GenreWithFilmModel> GetGenreByNameWithFilms(string name)
+        {
+            return Mapper.Map<Genre, GenreWithFilmModel>(await _genreRepository.GetGenreByNameWithFilms(name));
+        }
     }
 }
