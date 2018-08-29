@@ -22,16 +22,16 @@ class GenresContainer extends React.Component {
 		}
 	}
 	async setGenre(genre) {
-		console.log(genre.target.id);
 		this.setState({ currentGenre: genre.target.id });
 		let res = await genreRepository.getFilmsByGenre(genre.target.id);
 		if (res.status === 200) {
-			console.log(res.data.films);
 			this.setState({ films: res.data.films });
 		}
 	}
 	eachTask = i => {
-		return <Genre name={i.genreName} setGenre={this.setGenre} />;
+		return (
+			<Genre name={i.genreName} setGenre={this.setGenre} key={i.genreName} />
+		);
 	};
 	eachTaskFilms = i => {
 		return (

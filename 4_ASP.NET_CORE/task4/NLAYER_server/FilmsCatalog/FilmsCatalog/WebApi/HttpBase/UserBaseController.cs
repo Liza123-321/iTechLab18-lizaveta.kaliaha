@@ -11,27 +11,23 @@ namespace FilmsCtalog.WebApi.HttpBase
     public class UserBaseController: ControllerBase
     {
         private readonly IUserService _userService;
-        //private Lazy<Task<int>> _userId = new Lazy<Task<int>>(async() => await _userService2.GetIdByEmail(User.Identity.Name));
-        //public Task<int> UserLazy => _userId.Value;
-        private Task<int> _userId;
-        public Task<int> UserId
+        private int? _userId;
+        public int UserId
         {
             get
             {
-                if (_userId == null)
+                if (_userId == null && User.Identity.Name != null)
                 {
-                    _userId = _userService.GetIdByEmail(User.Identity.Name);
+                    _userId = _userService.GetIdByEmail(User.Identity.Name).Result;
+                    return (int)_userId;
                 }
-                return _userId;
+                else return 0;
+
             }
         }
         public UserBaseController(IUserService userService)
         {
             _userService = userService;
-        }
-        async public Task<int> GetUserIdAsync()
-        {
-            return await _userService.GetIdByEmail(User.Identity.Name);
         }
     }
 }

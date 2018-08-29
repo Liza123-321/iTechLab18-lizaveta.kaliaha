@@ -34,7 +34,7 @@ class FilmContainer extends React.Component {
 		await ratingRepository.setRating(newRating, this.state.id, this);
 	}
 	eachTask = i => {
-		return <Genre name={i.genreName} />;
+		return <Genre name={i.genreName} key={i.genreName} />;
 	};
 
 	render() {

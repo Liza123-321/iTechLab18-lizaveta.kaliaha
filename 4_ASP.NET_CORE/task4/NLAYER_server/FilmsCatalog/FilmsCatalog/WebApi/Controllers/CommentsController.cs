@@ -33,7 +33,7 @@ namespace FilmsCtalog.WebApi.Controllers
         {
             if (ModelState.IsValid)
             {
-                var myComment = await _commentsService.AddComment(_mapper.Map<Models.Comment, FilmsCatalog.Business.Models.Comment>(model), await UserId);
+                var myComment = await _commentsService.AddComment(_mapper.Map<Models.Comment, FilmsCatalog.Business.Models.Comment>(model), UserId);
                 return Ok(myComment);
             }
             else return BadRequest(new { message = "BadRequest" });
