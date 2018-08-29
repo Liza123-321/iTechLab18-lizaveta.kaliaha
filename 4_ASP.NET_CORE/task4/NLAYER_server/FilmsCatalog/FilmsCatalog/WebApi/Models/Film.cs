@@ -2,7 +2,7 @@
 
 namespace FilmsCtalog.WebApi.Models
 {
-    public class FilmViewModel
+    public class Film
     {
         [Required]
         public int Id { get; set; }

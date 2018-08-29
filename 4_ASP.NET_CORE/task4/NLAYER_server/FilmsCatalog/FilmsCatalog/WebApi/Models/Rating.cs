@@ -3,7 +3,7 @@
 
 namespace FilmsCtalog.WebApi.Models
 {
-    public class RatingViewModel
+    public class Rating
     {
         [Required]
         public int Mark { get; set; }

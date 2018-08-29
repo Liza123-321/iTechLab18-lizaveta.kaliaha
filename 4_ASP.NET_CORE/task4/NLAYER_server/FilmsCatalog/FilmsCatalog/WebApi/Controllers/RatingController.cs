@@ -14,20 +14,20 @@ namespace FilmsCtalog.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RatingController : ControllerBase
+    public class RatingController : UserBaseController
     {
         private readonly IRatingService _ratingService;
         private readonly IMapper _mapper;
-        public RatingController(IRatingService ratingService, IMapper mapper)
+        public RatingController(IRatingService ratingService, IMapper mapper, IUserService userService) : base(userService)
         {
             this._ratingService = ratingService;
             this._mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<List<RatingViewModel>> Get()
+        public async Task<List<Models.Rating>> Get()
         {
-            return _mapper.Map<List<RatingModel>,List<RatingViewModel>>(await _ratingService.GetAllRatings());
+            return _mapper.Map<List<FilmsCatalog.Business.Models.Rating>,List<Models.Rating>>(await _ratingService.GetAllRatings());
         }
 
         [HttpGet("{id}")]
@@ -37,10 +37,10 @@ namespace FilmsCtalog.WebApi.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> AddRating([FromBody]RatingViewModel model)
+        public async Task<IActionResult> AddRating([FromBody] Models.Rating model)
         {
             if (ModelState.IsValid) {
-                var myRating = await _ratingService.SetRating(_mapper.Map<RatingViewModel, RatingModel>(model), Int32.Parse(HttpContext.GetUserIdAsync()));
+                var myRating = await _ratingService.SetRating(_mapper.Map<Models.Rating, FilmsCatalog.Business.Models.Rating>(model), await GetUserIdAsync());
                 return Ok(myRating);
             }
            else return BadRequest();

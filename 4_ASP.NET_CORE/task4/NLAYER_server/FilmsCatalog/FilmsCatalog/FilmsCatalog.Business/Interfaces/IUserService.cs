@@ -6,11 +6,11 @@ namespace FilmsCatalog.Business.Interfaces
 {
     public interface IUserService
     {
-        Task<List<LoginModel>> GetAllUsers();
-        Task<LoginModel> GetUserById(int id);
-        Task<LoginModel> RegisterUser(LoginModel user);
+        Task<List<Login>> GetAllUsers();
+        Task<Login> GetUserById(int id);
+        Task<Login> RegisterUser(Login user);
         Task<string> GetEmailById(int id);
         Task<int> GetIdByEmail(string email);
-        Task<TokenModel> LoginUser(LoginModel user);
+        Task<Token> LoginUser(Login user);
     }
 }

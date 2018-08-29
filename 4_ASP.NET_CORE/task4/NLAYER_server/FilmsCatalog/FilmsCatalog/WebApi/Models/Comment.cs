@@ -2,7 +2,7 @@
 
 namespace FilmsCtalog.WebApi.Models
 {
-    public class CommentViewModel
+    public class Comment
     {
         [Required]
         public string CommentMessage { get; set; }

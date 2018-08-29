@@ -21,27 +21,27 @@ namespace FilmsCatalog.Business.Services
             this._ratingService = ratingService;
         }
 
-        public async Task<FilmModel> CreateFilm(FilmModel film)
+        public async Task<Models.Film> CreateFilm(Models.Film film)
         {        
-            return _mapper.Map < Film, FilmModel > (await _filmRepository.CreateFilm(_mapper.Map<FilmModel, Film>(film)));
+            return _mapper.Map <DAL.Models.Film, Models.Film> (await _filmRepository.CreateFilm(_mapper.Map<Models.Film, DAL.Models.Film>(film)));
         }
-        private async Task<FilmModel> SetFilmRating(FilmModel film)
+        private async Task<Models.Film> SetFilmRating(Models.Film film)
         {
             if (film == null) return null;
             film.AverageRating = _ratingService.GetAverageFilmRating(await _ratingService.GetRatingByFilmId(film.Id));
             return film;
         }
-        private async Task<FilmWithGenresModel> SetFilmRating(FilmWithGenresModel film)
+        private async Task<FilmWithGenres> SetFilmRating(FilmWithGenres film)
         {
             if (film == null) return null;
             film.AverageRating = _ratingService.GetAverageFilmRating(await _ratingService.GetRatingByFilmId(film.Id));
             return film;
         }
-        public async Task<FilmWithGenresModel> GetFilmByWithGenres(int id)
+        public async Task<FilmWithGenres> GetFilmByWithGenres(int id)
         {
-            return await SetFilmRating(Mapper.Map<Film, FilmWithGenresModel>(await _filmRepository.GetFilmByWithGenres(id)));
+            return await SetFilmRating(_mapper.Map<DAL.Models.Film, FilmWithGenres>(await _filmRepository.GetFilmByWithGenres(id)));
         }
-        private async Task<List<FilmModel>> SetFilmsRating(List<FilmModel> films)
+        private async Task<List<Models.Film>> SetFilmsRating(List<Models.Film> films)
         {
             for (int i = 0; i < films.Count; i++)
             {
@@ -49,19 +49,19 @@ namespace FilmsCatalog.Business.Services
             }
             return films;
         }
-        public async Task<List<FilmModel>> GetAllFilms()
+        public async Task<List<Models.Film>> GetAllFilms()
         {
-            return await SetFilmsRating(_mapper.Map<List<Film>, List<FilmModel>>(await _filmRepository.GetAllFilms()));
+            return await SetFilmsRating(_mapper.Map<List<DAL.Models.Film>, List<Models.Film>>(await _filmRepository.GetAllFilms()));
         }
 
-        public async Task<FilmModel> GetFilmById(int id)
+        public async Task<Models.Film> GetFilmById(int id)
         {
-            return await SetFilmRating(_mapper.Map<Film,FilmModel>(await _filmRepository.GetFilmById(id)));
+            return await SetFilmRating(_mapper.Map<DAL.Models.Film, Models.Film>(await _filmRepository.GetFilmById(id)));
         }
 
-        public async Task<FilmModel> UpdateFilm(FilmModel film)
+        public async Task<Models.Film> UpdateFilm(Models.Film film)
         {
-            return _mapper.Map<Film, FilmModel>(await _filmRepository.UpdateFilm(_mapper.Map<FilmModel, Film>(film)));
+            return _mapper.Map<DAL.Models.Film, Models.Film>(await _filmRepository.UpdateFilm(_mapper.Map<Models.Film, DAL.Models.Film>(film)));
         }
     }
 }

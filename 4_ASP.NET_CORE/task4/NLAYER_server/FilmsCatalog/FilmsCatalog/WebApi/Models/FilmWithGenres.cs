@@ -1,8 +1,14 @@
-﻿
-namespace FilmsCatalog.Business.Models
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace FilmsCtalog.WebApi.Models
 {
-    public class FilmModel
+    public class FilmWithGenres
     {
+        [Required]
         public int Id { get; set; }
         public string Name { get; set; }
         public double AverageRating { get; set; }
@@ -12,5 +18,6 @@ namespace FilmsCatalog.Business.Models
         public string Poster { get; set; }
         public int Year { get; set; }
         public string Video { get; set; }
+        public ICollection<Genre> Genres { get; set; }
     }
 }

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace FilmsCatalog.Business.Models
 {
-   public class FilmWithGenresModel
+    public class Film
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -15,6 +12,5 @@ namespace FilmsCatalog.Business.Models
         public string Poster { get; set; }
         public int Year { get; set; }
         public string Video { get; set; }
-        public ICollection<GenreModel> Genres { get; set; }
     }
 }

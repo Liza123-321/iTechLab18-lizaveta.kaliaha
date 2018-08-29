@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FilmsCatalog.Business.Models
 {
-    public class GenreModel
+    public class Genre
     {
         public string GenreName { get; set; }
     }

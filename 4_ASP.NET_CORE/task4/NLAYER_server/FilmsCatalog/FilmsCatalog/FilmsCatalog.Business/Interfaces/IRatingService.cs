@@ -7,11 +7,11 @@ namespace FilmsCatalog.Business.Interfaces
 {
   public  interface IRatingService
     {
-        Task<List<RatingModel>> GetAllRatings();
-        Task<List<RatingModel>> GetRatingByFilmId(int id);
-        Task<List<RatingModel>> GetRatingByUserId(int id);
-        Task<RatingModel> SetRating(RatingModel rating, int id);
+        Task<List<Rating>> GetAllRatings();
+        Task<List<Rating>> GetRatingByFilmId(int id);
+        Task<List<Rating>> GetRatingByUserId(int id);
+        Task<Rating> SetRating(Rating rating, int id);
         Task<RatingMark> GetRatingFromUserAndFilm(int userId, int filmId);
-        double GetAverageFilmRating(List<RatingModel> ratings);
+        double GetAverageFilmRating(List<Rating> ratings);
     }
 }

@@ -21,13 +21,13 @@ namespace FilmsCatalog.Business.Services
             _genreRepository = genreRepository;
         }
 
-        public async  Task<List<GenreModel>> GetAllGenres()
+        public async  Task<List<Models.Genre>> GetAllGenres()
         {
-            return _mapper.Map<List<Genre>, List<GenreModel>>(await _genreRepository.GetAllGenres());
+            return _mapper.Map<List<DAL.Models.Genre>, List<Models.Genre>>(await _genreRepository.GetAllGenres());
         }
-       public async Task<GenreWithFilmModel> GetGenreByNameWithFilms(string name)
+       public async Task<GenreWithFilm> GetGenreByNameWithFilms(string name)
         {
-            return Mapper.Map<Genre, GenreWithFilmModel>(await _genreRepository.GetGenreByNameWithFilms(name));
+            return _mapper.Map<DAL.Models.Genre, GenreWithFilm>(await _genreRepository.GetGenreByNameWithFilms(name));
         }
     }
 }

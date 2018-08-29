@@ -25,15 +25,15 @@ namespace FilmsCtalog.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<List<GenreViewModel>> Get()
+        public async Task<List<Models.Genre>> Get()
         {
-            return _mapper.Map<List<GenreModel>, List<GenreViewModel>>(await _genreService.GetAllGenres());
+            return _mapper.Map<List<FilmsCatalog.Business.Models.Genre>, List<Models.Genre>>(await _genreService.GetAllGenres());
         }
 
         [HttpGet("{name}")]
         public async Task<IActionResult> GetWithFilms(string name)
         {
-            GenreWithFilmViewModel genre = _mapper.Map<GenreWithFilmModel, GenreWithFilmViewModel>(await _genreService.GetGenreByNameWithFilms(name));
+            Models.GenreWithFilm genre = _mapper.Map<FilmsCatalog.Business.Models.GenreWithFilm, Models.GenreWithFilm>(await _genreService.GetGenreByNameWithFilms(name));
             if (genre == null) return BadRequest(new { message = "Genre with this name {" + name + "} not found" });
             return Ok(genre);
         }

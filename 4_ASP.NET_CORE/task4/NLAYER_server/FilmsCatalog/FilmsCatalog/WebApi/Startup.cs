@@ -42,6 +42,8 @@ namespace WebApi
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(connection));
+            //string con = "Server=localhost;Database=filmsCatalog;Trusted_Connection=True;";
+            //services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(con));
             services.AddCors();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -92,16 +94,6 @@ namespace WebApi
             }).AddXmlDataContractSerializerFormatters();
             services.AddAutoMapper();
 
-            Mapper.Initialize(x => { x.CreateMap<CommentModel, Comment>();
-                x.CreateMap<Comment, CommentModel>();
-                x.CreateMap<RatingModel, RatingMark>();
-                x.CreateMap<RatingMark, RatingModel>();
-                x.CreateMap<Comment, CommentWithEmailModel>().ForMember(u=>u.Email,u=>u.MapFrom(y=>y.User.Email));
-                x.CreateMap<Film, FilmWithGenresModel>().ForMember(dto => dto.Genres,opt=>opt.MapFrom(y => y.FilmGenres.Select(z=>z.Genre).ToList()));
-                x.CreateMap<FilmGenre, GenreModel>();
-                x.CreateMap<Genre, GenreWithFilmModel>().ForMember(dto => dto.Films, opt => opt.MapFrom(y => y.FilmGenres.Select(z => z.Film).ToList()));
-                x.CreateMap<FilmGenre, FilmModel>();
-            } );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

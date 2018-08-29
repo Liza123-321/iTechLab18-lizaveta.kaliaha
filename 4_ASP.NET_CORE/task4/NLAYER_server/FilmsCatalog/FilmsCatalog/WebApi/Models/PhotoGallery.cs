@@ -1,7 +1,7 @@
 ﻿
 namespace FilmsCtalog.WebApi.Models
 {
-    public class PhotoGalleryViewModel
+    public class PhotoGallery
     {
         public string Src { get; set; }
     }

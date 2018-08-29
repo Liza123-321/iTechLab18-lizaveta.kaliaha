@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace FilmsCtalog.WebApi.Models
 {
-    public class GenreViewModel
+    public class GenreWithFilm
     {
-        [Required]
         public string GenreName { get; set; }
+        public ICollection<Film> Films { get; set; }
     }
 }

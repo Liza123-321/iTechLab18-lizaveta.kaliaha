@@ -6,7 +6,7 @@ namespace FilmsCatalog.Business.Interfaces
 {
     public interface IPhotoGalleryService
     {
-        Task<List<PhotoGalleryModel>> GetAllPhotosGallery();
-        Task<List<PhotoGalleryModel>> GetGalleryByFilmId(int id);
+        Task<List<PhotoGallery>> GetAllPhotosGallery();
+        Task<List<PhotoGallery>> GetGalleryByFilmId(int id);
     }
 }

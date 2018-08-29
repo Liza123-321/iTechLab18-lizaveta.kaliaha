@@ -2,7 +2,7 @@
 
 namespace FilmsCtalog.WebApi.Models
 {
-    public class LoginViewModel
+    public class Login
     {
         [Required]
         public string Email { get; set; }

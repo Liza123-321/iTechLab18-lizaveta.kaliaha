@@ -6,7 +6,7 @@ namespace FilmsCatalog.Business.Interfaces
 {
    public interface ICommentService
     {
-        Task<List<CommentWithEmailModel>> GetCommentsByFilmId(int id);
-        Task<CommentModel> AddComment(CommentModel comment, int id);
+        Task<List<CommentWithEmail>> GetCommentsByFilmId(int id);
+        Task<Comment> AddComment(Comment comment, int id);
     }
 }

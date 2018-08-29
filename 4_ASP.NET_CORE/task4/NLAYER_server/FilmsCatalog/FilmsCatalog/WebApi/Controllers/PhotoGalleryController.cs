@@ -21,15 +21,15 @@ namespace FilmsCtalog.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<List<PhotoGalleryViewModel>> Get()
+        public async Task<List<Models.PhotoGallery>> Get()
         {
-            return _mapper.Map<List<PhotoGalleryModel>, List<PhotoGalleryViewModel>> (await _photosService.GetAllPhotosGallery());
+            return _mapper.Map<List<FilmsCatalog.Business.Models.PhotoGallery>, List<Models.PhotoGallery>> (await _photosService.GetAllPhotosGallery());
         }
 
         [HttpGet("{id}")]
-        public async Task<List<PhotoGalleryViewModel>> Get(int id)
+        public async Task<List<Models.PhotoGallery>> Get(int id)
         {
-            return _mapper.Map<List<PhotoGalleryModel>, List<PhotoGalleryViewModel>>(await _photosService.GetGalleryByFilmId(id));
+            return _mapper.Map<List<FilmsCatalog.Business.Models.PhotoGallery>, List<Models.PhotoGallery>>(await _photosService.GetGalleryByFilmId(id));
         }
     }
 }

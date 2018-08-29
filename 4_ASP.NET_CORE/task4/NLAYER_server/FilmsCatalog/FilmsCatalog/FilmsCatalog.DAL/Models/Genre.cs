@@ -8,6 +8,6 @@ namespace FilmsCatalog.DAL.Models
     {
         public int Id { get; set; }
         public string GenreName { get; set; }
-        public ICollection<FilmGenre> FilmGenres { get; set; }
+        public virtual ICollection<FilmGenre> FilmGenres { get; set; }
     }
 }

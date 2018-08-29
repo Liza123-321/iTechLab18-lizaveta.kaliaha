@@ -22,40 +22,31 @@ namespace FilmsCtalog.WebApi.Controllers
 
         // GET: api/Film
         [HttpGet]
-        public async Task<List<FilmViewModel>> Get()
+        public async Task<List<Models.Film>> Get()
         {
-            return _mapper.Map<List<FilmModel>, List<FilmViewModel>>(await _filmService.GetAllFilms());
+            return _mapper.Map<List<FilmsCatalog.Business.Models.Film>, List<Models.Film>>(await _filmService.GetAllFilms());
         }
-
-        // GET: api/Film/5
-        //[HttpGet("{id}")]
-        //public async Task<IActionResult> Get(int id)
-        //{
-        //    FilmViewModel film = _mapper.Map<FilmModel,FilmViewModel>(await _filmService.GetFilmById(id));
-        //    if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });
-        //    return Ok(film);
-        //}
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetWithGenres(int id)
         {
-            FilmWithGenresViewModel film = _mapper.Map<FilmWithGenresModel, FilmWithGenresViewModel>(await _filmService.GetFilmByWithGenres(id));
+            Models.FilmWithGenres film = _mapper.Map<FilmsCatalog.Business.Models.FilmWithGenres, Models.FilmWithGenres>(await _filmService.GetFilmByWithGenres(id));
             if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });
             return Ok(film);
         }
 
         // POST: api/Film
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody]FilmViewModel film)
+        public async Task<IActionResult> Post([FromBody] Models.Film film)
         {
-            return Ok(await _filmService.CreateFilm(_mapper.Map <FilmViewModel, FilmModel> (film)));
+            return Ok(await _filmService.CreateFilm(_mapper.Map <Models.Film, FilmsCatalog.Business.Models.Film> (film)));
         }
 
         // PUT: api/Film/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put([FromBody]FilmViewModel film)
+        public async Task<IActionResult> Put([FromBody] Models.Film film)
         {
-            var getfilm = await _filmService.UpdateFilm(_mapper.Map<FilmViewModel, FilmModel>(film));
+            var getfilm = await _filmService.UpdateFilm(_mapper.Map<Models.Film, FilmsCatalog.Business.Models.Film>(film));
             if (getfilm == null) return BadRequest("Film with this id {" + film.Id + "} not found");
             return Ok(getfilm);
         }

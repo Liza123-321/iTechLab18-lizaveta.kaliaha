@@ -29,7 +29,6 @@ namespace FilmsCatalog.Business.Services
                 {
                     new Claim(ClaimsIdentity.DefaultNameClaimType, user.Email),
                     new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role),
-                     new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 };
                 ClaimsIdentity claimsIdentity =
                 new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType,
@@ -39,7 +38,7 @@ namespace FilmsCatalog.Business.Services
             return null;
         }
 
-        public async Task<TokenModel> LoginUser(string email, string password)
+        public async Task<Token> LoginUser(string email, string password)
         {
             var identity = await GetIdentity(email, password);
             if (identity == null)
@@ -56,7 +55,7 @@ namespace FilmsCatalog.Business.Services
                     expires: now.Add(TimeSpan.FromMinutes(AuthOptions.LIFETIME)),
                     signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
             var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
-            return new TokenModel { Access_token = encodedJwt, Email = identity.Name };
+            return new Token { Access_token = encodedJwt, Email = identity.Name };
         }
     }
 }

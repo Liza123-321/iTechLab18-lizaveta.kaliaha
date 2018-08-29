@@ -1,7 +1,7 @@
 ﻿
 namespace FilmsCatalog.Business.Models
 {
-   public class CommentModel
+   public class Comment
     {
         public string CommentMessage { get; set; }
         public int UserId { get; set; }

@@ -20,14 +20,14 @@ namespace FilmsCatalog.Business.Services
             _tokenService = tokenService;
             _mapper = mapper;
         }
-        public async Task<List<LoginModel>> GetAllUsers()
+        public async Task<List<Login>> GetAllUsers()
         {
-            return  _mapper.Map<List<User>, List<LoginModel>>(await _userRepository.GetAllUsers());
+            return  _mapper.Map<List<User>, List<Login>>(await _userRepository.GetAllUsers());
         }
 
         public async Task<string> GetEmailById(int id)
         {
-            LoginModel user = await GetUserById(id);
+            Login user = await GetUserById(id);
             if (user != null) return user.Email;
             else return null;
         }
@@ -39,23 +39,23 @@ namespace FilmsCatalog.Business.Services
             else return 0;
         }
 
-        public async Task<LoginModel> GetUserById(int id)
+        public async Task<Login> GetUserById(int id)
         {
-            return _mapper.Map<User, LoginModel>(await _userRepository.GetUserById(id));
+            return _mapper.Map<User, Login>(await _userRepository.GetUserById(id));
         }
 
-        public async Task<TokenModel> LoginUser(LoginModel user)
+        public async Task<Token> LoginUser(Login user)
         {
             return await _tokenService.LoginUser(user.Email, user.Password);
         }
 
-        public async Task<LoginModel> RegisterUser(LoginModel user)
+        public async Task<Login> RegisterUser(Login user)
         {
             User myUser = new User { Email = user.Email, Password = user.Password, Role = "user" };
             if (!_userRepository.AnyUserWithEmail(user.Email))
             {
                 await _userRepository.AddUser(myUser);
-                return _mapper.Map<User, LoginModel>(myUser);
+                return _mapper.Map<User, Login>(myUser);
             }
             else return null;
 

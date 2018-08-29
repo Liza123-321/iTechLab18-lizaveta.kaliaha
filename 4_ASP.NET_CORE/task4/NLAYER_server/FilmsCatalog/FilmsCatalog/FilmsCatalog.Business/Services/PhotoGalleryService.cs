@@ -19,14 +19,14 @@ namespace FilmsCatalog.Business.Services
             _photoRepository = photoRepository;
         }
 
-        public async Task<List<PhotoGalleryModel>> GetAllPhotosGallery()
+        public async Task<List<PhotoGallery>> GetAllPhotosGallery()
         {
-            return _mapper.Map<List<Photo>, List<PhotoGalleryModel>>(await _photoRepository.GetAllPhotos());
+            return _mapper.Map<List<Photo>, List<PhotoGallery>>(await _photoRepository.GetAllPhotos());
         }
 
-        public async Task<List<PhotoGalleryModel>> GetGalleryByFilmId(int id)
+        public async Task<List<PhotoGallery>> GetGalleryByFilmId(int id)
         {
-            return _mapper.Map<List<Photo>, List<PhotoGalleryModel>>(await _photoRepository.GetGalleryByFilmId(id));
+            return _mapper.Map<List<Photo>, List<PhotoGallery>>(await _photoRepository.GetGalleryByFilmId(id));
         }
     }
 }

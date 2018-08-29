@@ -20,12 +20,12 @@ namespace FilmsCatalog.Business.Services
             _ratingRepository = ratingRepository;
         }
 
-        public async Task<List<RatingModel>> GetAllRatings()
+        public async Task<List<Rating>> GetAllRatings()
         {
-            return _mapper.Map<List<RatingMark>, List<RatingModel>>(await _ratingRepository.GetAllRatings());
+            return _mapper.Map<List<RatingMark>, List<Rating>>(await _ratingRepository.GetAllRatings());
         }
 
-        public  double GetAverageFilmRating(List<RatingModel> ratings)
+        public  double GetAverageFilmRating(List<Rating> ratings)
         {
             double result = 0.0;
             for (int i = 0; i < ratings.Count; i++)
@@ -36,15 +36,15 @@ namespace FilmsCatalog.Business.Services
             else return 0;
         }
 
-        public async Task<List<RatingModel>> GetRatingByFilmId(int id)
+        public async Task<List<Rating>> GetRatingByFilmId(int id)
         {
 
-            return _mapper.Map<List<RatingMark>, List<RatingModel>>(await _ratingRepository.GetRatingByFilmId(id));
+            return _mapper.Map<List<RatingMark>, List<Rating>>(await _ratingRepository.GetRatingByFilmId(id));
         }
 
-        public async Task<List<RatingModel>> GetRatingByUserId(int id)
+        public async Task<List<Rating>> GetRatingByUserId(int id)
         {
-            return _mapper.Map<List<RatingMark>, List<RatingModel>>(await _ratingRepository.GetRatingByUserId(id));
+            return _mapper.Map<List<RatingMark>, List<Rating>>(await _ratingRepository.GetRatingByUserId(id));
         }
 
         public async Task<RatingMark> GetRatingFromUserAndFilm(int userId, int filmId)
@@ -52,7 +52,7 @@ namespace FilmsCatalog.Business.Services
             return await _ratingRepository.GetRatingFromUserAndFilm(userId,filmId);
         }
 
-        public async Task<RatingModel> SetRating(RatingModel rating, int id)
+        public async Task<Rating> SetRating(Rating rating, int id)
         {
             rating.UserId = id;
             var ratingMark = await GetRatingFromUserAndFilm(rating.UserId, rating.FilmId);

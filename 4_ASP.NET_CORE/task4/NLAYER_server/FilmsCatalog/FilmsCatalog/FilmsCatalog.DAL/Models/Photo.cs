@@ -6,7 +6,7 @@ namespace FilmsCatalog.DAL.Models
     {
         public int Id { get; set; }
         public string Src { get; set; }
-        public Film Film { get; set; }
+        public virtual Film Film { get; set; }
         public int FilmId { get; set; }
     }
 }

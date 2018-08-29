@@ -19,21 +19,21 @@ namespace FilmsCtalog.WebApi.Controllers
             this._mapper = mapper;
         }
         [HttpPost("login")]
-        public async Task<IActionResult> GetToken([FromBody]LoginViewModel user)
+        public async Task<IActionResult> GetToken([FromBody] Models.Login user)
         {
             if (ModelState.IsValid)
             {
-                return new ObjectResult(await _userService.LoginUser(_mapper.Map<LoginViewModel, LoginModel>(user)));
+                return new ObjectResult(await _userService.LoginUser(_mapper.Map<Models.Login, FilmsCatalog.Business.Models.Login>(user)));
             }
             else return BadRequest();
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody]LoginViewModel model)
+        public async Task<IActionResult> Register([FromBody] Models.Login model)
         {
             if (ModelState.IsValid)
             {
-                var myUser = await _userService.RegisterUser(_mapper.Map<LoginViewModel, LoginModel>(model));
+                var myUser = await _userService.RegisterUser(_mapper.Map<Models.Login, FilmsCatalog.Business.Models.Login>(model));
                 if (myUser == null) return BadRequest(new { message = "This email used by other user" });
                 return Ok(model);
             }

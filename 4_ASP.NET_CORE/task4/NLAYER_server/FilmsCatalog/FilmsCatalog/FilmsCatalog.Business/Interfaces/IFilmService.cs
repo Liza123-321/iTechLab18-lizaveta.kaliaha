@@ -6,10 +6,10 @@ namespace FilmsCatalog.Business.Interfaces
 {
    public interface IFilmService
     {
-        Task<List<FilmModel>> GetAllFilms();
-        Task<FilmModel> GetFilmById(int id);
-        Task<FilmModel> CreateFilm(FilmModel film);
-        Task<FilmWithGenresModel> GetFilmByWithGenres(int id);
-        Task<FilmModel> UpdateFilm(FilmModel film);
+        Task<List<Film>> GetAllFilms();
+        Task<Film> GetFilmById(int id);
+        Task<Film> CreateFilm(Film film);
+        Task<FilmWithGenres> GetFilmByWithGenres(int id);
+        Task<Film> UpdateFilm(Film film);
     }
 }

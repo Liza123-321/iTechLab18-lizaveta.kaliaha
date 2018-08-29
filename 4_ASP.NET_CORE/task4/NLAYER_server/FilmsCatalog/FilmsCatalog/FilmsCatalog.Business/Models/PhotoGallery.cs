@@ -1,7 +1,7 @@
 ﻿
 namespace FilmsCatalog.Business.Models
 {
-   public class PhotoGalleryModel
+   public class PhotoGallery
     {
         public string Src { get; set; }
     }

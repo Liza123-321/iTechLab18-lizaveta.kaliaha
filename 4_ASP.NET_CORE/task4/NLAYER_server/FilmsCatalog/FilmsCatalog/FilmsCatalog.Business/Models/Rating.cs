@@ -1,7 +1,7 @@
 ﻿
 namespace FilmsCatalog.Business.Models
 {
-    public class RatingModel
+    public class Rating
     {
         public int Mark { get; set; }
         public int FilmId { get; set; }

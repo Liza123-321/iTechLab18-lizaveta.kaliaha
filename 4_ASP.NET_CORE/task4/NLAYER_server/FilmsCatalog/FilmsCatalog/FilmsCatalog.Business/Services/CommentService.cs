@@ -18,15 +18,15 @@ namespace FilmsCatalog.Business.Services
             _mapper = mapper;
             _commentRepository = commentRepository;
         }
-        public async Task<CommentModel> AddComment(CommentModel comment,int id)
+        public async Task<Models.Comment> AddComment(Models.Comment comment,int id)
         {
             comment.UserId = id;
-            await _commentRepository.AddComment(Mapper.Map<CommentModel, Comment>(comment));
+            await _commentRepository.AddComment(_mapper.Map<Models.Comment, DAL.Models.Comment>(comment));
             return comment;
         }
-        public async Task<List<CommentWithEmailModel>> GetCommentsByFilmId(int id)
+        public async Task<List<CommentWithEmail>> GetCommentsByFilmId(int id)
         {
-            return Mapper.Map<List<Comment>, List<CommentWithEmailModel>>(await _commentRepository.GetCommentsByFilmId(id));
+            return _mapper.Map<List<DAL.Models.Comment>, List<CommentWithEmail>>(await _commentRepository.GetCommentsByFilmId(id));
         }
     }
 }

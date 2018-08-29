@@ -4,9 +4,9 @@ using System.Text;
 
 namespace FilmsCatalog.Business.Models
 {
-   public class GenreWithFilmModel
+   public class GenreWithFilm
     {
         public string GenreName { get; set; }
-        public ICollection<FilmModel> Films { get; set; }
+        public ICollection<Film> Films { get; set; }
     }
 }
