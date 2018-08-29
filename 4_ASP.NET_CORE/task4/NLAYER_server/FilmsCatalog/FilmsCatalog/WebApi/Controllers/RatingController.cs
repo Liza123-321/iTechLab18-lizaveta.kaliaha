@@ -40,7 +40,7 @@ namespace FilmsCtalog.WebApi.Controllers
         public async Task<IActionResult> AddRating([FromBody] Models.Rating model)
         {
             if (ModelState.IsValid) {
-                var myRating = await _ratingService.SetRating(_mapper.Map<Models.Rating, FilmsCatalog.Business.Models.Rating>(model), await GetUserIdAsync());
+                var myRating = await _ratingService.SetRating(_mapper.Map<Models.Rating, FilmsCatalog.Business.Models.Rating>(model), await UserId);
                 return Ok(myRating);
             }
            else return BadRequest();

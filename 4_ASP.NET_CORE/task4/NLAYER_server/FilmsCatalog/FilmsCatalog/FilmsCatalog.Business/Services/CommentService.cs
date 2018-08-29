@@ -2,7 +2,6 @@
 using FilmsCatalog.Business.Interfaces;
 using FilmsCatalog.Business.Models;
 using FilmsCatalog.DAL.Interfaces;
-using FilmsCatalog.DAL.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

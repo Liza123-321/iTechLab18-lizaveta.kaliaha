@@ -2845,3 +2845,387 @@ User
 2018-08-29 14:48:18,533 [15] INFO  App  
  GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
  
+2018-08-29 15:21:16,704 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:20,158 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:20,203 [7] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:22,844 [9] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:22,858 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:27,633 [13] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.UserController.GetToken (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:28,964 [10] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:28,974 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:30,500 [7] ERROR App  
+ Exception: Object reference not set to an instance of an object. FilmsCtalog.WebApi  
+ 
+2018-08-29 15:21:30,543 [10] INFO  App  
+ GET /api/photogallery/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:30,657 [9] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:31,831 [13] ERROR App  
+ Exception: Object reference not set to an instance of an object. FilmsCtalog.WebApi  
+ 
+2018-08-29 15:21:51,409 [10] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:51,428 [16] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:52,973 [10] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:52,999 [15] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:21:59,829 [19] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.UserController.GetToken (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:22:02,103 [19] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:22:02,125 [19] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:22:06,131 [17] INFO  App  
+ GET /api/genre/Horrors HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.GetWithFilms (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:22:07,130 [17] INFO  App  
+ GET /api/genre/Horrors HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.GetWithFilms (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:22:09,062 [10] ERROR App  
+ Exception: Object reference not set to an instance of an object. FilmsCtalog.WebApi  
+ 
+2018-08-29 15:22:09,069 [18] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:22:09,096 [16] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:22:45,773 [27] ERROR App  
+ Exception: Object reference not set to an instance of an object. FilmsCtalog.WebApi  
+ 
+2018-08-29 15:22:45,831 [23] ERROR App  
+ Exception: Object reference not set to an instance of an object. FilmsCtalog.WebApi  
+ 
+2018-08-29 15:25:31,702 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:25:35,419 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:25:35,439 [9] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:25:39,825 [8] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.UserController.GetToken (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:25:40,858 [9] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:25:40,868 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:25:42,846 [8] ERROR App  
+ Exception: Object reference not set to an instance of an object. FilmsCtalog.WebApi  
+ 
+2018-08-29 15:25:42,900 [8] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:25:43,065 [8] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:25:44,230 [10] ERROR App  
+ Exception: Object reference not set to an instance of an object. FilmsCtalog.WebApi  
+ 
+2018-08-29 15:30:25,401 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:29,841 [9] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:29,938 [8] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:29,993 [10] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:30,952 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:30,983 [8] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:36,670 [8] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.UserController.GetToken (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:38,024 [8] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:38,030 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:39,913 [13] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:39,914 [9] INFO  App  
+ GET /api/comments/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:30:39,928 [8] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:31:13,446 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:31:15,793 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:31:15,813 [13] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:31:20,168 [8] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.UserController.GetToken (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:31:21,469 [9] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:31:21,478 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:31:23,267 [7] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:31:23,376 [7] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 15:31:23,408 [9] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:18,772 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:21,922 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:21,936 [8] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:25,932 [10] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.UserController.GetToken (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:27,418 [9] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:27,440 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:29,550 [7] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:29,567 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:32,136 [13] ERROR App  
+ Exception: Object reference not set to an instance of an object. FilmsCtalog.WebApi  
+ 
+2018-08-29 16:05:32,218 [13] INFO  App  
+ GET /api/photogallery/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:32,432 [10] INFO  App  
+ GET /api/film/1 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:33,983 [10] ERROR App  
+ Exception: Object reference not set to an instance of an object. FilmsCtalog.WebApi  
+ 
+2018-08-29 16:05:37,996 [13] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:05:38,016 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:17:55,202 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:18:01,225 [13] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.UserController.GetToken (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:18:02,641 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:18:02,673 [9] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:18:04,312 [8] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:18:04,446 [13] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:18:04,475 [10] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:18:05,832 [7] INFO  App  
+ POST /api/rating HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.RatingController.AddRating (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:18:05,843 [7] ERROR App  
+ Exception: The lazily-initialized type does not have a public, parameterless constructor. System.Private.CoreLib  
+ 
+2018-08-29 16:18:08,122 [10] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:18:08,142 [16] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:12,588 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:15,671 [9] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:15,734 [9] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:21,416 [13] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.UserController.GetToken (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:25,454 [8] INFO  App  
+ POST /api/user/login HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.UserController.GetToken (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:27,002 [8] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:27,024 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:28,918 [9] INFO  App  
+ GET /api/photogallery/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:29,034 [14] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:29,069 [10] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:30,437 [15] INFO  App  
+ POST /api/rating HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.RatingController.AddRating (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:30,488 [10] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:32,828 [14] INFO  App  
+ POST /api/rating HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.RatingController.AddRating (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:32,882 [8] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:33,842 [10] INFO  App  
+ POST /api/rating HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.RatingController.AddRating (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:33,871 [14] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:35,056 [9] INFO  App  
+ POST /api/rating HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.RatingController.AddRating (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:35,093 [9] INFO  App  
+ GET /api/film/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:40,513 [8] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.AddComment (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:40,557 [14] INFO  App  
+ GET /api/comments/2 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:45,009 [7] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:22:45,036 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:28,139 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:31,299 [10] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:31,381 [10] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:34,484 [7] INFO  App  
+ GET /api/photogallery/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:34,574 [13] INFO  App  
+ GET /api/comments/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:34,624 [9] INFO  App  
+ GET /api/film/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:36,873 [13] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.AddComment (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:36,948 [10] INFO  App  
+ GET /api/comments/4 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:38,352 [8] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:25:38,361 [13] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:25,813 [7] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:29,457 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:29,494 [8] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:31,935 [8] INFO  App  
+ GET /api/photogallery/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.PhotoGalleryController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:32,051 [7] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:32,108 [8] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:35,450 [13] INFO  App  
+ POST /api/comments/ HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.AddComment (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:35,508 [9] INFO  App  
+ GET /api/comments/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.CommentsController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:37,638 [8] INFO  App  
+ POST /api/rating HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.RatingController.AddRating (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:37,691 [7] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:39,188 [7] INFO  App  
+ POST /api/rating HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.RatingController.AddRating (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:39,216 [9] INFO  App  
+ GET /api/film/3 HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.GetWithGenres (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:40,712 [9] INFO  App  
+ GET /api/genre HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.GenreController.Get (FilmsCtalog.WebApi) 
+ 
+2018-08-29 16:26:40,720 [8] INFO  App  
+ GET /api/film HTTP/1.1 Action: FilmsCtalog.WebApi.Controllers.FilmController.Get (FilmsCtalog.WebApi) 
+ 
