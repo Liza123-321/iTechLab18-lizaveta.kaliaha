@@ -1,0 +1,15 @@
+Compatibility switch AllowInputFormatterExceptionMessages in type MvcJsonOptions is using default value False
+Compatibility switch AllowCombiningAuthorizeFilters in type MvcOptions is using default value False
+Compatibility switch AllowBindingHeaderValuesToNonStringModelTypes in type MvcOptions is using default value False
+Compatibility switch AllowValidatingTopLevelNodes in type MvcOptions is using default value False
+Compatibility switch InputFormatterExceptionPolicy in type MvcOptions is using default value AllExceptions
+Compatibility switch SuppressBindingUndefinedValueToEnumType in type MvcOptions is using default value False
+Compatibility switch AllowAreas in type RazorPagesOptions is using default value False
+Compatibility switch AllowMappingHeadRequestsToGetHandler in type RazorPagesOptions is using default value False
+Compatibility switch SuppressTempDataAttributePrefix in type MvcViewOptions is using default value False
+Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+Failed to locate the development https certificate at '(null)'.
+Using development certificate: CN=localhost (Thumbprint: 633D765758744D394FB127A3CC41E6E5F757FE60)
+Hosting started
+Loaded hosting startup assembly task3WebAPI
+Hosting shutdown

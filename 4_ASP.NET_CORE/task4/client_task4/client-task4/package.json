@@ -1,0 +1,48 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "homepage": "http://Liza123-321.github.io/React_task1",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.4.1",
+    "axios": "^0.18.0",
+    "react": "^16.4.1",
+    "react-alert": "^4.0.4",
+    "react-alert-template-basic": "^1.0.0",
+    "react-dom": "^16.4.1",
+    "react-grid-gallery": "^0.5.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-stars": "^2.2.5",
+    "redux": "^4.0.0",
+    "redux-actions": "^2.6.1",
+    "redux-form": "^7.4.2",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "precommit": "lint-staged",
+    "prettier": "prettier --single-quote --use-tabs --trailing-comma es5 --write \"src/**/*.js\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d build"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --single-quote --use-tabs --trailing-comma es5 --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@material-ui/icons": "^2.0.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.14.0",
+    "prop-types": "^15.6.2",
+    "redux-devtools": "^3.4.1",
+    "redux-devtools-extension": "^2.13.5"
+  }
+}

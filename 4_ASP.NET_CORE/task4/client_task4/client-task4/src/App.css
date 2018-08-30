@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /*animation: App-logo-spin infinite 10s linear;*/
+  height: 80px;
+}
+
+.App-header {
+  background-color: darkgray;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  color: white;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.App-films{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.App-genres{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.App-text{
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Georgia';
+  font-size: 26px;
+  color: #ff1a75;
+}
+.card{
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
