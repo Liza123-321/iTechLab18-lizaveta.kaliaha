@@ -116,7 +116,7 @@ namespace WebApi
             app.UseHttpsRedirection();
             app.UseSignalR(routes =>
             {
-                routes.MapHub<CommentHub>("/test");
+                routes.MapHub<CommentHub>("/comment");
             });
             app.UseMvc();
         }

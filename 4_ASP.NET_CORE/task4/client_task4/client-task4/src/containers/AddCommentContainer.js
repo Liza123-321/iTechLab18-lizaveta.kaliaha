@@ -9,9 +9,8 @@ import CommentRepository from '../repository/comment';
 
 const commentRepository = new CommentRepository();
 const signalR = require('@aspnet/signalr');
-const token = sessionStorage.getItem('jwt_token');
 const connection = new signalR.HubConnectionBuilder()
-	.withUrl('https://localhost:5001/test', { accessTokenFactory: () => token })
+	.withUrl('https://localhost:5001/comment')
 	.build();
 class AddCommentContainer extends React.Component {
 	constructor(props) {
@@ -24,6 +23,9 @@ class AddCommentContainer extends React.Component {
 			comments: [],
 			isAuth: sessionStorage.getItem('jwt_token') !== null,
 		};
+		connection.start().catch(error => {
+			console.log(error);
+		});
 	}
 	handleUserInput = e => {
 		const name = e.target.id;
@@ -32,36 +34,25 @@ class AddCommentContainer extends React.Component {
 	};
 
 	async componentDidMount() {
-		connection
-			.start()
-			.then(() => connection.invoke('SetComment', this.state.id));
-		connection.on('ReceiveComments', comments => {
-			this.setState({ comments: comments });
+		let self = this;
+		let res = await commentRepository.getComments(this.state.id);
+		if (res.status === 200) {
+			this.setState({ comments: res.data });
+		}
+		connection.on('GetComment', comments => {
+			console.log(comments);
+			console.log(self.state.id);
+			if (comments[0].filmId == self.state.id) {
+				this.setState({ comments: comments });
+			}
 		});
 	}
 	async addComment() {
-		let now = new Date();
-		let obj = {
-			commentMessage: this.state.commentMessage,
-			filmId: this.state.id,
-			data:
-				now.getDate() +
-				'/' +
-				now.getMonth() +
-				'/' +
-				now.getFullYear() +
-				' ' +
-				now.getHours() +
-				':' +
-				now.getMinutes() +
-				':' +
-				now.getSeconds(),
-		};
-		connection.invoke('AddComment', obj);
-		this.setState({ commentMessage: '' });
-		connection.on('ReceiveComments', comments => {
-			this.setState({ comments: comments });
-		});
+		await commentRepository.addComment(
+			this.state.id,
+			this.state.commentMessage,
+			this
+		);
 	}
 	render() {
 		return (
