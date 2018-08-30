@@ -9,6 +9,7 @@ using FilmsCatalog.Business.Logger;
 using FilmsCatalog.Business.Logger.Filters;
 using FilmsCatalog.Business.Models;
 using FilmsCatalog.Business.Services;
+using FilmsCatalog.Business.SignalR;
 using FilmsCatalog.DAL.Context;
 using FilmsCatalog.DAL.Interfaces;
 using FilmsCatalog.DAL.Models;
@@ -93,13 +94,14 @@ namespace WebApi
 
             }).AddXmlDataContractSerializerFormatters();
             services.AddAutoMapper();
+            services.AddSignalR();
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials());
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -112,6 +114,10 @@ namespace WebApi
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseHttpsRedirection();
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<CommentHub>("/test");
+            });
             app.UseMvc();
         }
     }

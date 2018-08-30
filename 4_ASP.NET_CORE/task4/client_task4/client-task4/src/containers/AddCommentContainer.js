@@ -8,6 +8,11 @@ import Card from '@material-ui/core/Card';
 import CommentRepository from '../repository/comment';
 
 const commentRepository = new CommentRepository();
+const signalR = require('@aspnet/signalr');
+const token = sessionStorage.getItem('jwt_token');
+const connection = new signalR.HubConnectionBuilder()
+	.withUrl('https://localhost:5001/test', { accessTokenFactory: () => token })
+	.build();
 class AddCommentContainer extends React.Component {
 	constructor(props) {
 		super(props);
@@ -27,17 +32,36 @@ class AddCommentContainer extends React.Component {
 	};
 
 	async componentDidMount() {
-		let res = await commentRepository.getComments(this.state.id);
-		if (res.status === 200) {
-			this.setState({ comments: res.data });
-		}
+		connection
+			.start()
+			.then(() => connection.invoke('SetComment', this.state.id));
+		connection.on('ReceiveComments', comments => {
+			this.setState({ comments: comments });
+		});
 	}
 	async addComment() {
-		await commentRepository.addComment(
-			this.state.id,
-			this.state.commentMessage,
-			this
-		);
+		let now = new Date();
+		let obj = {
+			commentMessage: this.state.commentMessage,
+			filmId: this.state.id,
+			data:
+				now.getDate() +
+				'/' +
+				now.getMonth() +
+				'/' +
+				now.getFullYear() +
+				' ' +
+				now.getHours() +
+				':' +
+				now.getMinutes() +
+				':' +
+				now.getSeconds(),
+		};
+		connection.invoke('AddComment', obj);
+		this.setState({ commentMessage: '' });
+		connection.on('ReceiveComments', comments => {
+			this.setState({ comments: comments });
+		});
 	}
 	render() {
 		return (
