@@ -28,7 +28,7 @@ namespace FilmsCtalog.WebApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetWithGenres(int id)
+        public async Task<ActionResult<Models.Film>> GetWithGenres(int id)
         {
             Models.FilmWithGenres film = _mapper.Map<FilmsCatalog.Business.Models.FilmWithGenres, Models.FilmWithGenres>(await _filmService.GetFilmByWithGenres(id));
             if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });

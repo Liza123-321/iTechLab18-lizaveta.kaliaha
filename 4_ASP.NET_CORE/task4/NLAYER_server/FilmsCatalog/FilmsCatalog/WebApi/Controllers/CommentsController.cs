@@ -26,6 +26,7 @@ namespace FilmsCtalog.WebApi.Controllers
             _mapper = mapper;
             _hubContext = hubContext;
         }
+
         [HttpGet("{id}")]
         public async Task<List<Models.CommentWithEmail>> Get(int id)
         {
