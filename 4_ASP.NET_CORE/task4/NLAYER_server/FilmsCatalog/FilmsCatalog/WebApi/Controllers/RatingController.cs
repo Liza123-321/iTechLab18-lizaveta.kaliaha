@@ -37,7 +37,7 @@ namespace FilmsCtalog.WebApi.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> AddRating([FromBody] Models.Rating model)
+        public async Task<ActionResult<Models.Rating>> AddRating([FromBody] Models.Rating model)
         {
             if (ModelState.IsValid) {
                 var myRating = await _ratingService.SetRating(_mapper.Map<Models.Rating, FilmsCatalog.Business.Models.Rating>(model), UserId);
