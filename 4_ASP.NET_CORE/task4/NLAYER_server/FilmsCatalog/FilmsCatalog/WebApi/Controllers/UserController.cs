@@ -21,8 +21,11 @@ namespace FilmsCtalog.WebApi.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<FilmsCatalog.Business.Models.Login>> Login([FromBody] Models.Login user)
         {
-
+            if (ModelState.IsValid)
+            {
                 return new ObjectResult(await _userService.LoginUser(_mapper.Map<Models.Login, FilmsCatalog.Business.Models.Login>(user)));
+            }
+            else return BadRequest();
         }
 
         [HttpPost("register")]

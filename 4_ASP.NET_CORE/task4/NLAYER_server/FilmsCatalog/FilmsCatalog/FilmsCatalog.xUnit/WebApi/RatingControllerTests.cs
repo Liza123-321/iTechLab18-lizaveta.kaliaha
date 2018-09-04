@@ -67,7 +67,7 @@ namespace FilmsCatalog.xUnit.WebApi
         {
             // Arrange
             int filmId = 1;
-            ratingService.Setup(rating => rating.SetRating(addRating,addRating.UserId)).ReturnsAsync(addRating);
+            ratingService.Setup(rating => rating.SetRating(addRating,1)).ReturnsAsync(addRating);
             var controller = new RatingController(ratingService.Object, mapper, userService.Object);
 
             // Act
@@ -99,13 +99,13 @@ namespace FilmsCatalog.xUnit.WebApi
 
         private Rating addRating = new Rating
         {
-            Mark=9,FilmId=1,UserId=2
+            Mark=9,FilmId=1,UserId=1
         };
         private FilmsCtalog.WebApi.Models.Rating addRatingWebApi = new FilmsCtalog.WebApi.Models.Rating
         {
             Mark = 9,
             FilmId = 1,
-            UserId = 2
+            UserId = 1
         };
     }
 }
