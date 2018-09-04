@@ -22,8 +22,9 @@ namespace FilmsCatalog.Business.Services
         }
 
         public async Task<Models.Film> CreateFilm(Models.Film film)
-        {        
-            return _mapper.Map <DAL.Models.Film, Models.Film> (await _filmRepository.CreateFilm(_mapper.Map<Models.Film, DAL.Models.Film>(film)));
+        {
+            var createFilm = await _filmRepository.CreateFilm(_mapper.Map<Models.Film, DAL.Models.Film>(film));
+            return _mapper.Map <DAL.Models.Film, Models.Film> (createFilm);
         }
         private async Task<Models.Film> SetFilmRating(Models.Film film)
         {

@@ -13,6 +13,8 @@ namespace FilmsCatalog.Business.Profiles
             CreateMap<DAL.Models.Comment, Models.Comment>();
             CreateMap<Models.Comment,DAL.Models.Comment>();
             CreateMap<Rating, RatingMark>();
+            CreateMap<DAL.Models.Film, Models.Film>();
+            CreateMap<Models.Film, DAL.Models.Film>();
             CreateMap<RatingMark, Rating>();
             CreateMap<DAL.Models.Comment, CommentWithEmail>().ForMember(u => u.Email, u => u.MapFrom(y => y.User.Email));
             CreateMap<DAL.Models.Film, FilmWithGenres>().ForMember(dto => dto.Genres, opt => opt.MapFrom(y => y.FilmGenres.Select(z => z.Genre).ToList()));

@@ -74,12 +74,9 @@ namespace FilmsCatalog.xUnit.WebApi
             var result = await controller.AddRating(addRatingWebApi);
 
             // Assert
-            var viewResult = Assert.IsAssignableFrom<ActionResult<FilmsCtalog.WebApi.Models.Rating>>(result);
-            var okResult = result.Result as OkObjectResult;
+            var viewResult = Assert.IsAssignableFrom<IActionResult>(result);
+            var okResult = result as OkObjectResult;
             Assert.NotNull(okResult);
-            var ratingTest = okResult.Value as FilmsCtalog.WebApi.Models.Rating;
-            Assert.NotNull(ratingTest);
-            Assert.Equal(filmId, ratingTest.FilmId);
         }
 
 

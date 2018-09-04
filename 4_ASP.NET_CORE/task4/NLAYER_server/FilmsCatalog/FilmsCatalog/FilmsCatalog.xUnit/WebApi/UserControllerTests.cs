@@ -42,12 +42,9 @@ namespace FilmsCatalog.xUnit.WebApi
             var result = await controller.Login(user);
 
             // Assert
-            var viewResult = Assert.IsAssignableFrom<ActionResult<Login>>(result);
-            var okResult = result.Result as OkObjectResult;
+            var viewResult = Assert.IsAssignableFrom<IActionResult>(result);
+            var okResult = result as OkObjectResult;
             Assert.NotNull(okResult);
-            var loginTest = okResult.Value as FilmsCtalog.WebApi.Models.Login;
-            Assert.NotNull(loginTest);
-            Assert.Equal(user.Email, loginTest.Email);
         }
 
         [Fact]
@@ -66,12 +63,9 @@ namespace FilmsCatalog.xUnit.WebApi
             var result = await controller.Register(user);
 
             // Assert
-            var viewResult = Assert.IsAssignableFrom<ActionResult<Login>>(result);
-            var okResult = result.Result as ObjectResult;
+            var viewResult = Assert.IsAssignableFrom<IActionResult>(result);
+            var okResult = result as OkObjectResult;
             Assert.NotNull(okResult);
-            var loginTest = okResult.Value as FilmsCtalog.WebApi.Models.Login;
-            Assert.NotNull(loginTest);
-            Assert.Equal(user.Email, loginTest.Email);
         }
 
         private Login newUser = new Login

@@ -19,17 +19,17 @@ namespace FilmsCtalog.WebApi.Controllers
             this._mapper = mapper;
         }
         [HttpPost("login")]
-        public async Task<ActionResult<FilmsCatalog.Business.Models.Login>> Login([FromBody] Models.Login user)
+        public async Task<IActionResult> Login([FromBody] Models.Login user)
         {
             if (ModelState.IsValid)
             {
-                return new ObjectResult(await _userService.LoginUser(_mapper.Map<Models.Login, FilmsCatalog.Business.Models.Login>(user)));
+                return Ok(await _userService.LoginUser(_mapper.Map<Models.Login, FilmsCatalog.Business.Models.Login>(user)));
             }
             else return BadRequest();
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult<FilmsCatalog.Business.Models.Login>> Register([FromBody] Models.Login model)
+        public async Task<IActionResult> Register([FromBody] Models.Login model)
         {
             if (ModelState.IsValid)
             {

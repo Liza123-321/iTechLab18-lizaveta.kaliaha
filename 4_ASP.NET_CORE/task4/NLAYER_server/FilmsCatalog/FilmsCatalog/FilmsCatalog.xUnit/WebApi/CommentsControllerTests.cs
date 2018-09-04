@@ -54,7 +54,6 @@ namespace FilmsCatalog.xUnit.WebApi
         public async void Add()
         {
             // Arrange
-            FilmsCtalog.WebApi.Models.Comment testItem = new FilmsCtalog.WebApi.Models.Comment { CommentMessage = "test", Data = "01/01/1996", FilmId = 2, UserId = 1 };
             commentService.Setup(c => c.AddComment(comment,1)).ReturnsAsync(comment);
             var controller = new CommentsController(commentService.Object, mapper, userService.Object, _hubContext);
 
@@ -62,7 +61,7 @@ namespace FilmsCatalog.xUnit.WebApi
             var result = await controller.AddComment(testItem);
 
             // Assert
-            var viewResult = Assert.IsAssignableFrom<ActionResult<Comment>>(result);
+            var viewResult = Assert.IsAssignableFrom<IActionResult>(result);
             Assert.NotNull(result);
         }
 
@@ -80,5 +79,7 @@ namespace FilmsCatalog.xUnit.WebApi
             FilmId = 2,
             UserId = 1
         };
+
+        FilmsCtalog.WebApi.Models.Comment testItem = new FilmsCtalog.WebApi.Models.Comment { CommentMessage = "test", Data = "01/01/1996", FilmId = 2, UserId = 1 };
     }
 }

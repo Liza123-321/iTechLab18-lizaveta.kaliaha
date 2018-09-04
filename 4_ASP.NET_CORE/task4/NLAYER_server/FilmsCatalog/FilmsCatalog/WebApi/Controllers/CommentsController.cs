@@ -35,7 +35,7 @@ namespace FilmsCtalog.WebApi.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<ActionResult<Models.Comment>> AddComment([FromBody] Models.Comment model)
+        public async Task<IActionResult> AddComment([FromBody] Models.Comment model)
         {
             if (ModelState.IsValid)
             {
