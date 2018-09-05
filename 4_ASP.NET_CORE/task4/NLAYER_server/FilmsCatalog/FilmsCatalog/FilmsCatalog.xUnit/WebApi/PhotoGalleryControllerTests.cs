@@ -28,7 +28,7 @@ namespace FilmsCatalog.xUnit.WebApi
             mapper = config.CreateMapper();
         }
         [Fact]
-        public async void GetAll()
+        public async void GetAllPhotoGallery()
         {
             // Arrange
             photoService.Setup(gallery => gallery.GetAllPhotosGallery()).ReturnsAsync(photoList);
@@ -43,7 +43,7 @@ namespace FilmsCatalog.xUnit.WebApi
             Assert.Equal(photoList.Count, result.Result.Count);
         }
         [Fact]
-        public async void GetAllByFilmId()
+        public async void GetPhotoGalleryByFilmId()
         {
             // Arrange
             int filmId = 2;

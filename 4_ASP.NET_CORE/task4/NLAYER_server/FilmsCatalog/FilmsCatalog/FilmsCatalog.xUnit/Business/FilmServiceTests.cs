@@ -32,7 +32,7 @@ namespace FilmsCatalog.xUnit.Business
         }
 
         [Fact]
-        public void GetAll()
+        public void GetAllFilms()
         {
             // Arrange
             filmRepository.Setup(f => f.GetAllFilms()).ReturnsAsync(filmList);
@@ -47,7 +47,7 @@ namespace FilmsCatalog.xUnit.Business
             Assert.Equal(filmList.Count, result.Result.Count);
         }
         [Fact]
-        public void GetById()
+        public void GetFilmById()
         {
             // Arrange
             int filmId = 2;
@@ -64,7 +64,7 @@ namespace FilmsCatalog.xUnit.Business
         }
 
         [Fact]
-        public void GetByIdWithGenres()
+        public void GetFilmByIdWithGenres()
         {
             // Arrange
             int filmId = 2;
@@ -92,9 +92,21 @@ namespace FilmsCatalog.xUnit.Business
             // Assert
             var viewResult = Assert.IsType<Task<FilmsCatalog.Business.Models.Film>>(result);
             Assert.NotNull(result);
-            Assert.Equal(filmOne.Id, result.Result.Id);
         }
+        [Fact]
+        public void UpdateFilm()
+        {
+            // Arrange
+            filmRepository.Setup(f => f.UpdateFilm(filmOne)).ReturnsAsync(filmOne);
+            var service = new FilmService(filmRepository.Object, mapper, ratingService.Object);
 
+            // Act
+            var result = service.UpdateFilm(filmAdd);
+
+            // Assert
+            var viewResult = Assert.IsType<Task<FilmsCatalog.Business.Models.Film>>(result);
+            Assert.NotNull(result);
+        }
 
         private List<Film> filmList = new List<Film>()
         {

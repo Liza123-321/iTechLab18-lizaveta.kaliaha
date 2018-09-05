@@ -27,7 +27,7 @@ namespace FilmsCatalog.xUnit.WebApi
             mapper = config.CreateMapper();
         }
         [Fact]
-        public async void GetAll()
+        public async void GetAllGenres()
         {
             // Arrange
             genreService.Setup(genre => genre.GetAllGenres()).ReturnsAsync(genreList);
@@ -42,7 +42,7 @@ namespace FilmsCatalog.xUnit.WebApi
             Assert.Equal(genreList.Count, result.Result.Count);
         }
         [Fact]
-        public async void GetWithFilms()
+        public async void GetGenresWithFilms()
         {
             // Arrange
             string genreName = "genre3";

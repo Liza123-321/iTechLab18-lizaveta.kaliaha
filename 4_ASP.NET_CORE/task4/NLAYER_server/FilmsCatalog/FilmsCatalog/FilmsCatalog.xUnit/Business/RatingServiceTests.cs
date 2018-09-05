@@ -28,7 +28,7 @@ namespace FilmsCatalog.xUnit.Business
             mapper = config.CreateMapper();
         }
         [Fact]
-        public void GetAll()
+        public void GetAllRatings()
         {
             // Arrange
             ratingRepository.Setup(rating => rating.GetAllRatings()).ReturnsAsync(ratingList);
@@ -43,7 +43,7 @@ namespace FilmsCatalog.xUnit.Business
             Assert.Equal(ratingList.Count, result.Result.Count);
         }
         [Fact]
-        public void GetByFilmId()
+        public void GetRatingsByFilmId()
         {
             // Arrange
             int filmId = 2;
@@ -60,7 +60,7 @@ namespace FilmsCatalog.xUnit.Business
             Assert.Equal(filmId, result.Result[0].FilmId);
         }
         [Fact]
-        public void GetByUserId()
+        public void GetRatingsByUserId()
         {
             // Arrange
             int userId = 1;
@@ -79,7 +79,7 @@ namespace FilmsCatalog.xUnit.Business
 
 
         [Fact]
-        public void GetByFilmIdAndUser()
+        public void GetRatingsByFilmIdAndUser()
         {
             // Arrange
             int filmId = 1;
@@ -113,7 +113,7 @@ namespace FilmsCatalog.xUnit.Business
             Assert.Equal(0, resultError);
         }
         [Fact]
-        public void SetRating()
+        public void SetFilmRating()
         {
             // Arrange
             int userId = 2;

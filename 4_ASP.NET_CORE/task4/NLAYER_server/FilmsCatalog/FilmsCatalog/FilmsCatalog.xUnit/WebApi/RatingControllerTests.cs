@@ -31,7 +31,7 @@ namespace FilmsCatalog.xUnit.WebApi
             mapper = config.CreateMapper();
         }
         [Fact]
-        public async void GetAll()
+        public async void GetAllRatings()
         {
             // Arrange
             ratingService.Setup(rating => rating.GetAllRatings()).ReturnsAsync(ratingList);
@@ -46,7 +46,7 @@ namespace FilmsCatalog.xUnit.WebApi
             Assert.Equal(ratingList.Count, result.Result.Count);
         }
         [Fact]
-        public async void GetAllByFilm()
+        public async void GetAllRatingsByFilm()
         {
             // Arrange
            int filmId = 1;
@@ -61,13 +61,23 @@ namespace FilmsCatalog.xUnit.WebApi
             var viewResult = Assert.IsType<Task<double>>(result);
             Assert.Equal(8, result.Result);
         }
-
+        //public async Task<IActionResult> AddRating([FromBody] Models.Rating model)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        return Ok(await _ratingService.SetRating(_mapper.Map<Models.Rating, FilmsCatalog.Business.Models.Rating>(model), UserId));
+        //    }
+        //    else return BadRequest();
+        //}
         [Fact]
-        public async void Add()
+        public async void AddRating()
         {
             // Arrange
             int filmId = 1;
-            ratingService.Setup(rating => rating.SetRating(addRating,1)).ReturnsAsync(addRating);
+            int userId = 1;
+            string userEmail = "test@mail.ru";
+            ratingService.Setup(rating => rating.SetRating(addRating,filmId)).ReturnsAsync(addRating);
+            userService.Setup(user => user.GetIdByEmail(userEmail)).ReturnsAsync(userId);
             var controller = new RatingController(ratingService.Object, mapper, userService.Object);
 
             // Act

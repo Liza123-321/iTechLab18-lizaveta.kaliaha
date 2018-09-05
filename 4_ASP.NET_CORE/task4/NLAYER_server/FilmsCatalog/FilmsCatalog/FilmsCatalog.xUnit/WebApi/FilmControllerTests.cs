@@ -30,7 +30,7 @@ namespace FilmsCatalog.xUnit.WebApi
         }
 
         [Fact]
-        public async void GetAll()
+        public async void GetAllFilms()
         {
             // Arrange
             filmService.Setup(film => film.GetAllFilms()).ReturnsAsync(filmList);
@@ -46,7 +46,7 @@ namespace FilmsCatalog.xUnit.WebApi
         }
 
         [Fact]
-        public async void GetWithGenres()
+        public async void GetFilmsWithGenres()
         {
             // Arrange
             int filmId = 2;

@@ -28,7 +28,7 @@ namespace FilmsCatalog.xUnit.WebApi
             mapper = config.CreateMapper();
         }
         [Fact]
-        public async void Login()
+        public async void LoginUser()
         {
             // Arrange
             FilmsCtalog.WebApi.Models.Login user = new FilmsCtalog.WebApi.Models.Login {
@@ -46,9 +46,8 @@ namespace FilmsCatalog.xUnit.WebApi
             var okResult = result as OkObjectResult;
             Assert.NotNull(okResult);
         }
-
         [Fact]
-        public async void Register()
+        public async void RegisterUser()
         {
             // Arrange
             FilmsCtalog.WebApi.Models.Login user = new FilmsCtalog.WebApi.Models.Login
@@ -64,7 +63,7 @@ namespace FilmsCatalog.xUnit.WebApi
 
             // Assert
             var viewResult = Assert.IsAssignableFrom<IActionResult>(result);
-            var okResult = result as OkObjectResult;
+            var okResult = result as ObjectResult;
             Assert.NotNull(okResult);
         }
 

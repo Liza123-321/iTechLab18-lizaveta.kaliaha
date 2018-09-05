@@ -27,7 +27,7 @@ namespace FilmsCatalog.xUnit.Business
             mapper = config.CreateMapper();
         }
         [Fact]
-        public void GetAll()
+        public void GetAllGenres()
         {
             // Arrange
             genreRepository.Setup(g => g.GetAllGenres()).ReturnsAsync(genreList);

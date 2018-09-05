@@ -33,11 +33,14 @@ namespace FilmsCatalog.xUnit.WebApi
             mapper = config.CreateMapper();
         }
         [Fact]
-        public async void GetByFilmId()
+        public async void GetCommentByFilmId()
         {
             // Arrange
             int filmId = 2;
+            int userId = 1;
+            string userEmail = "test@mail.ru";
             commentService.Setup(c => c.GetCommentsByFilmId(filmId)).ReturnsAsync(commentListByFilm);
+            userService.Setup(user => user.GetIdByEmail(userEmail)).ReturnsAsync(userId);
             var controller = new CommentsController(commentService.Object, mapper, userService.Object, _hubContext);
 
             // Act
@@ -51,10 +54,10 @@ namespace FilmsCatalog.xUnit.WebApi
         }
 
         [Fact]
-        public async void Add()
+        public async void AddComment()
         {
             // Arrange
-            commentService.Setup(c => c.AddComment(comment,1)).ReturnsAsync(comment);
+            commentService.Setup(c => c.AddComment(comment,1)).ReturnsAsync(commentAdd);
             var controller = new CommentsController(commentService.Object, mapper, userService.Object, _hubContext);
 
             // Act
@@ -73,6 +76,13 @@ namespace FilmsCatalog.xUnit.WebApi
         };
 
         private Comment comment = new Comment
+        {
+            CommentMessage = "test",
+            Data = "01/01/1996",
+            FilmId = 2,
+            UserId = 0
+        };
+        private Comment commentAdd = new Comment
         {
             CommentMessage = "test",
             Data = "01/01/1996",

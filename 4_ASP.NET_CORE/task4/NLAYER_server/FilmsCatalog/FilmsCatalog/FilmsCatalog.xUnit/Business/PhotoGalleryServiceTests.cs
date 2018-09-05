@@ -29,7 +29,7 @@ namespace FilmsCatalog.xUnit.Business
         }
 
         [Fact]
-        public void GetAll()
+        public void GetAllPhotoGallery()
         {
             // Arrange
             photoRepository.Setup(p => p.GetAllPhotos()).ReturnsAsync(photoList);
@@ -44,13 +44,8 @@ namespace FilmsCatalog.xUnit.Business
             Assert.Equal(photoList.Count, result.Result.Count);
         }
 
-        //public async Task<List<PhotoGallery>> GetGalleryByFilmId(int id)
-        //{
-        //    return _mapper.Map<List<Photo>, List<PhotoGallery>>(await _photoRepository.GetGalleryByFilmId(id));
-        //}
-
         [Fact]
-        public void GetByFilmId()
+        public void GetPhotoGalleryByFilmId()
         {
             // Arrange
             int filmId = 2;
