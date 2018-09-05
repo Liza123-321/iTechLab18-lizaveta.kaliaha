@@ -28,27 +28,11 @@ namespace FilmsCtalog.WebApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetWithGenres(int id)
+        public async Task<ActionResult<Models.FilmWithGenres>> GetWithGenres(int id)
         {
             Models.FilmWithGenres film = _mapper.Map<FilmsCatalog.Business.Models.FilmWithGenres, Models.FilmWithGenres>(await _filmService.GetFilmByWithGenres(id));
             if (film == null) return BadRequest(new { message = "Film with this id {" + id + "} not found" });
             return Ok(film);
-        }
-
-        // POST: api/Film
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Models.Film film)
-        {
-            return Ok(await _filmService.CreateFilm(_mapper.Map <Models.Film, FilmsCatalog.Business.Models.Film> (film)));
-        }
-
-        // PUT: api/Film/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Put([FromBody] Models.Film film)
-        {
-            var getfilm = await _filmService.UpdateFilm(_mapper.Map<Models.Film, FilmsCatalog.Business.Models.Film>(film));
-            if (getfilm == null) return BadRequest("Film with this id {" + film.Id + "} not found");
-            return Ok(getfilm);
         }
     }
 }

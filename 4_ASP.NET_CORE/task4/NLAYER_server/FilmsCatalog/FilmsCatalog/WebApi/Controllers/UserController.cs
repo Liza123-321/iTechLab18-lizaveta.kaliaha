@@ -19,11 +19,11 @@ namespace FilmsCtalog.WebApi.Controllers
             this._mapper = mapper;
         }
         [HttpPost("login")]
-        public async Task<IActionResult> GetToken([FromBody] Models.Login user)
+        public async Task<IActionResult> Login([FromBody] Models.Login user)
         {
             if (ModelState.IsValid)
             {
-                return new ObjectResult(await _userService.LoginUser(_mapper.Map<Models.Login, FilmsCatalog.Business.Models.Login>(user)));
+                return Ok(await _userService.LoginUser(_mapper.Map<Models.Login, FilmsCatalog.Business.Models.Login>(user)));
             }
             else return BadRequest();
         }
