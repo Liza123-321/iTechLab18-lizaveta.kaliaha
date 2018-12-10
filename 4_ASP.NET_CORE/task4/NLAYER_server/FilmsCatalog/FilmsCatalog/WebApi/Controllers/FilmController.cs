@@ -27,6 +27,13 @@ namespace FilmsCtalog.WebApi.Controllers
             return _mapper.Map<List<FilmsCatalog.Business.Models.Film>, List<Models.Film>>(await _filmService.GetAllFilms());
         }
 
+        // GET: api/Film
+        [HttpGet("lazy/{page}")]
+        public async Task<List<Models.Film>> GetLazy(int page)
+        {
+            return _mapper.Map<List<FilmsCatalog.Business.Models.Film>, List<Models.Film>>(await _filmService.GetAllFilmsLazy(page,10));
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Models.FilmWithGenres>> GetWithGenres(int id)
         {

@@ -39,13 +39,18 @@ namespace FilmsCatalog.DAL.Repository
         {
             return await db.Films.ToListAsync();
         }
+        public async Task<List<Film>> GetAllFilmsLazy(int page, int pageSize)
+        {
+            return await db.Films.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
+        }
+
         public async Task<Film> GetFilmById(int id)
         {
-            return  await db.Films.FirstOrDefaultAsync(x => x.Id == id);
+            return await db.Films.FirstOrDefaultAsync(x => x.Id == id);
         }
         public async Task<Film> GetFilmByWithGenres(int id)
         {
-            return await db.Films.Include(e=>e.FilmGenres).ThenInclude(e=>e.Genre).FirstOrDefaultAsync(x => x.Id == id);
+            return await db.Films.Include(e => e.FilmGenres).ThenInclude(e => e.Genre).FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<Film> UpdateFilm(Film film)

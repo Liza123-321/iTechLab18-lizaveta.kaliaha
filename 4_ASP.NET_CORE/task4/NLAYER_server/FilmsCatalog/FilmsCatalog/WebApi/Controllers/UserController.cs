@@ -23,7 +23,13 @@ namespace FilmsCtalog.WebApi.Controllers
         {
             if (ModelState.IsValid)
             {
-                return Ok(await _userService.LoginUser(_mapper.Map<Models.Login, FilmsCatalog.Business.Models.Login>(user)));
+                var login = await _userService.LoginUser(_mapper.Map<Models.Login, FilmsCatalog.Business.Models.Login>(user));
+                if (login == null) return BadRequest(new { message = "Invalid email or password" });
+                else
+                {
+                    return Ok(login);
+                }
+
             }
             else return BadRequest();
         }

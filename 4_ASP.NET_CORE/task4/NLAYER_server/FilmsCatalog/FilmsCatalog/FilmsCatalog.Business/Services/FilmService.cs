@@ -55,6 +55,12 @@ namespace FilmsCatalog.Business.Services
             return await SetFilmsRating(_mapper.Map<List<DAL.Models.Film>, List<Models.Film>>(await _filmRepository.GetAllFilms()));
         }
 
+        public async Task<List<Models.Film>> GetAllFilmsLazy(int page, int pageSize)
+        {
+            return await SetFilmsRating(_mapper.Map<List<DAL.Models.Film>, List<Models.Film>>(await _filmRepository.GetAllFilmsLazy(page, pageSize)));
+        }
+
+
         public async Task<Models.Film> GetFilmById(int id)
         {
             return await SetFilmRating(_mapper.Map<DAL.Models.Film, Models.Film>(await _filmRepository.GetFilmById(id)));
