@@ -14,6 +14,8 @@ using FilmsCatalog.DAL.Context;
 using FilmsCatalog.DAL.Interfaces;
 using FilmsCatalog.DAL.Models;
 using FilmsCatalog.DAL.Repository;
+using Microsoft.AspNet.OData.Builder;
+using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,6 +27,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OData.Edm;
 
 namespace WebApi
 {
@@ -77,6 +80,7 @@ namespace WebApi
             services.AddScoped<IRatingService, RatingService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IPhotoGalleryService, PhotoGalleryService>();
+            services.AddScoped<IODataService, ODataService>();
 
 
             services.AddScoped<IRatingRepository, RatingRepository>();
@@ -86,6 +90,7 @@ namespace WebApi
             services.AddScoped<IPhotoRepository, PhotoRepository>();
             services.AddScoped<IGenreRepository, GenreRepository>();
 
+            services.AddOData();
 
             services.AddMvc(options =>
             {
@@ -118,7 +123,26 @@ namespace WebApi
             {
                 routes.MapHub<CommentHub>("/comment");
             });
-            app.UseMvc();
+            app.UseMvc(b =>
+            {
+                b.Select().Expand().Filter().OrderBy().MaxTop(100).Count();
+                b.MapODataServiceRoute("odata", "odata", GetEdmModel());
+                b.EnableDependencyInjection();
+            });
+        }
+
+        private static IEdmModel GetEdmModel()
+        {
+            ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
+
+            builder.EntitySet<User>("Users");
+            builder.EntitySet<Photo>("Photos");
+            builder.EntitySet<RatingMark>("RatingMarks");
+            builder.EntitySet<FilmsCatalog.DAL.Models.Genre>("Genres");
+            builder.EntitySet<FilmsCatalog.DAL.Models.Comment>("Comments");
+            builder.EntitySet<FilmsCatalog.DAL.Models.Film>("Films");
+
+            return builder.GetEdmModel();
         }
     }
 }

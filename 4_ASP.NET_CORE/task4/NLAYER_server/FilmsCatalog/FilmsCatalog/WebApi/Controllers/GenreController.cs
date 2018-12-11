@@ -25,9 +25,9 @@ namespace FilmsCtalog.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<List<Models.Genre>> Get()
+        public async Task<IList<Models.Genre>> Get()
         {
-            return _mapper.Map<List<FilmsCatalog.Business.Models.Genre>, List<Models.Genre>>(await _genreService.GetAllGenres());
+            return _mapper.Map<IList<FilmsCatalog.Business.Models.Genre>, IList<Models.Genre>>(await _genreService.GetAllGenres());
         }
 
         [HttpGet("{name}")]

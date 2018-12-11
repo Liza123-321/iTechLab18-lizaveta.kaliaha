@@ -22,16 +22,16 @@ namespace FilmsCtalog.WebApi.Controllers
 
         // GET: api/Film
         [HttpGet]
-        public async Task<List<Models.Film>> Get()
+        public async Task<IList<Models.Film>> Get()
         {
-            return _mapper.Map<List<FilmsCatalog.Business.Models.Film>, List<Models.Film>>(await _filmService.GetAllFilms());
+            return _mapper.Map<IList<FilmsCatalog.Business.Models.Film>, IList<Models.Film>>(await _filmService.GetAllFilms());
         }
 
         // GET: api/Film
         [HttpGet("lazy/{page}")]
-        public async Task<List<Models.Film>> GetLazy(int page)
+        public async Task<IList<Models.Film>> GetLazy(int page)
         {
-            return _mapper.Map<List<FilmsCatalog.Business.Models.Film>, List<Models.Film>>(await _filmService.GetAllFilmsLazy(page,10));
+            return _mapper.Map<IList<FilmsCatalog.Business.Models.Film>, IList<Models.Film>>(await _filmService.GetAllFilmsLazy(page,10));
         }
 
         [HttpGet("{id}")]

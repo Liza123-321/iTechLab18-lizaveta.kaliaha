@@ -23,9 +23,9 @@ namespace FilmsCatalog.Business.Services
             await _commentRepository.AddComment(_mapper.Map<Models.Comment, DAL.Models.Comment>(comment));
             return comment;
         }
-        public async Task<List<CommentWithEmail>> GetCommentsByFilmId(int id)
+        public async Task<IList<CommentWithEmail>> GetCommentsByFilmId(int id)
         {
-            return _mapper.Map<List<DAL.Models.Comment>, List<CommentWithEmail>>(await _commentRepository.GetCommentsByFilmId(id));
+            return _mapper.Map<IList<DAL.Models.Comment>, IList<CommentWithEmail>>(await _commentRepository.GetCommentsByFilmId(id));
         }
     }
 }

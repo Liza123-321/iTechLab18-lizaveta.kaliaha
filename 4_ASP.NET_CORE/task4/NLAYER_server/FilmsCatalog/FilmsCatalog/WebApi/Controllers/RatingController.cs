@@ -25,9 +25,9 @@ namespace FilmsCtalog.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<List<Models.Rating>> Get()
+        public async Task<IList<Models.Rating>> Get()
         {
-            return _mapper.Map<List<FilmsCatalog.Business.Models.Rating>,List<Models.Rating>>(await _ratingService.GetAllRatings());
+            return _mapper.Map<IList<FilmsCatalog.Business.Models.Rating>,IList<Models.Rating>>(await _ratingService.GetAllRatings());
         }
 
         [HttpGet("{id}")]

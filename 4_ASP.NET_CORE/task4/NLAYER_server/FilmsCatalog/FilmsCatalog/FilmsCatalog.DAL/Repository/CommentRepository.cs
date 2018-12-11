@@ -23,6 +23,11 @@ namespace FilmsCatalog.DAL.Repository
             return comment;
         }
 
+        public IQueryable<Comment> GetQueryableAllComments()
+        {
+            return db.Comments;
+        }
+
         public async  Task<Comment> DeleteComment(Comment comment)
         {
             db.Comments.Remove(comment);
@@ -35,7 +40,7 @@ namespace FilmsCatalog.DAL.Repository
             return await db.Comments.ToListAsync();
         }
 
-        public async Task<List<Comment>> GetCommentsByFilmId(int id)
+        public async Task<IList<Comment>> GetCommentsByFilmId(int id)
         {
             return await db.Comments.Include(u=>u.User).Where(x => x.FilmId == id).ToListAsync();
         }

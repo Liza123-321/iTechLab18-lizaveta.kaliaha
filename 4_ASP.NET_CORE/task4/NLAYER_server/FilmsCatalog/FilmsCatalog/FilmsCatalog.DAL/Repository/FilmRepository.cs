@@ -35,11 +35,15 @@ namespace FilmsCatalog.DAL.Repository
             return film;
         }
 
-        public async Task<List<Film>> GetAllFilms()
+        public async Task<IList<Film>> GetAllFilms()
         {
             return await db.Films.ToListAsync();
         }
-        public async Task<List<Film>> GetAllFilmsLazy(int page, int pageSize)
+        public IQueryable<Film> GetQueryableAllFilms()
+        {
+            return db.Films;
+        }
+        public async Task<IList<Film>> GetAllFilmsLazy(int page, int pageSize)
         {
             return await db.Films.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
         }
