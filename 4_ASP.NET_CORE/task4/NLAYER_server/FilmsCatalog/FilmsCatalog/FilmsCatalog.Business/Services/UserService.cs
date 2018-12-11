@@ -20,9 +20,9 @@ namespace FilmsCatalog.Business.Services
             _tokenService = tokenService;
             _mapper = mapper;
         }
-        public async Task<List<Login>> GetAllUsers()
+        public async Task<IList<Login>> GetAllUsers()
         {
-            return  _mapper.Map<List<User>, List<Login>>(await _userRepository.GetAllUsers());
+            return  _mapper.Map<IList<User>, IList<Login>>(await _userRepository.GetAllUsers());
         }
 
         public async Task<string> GetEmailById(int id)

@@ -28,10 +28,10 @@ namespace FilmsCtalog.WebApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<List<Models.CommentWithEmail>> Get(int id)
+        public async Task<IList<Models.CommentWithEmail>> Get(int id)
         {
           
-            return _mapper.Map<List<FilmsCatalog.Business.Models.CommentWithEmail>, List<Models.CommentWithEmail>> (await _commentsService.GetCommentsByFilmId(id));
+            return _mapper.Map<IList<FilmsCatalog.Business.Models.CommentWithEmail>, IList<Models.CommentWithEmail>> (await _commentsService.GetCommentsByFilmId(id));
         }
         [Authorize]
         [HttpPost]
@@ -40,7 +40,7 @@ namespace FilmsCtalog.WebApi.Controllers
             if (ModelState.IsValid)
             {
                 var myComment = await _commentsService.AddComment(_mapper.Map<Models.Comment, FilmsCatalog.Business.Models.Comment>(model), UserId);
-                var allComments = _mapper.Map<List<FilmsCatalog.Business.Models.CommentWithEmail>, List<Models.CommentWithEmail>>(await _commentsService.GetCommentsByFilmId(model.FilmId));
+                var allComments = _mapper.Map<IList<FilmsCatalog.Business.Models.CommentWithEmail>, IList<Models.CommentWithEmail>>(await _commentsService.GetCommentsByFilmId(model.FilmId));
                 await _hubContext.Clients.All.SendAsync("GetComment", allComments);
                 return Ok(myComment);
             }

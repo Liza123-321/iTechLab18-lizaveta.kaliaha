@@ -17,17 +17,21 @@ namespace FilmsCatalog.DAL.Repository
             this.db = ratings;
         }
 
-        public async Task<List<RatingMark>> GetAllRatings()
+        public async Task<IList<RatingMark>> GetAllRatings()
         {
             return await db.RatingMarks.ToListAsync();
         }
+        public IQueryable<RatingMark> GetQueryableAllRatings()
+        {
+            return db.RatingMarks;
+        }
 
-        public async Task<List<RatingMark>> GetRatingByFilmId(int id)
+        public async Task<IList<RatingMark>> GetRatingByFilmId(int id)
         {
             return await db.RatingMarks.Where(x => x.FilmId == id).ToListAsync();
         }
 
-        public async Task<List<RatingMark>> GetRatingByUserId(int id)
+        public async Task<IList<RatingMark>> GetRatingByUserId(int id)
         {
             return await db.RatingMarks.Where(x => x.UserId == id).ToListAsync();
         }

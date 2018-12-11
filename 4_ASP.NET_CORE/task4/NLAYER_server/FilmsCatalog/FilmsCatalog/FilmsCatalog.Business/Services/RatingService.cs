@@ -20,36 +20,36 @@ namespace FilmsCatalog.Business.Services
             _ratingRepository = ratingRepository;
         }
 
-        public async Task<List<Rating>> GetAllRatings()
+        public async Task<IList<Rating>> GetAllRatings()
         {
-            return _mapper.Map<List<RatingMark>, List<Rating>>(await _ratingRepository.GetAllRatings());
+            return _mapper.Map<IList<RatingMark>, IList<Rating>>(await _ratingRepository.GetAllRatings());
         }
 
-        public  double GetAverageFilmRating(List<Rating> ratings)
+        public double GetAverageFilmRating(IList<Rating> ratings)
         {
             double result = 0.0;
-            for (int i = 0; i < ratings.Count; i++)
+            foreach (var rating in ratings)
             {
-                result += ratings[i].Mark;
+                result += rating.Mark;
             }
             if (ratings.Count > 0) return Math.Round(result / ratings.Count, 2);
             else return 0;
         }
 
-        public async Task<List<Rating>> GetRatingByFilmId(int id)
+        public async Task<IList<Rating>> GetRatingByFilmId(int id)
         {
 
-            return _mapper.Map<List<RatingMark>, List<Rating>>(await _ratingRepository.GetRatingByFilmId(id));
+            return _mapper.Map<IList<RatingMark>, IList<Rating>>(await _ratingRepository.GetRatingByFilmId(id));
         }
 
-        public async Task<List<Rating>> GetRatingByUserId(int id)
+        public async Task<IList<Rating>> GetRatingByUserId(int id)
         {
-            return _mapper.Map<List<RatingMark>, List<Rating>>(await _ratingRepository.GetRatingByUserId(id));
+            return _mapper.Map<IList<RatingMark>, IList<Rating>>(await _ratingRepository.GetRatingByUserId(id));
         }
 
         public async Task<RatingMark> GetRatingFromUserAndFilm(int userId, int filmId)
         {
-            return await _ratingRepository.GetRatingFromUserAndFilm(userId,filmId);
+            return await _ratingRepository.GetRatingFromUserAndFilm(userId, filmId);
         }
 
         public async Task<Rating> SetRating(Rating rating, int id)
@@ -58,7 +58,7 @@ namespace FilmsCatalog.Business.Services
             var ratingMark = await GetRatingFromUserAndFilm(rating.UserId, rating.FilmId);
             if (ratingMark != null)
             {
-              await  _ratingRepository.RemoveRating(ratingMark);
+                await _ratingRepository.RemoveRating(ratingMark);
             }
             await _ratingRepository.SetRating(new RatingMark { UserId = rating.UserId, FilmId = rating.FilmId, Mark = rating.Mark });
             return rating;

@@ -38,9 +38,14 @@ namespace FilmsCatalog.DAL.Repository
             return user;
         }
 
-        public async Task<List<User>> GetAllUsers()
+        public async Task<IList<User>> GetAllUsers()
         {
             return await db.Users.ToListAsync();
+        }
+
+        public IQueryable<User> GetQueryableAllUsers()
+        {
+            return db.Users;
         }
 
         public async Task<User> GetUserById(int id)

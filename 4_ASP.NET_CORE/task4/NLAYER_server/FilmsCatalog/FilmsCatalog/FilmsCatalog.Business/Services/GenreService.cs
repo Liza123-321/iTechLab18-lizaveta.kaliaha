@@ -21,9 +21,9 @@ namespace FilmsCatalog.Business.Services
             _genreRepository = genreRepository;
         }
 
-        public async  Task<List<Models.Genre>> GetAllGenres()
+        public async  Task<IList<Models.Genre>> GetAllGenres()
         {
-            return _mapper.Map<List<DAL.Models.Genre>, List<Models.Genre>>(await _genreRepository.GetAllGenres());
+            return _mapper.Map<IList<DAL.Models.Genre>, IList<Models.Genre>>(await _genreRepository.GetAllGenres());
         }
        public async Task<GenreWithFilm> GetGenreByNameWithFilms(string name)
         {

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FilmsCatalog.DAL.Repository
 {
-   public class GenreRepository : IGenreRepository
+    public class GenreRepository : IGenreRepository
     {
         private ApplicationContext db;
 
@@ -42,7 +42,10 @@ namespace FilmsCatalog.DAL.Repository
             return await db.Genres.ToListAsync();
         }
 
-
+        public IQueryable<Genre> GetQueryableAllGenres()
+        {
+            return db.Genres;
+        }
 
         public async Task<Genre> GetGenreById(int id)
         {
@@ -51,7 +54,7 @@ namespace FilmsCatalog.DAL.Repository
 
         public async Task<Genre> GetGenreByNameWithFilms(string name)
         {
-            return await db.Genres.Include(u=>u.FilmGenres).ThenInclude(e => e.Film).FirstOrDefaultAsync(x => x.GenreName == name);
+            return await db.Genres.Include(u => u.FilmGenres).ThenInclude(e => e.Film).FirstOrDefaultAsync(x => x.GenreName == name);
         }
 
         public async Task<Genre> UpdateGenre(Genre genre)

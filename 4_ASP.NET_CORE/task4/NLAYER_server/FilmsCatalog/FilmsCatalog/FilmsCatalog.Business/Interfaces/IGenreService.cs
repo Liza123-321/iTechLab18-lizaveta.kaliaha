@@ -8,7 +8,7 @@ namespace FilmsCatalog.Business.Interfaces
 {
   public interface IGenreService
     {
-        Task<List<Genre>> GetAllGenres();
+        Task<IList<Genre>> GetAllGenres();
         Task<GenreWithFilm> GetGenreByNameWithFilms(string name);
     }
 }

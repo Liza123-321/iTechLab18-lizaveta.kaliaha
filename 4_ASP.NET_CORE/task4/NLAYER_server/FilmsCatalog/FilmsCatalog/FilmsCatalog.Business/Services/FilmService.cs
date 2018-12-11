@@ -42,18 +42,17 @@ namespace FilmsCatalog.Business.Services
         {
             return await SetFilmRating(_mapper.Map<DAL.Models.Film, FilmWithGenres>(await _filmRepository.GetFilmByWithGenres(id)));
         }
-        private async Task<List<Models.Film>> SetFilmsRating(List<Models.Film> films)
+
+        public async Task<IList<Models.Film>> GetAllFilms()
         {
-            for (int i = 0; i < films.Count; i++)
-            {
-                films[i].AverageRating = _ratingService.GetAverageFilmRating(await _ratingService.GetRatingByFilmId(films[i].Id));
-            }
-            return films;
+            return await SetFilmsRating(_mapper.Map<IList<DAL.Models.Film>, IList<Models.Film>>(await _filmRepository.GetAllFilms()));
         }
-        public async Task<List<Models.Film>> GetAllFilms()
+
+        public async Task<IList<Models.Film>> GetAllFilmsLazy(int page, int pageSize)
         {
-            return await SetFilmsRating(_mapper.Map<List<DAL.Models.Film>, List<Models.Film>>(await _filmRepository.GetAllFilms()));
+            return await SetFilmsRating(_mapper.Map<IList<DAL.Models.Film>, IList<Models.Film>>(await _filmRepository.GetAllFilmsLazy(page, pageSize)));
         }
+
 
         public async Task<Models.Film> GetFilmById(int id)
         {
@@ -63,6 +62,15 @@ namespace FilmsCatalog.Business.Services
         public async Task<Models.Film> UpdateFilm(Models.Film film)
         {
             return _mapper.Map<DAL.Models.Film, Models.Film>(await _filmRepository.UpdateFilm(_mapper.Map<Models.Film, DAL.Models.Film>(film)));
+        }
+
+        private async Task<IList<Models.Film>> SetFilmsRating(IList<Models.Film> films)
+        {
+            foreach( var film in films)
+            {
+                film.AverageRating = _ratingService.GetAverageFilmRating(await _ratingService.GetRatingByFilmId(film.Id));
+            }
+            return films;
         }
     }
 }

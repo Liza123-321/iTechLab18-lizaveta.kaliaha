@@ -24,12 +24,17 @@ namespace FilmsCatalog.DAL.Repository
             return photo;
         }
 
-        public async Task<List<Photo>> GetAllPhotos()
+        public async Task<IList<Photo>> GetAllPhotos()
         {
             return await db.Photos.ToListAsync();
         }
 
-        public async Task<List<Photo>> GetGalleryByFilmId(int id)
+        public IQueryable<Photo> GetQueryableAllPhotos()
+        {
+            return db.Photos;
+        }
+
+        public async Task<IList<Photo>> GetGalleryByFilmId(int id)
         {
             return await db.Photos.Where(x => x.FilmId == id).ToListAsync();
         }
